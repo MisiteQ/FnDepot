@@ -1,0 +1,45 @@
+{
+  "schema_version": "2",
+  "source_info": {
+    "name": "MisiteQ 应用源",
+    "author": "MisiteQ",
+    "homepage": "https://github.com/MisiteQ/fnmonitor",
+    "description": "飞牛监控 fnmonitor 官方发布源：fnOS 系统监控面板，实时监控 CPU / 内存 / 磁盘 / 网络 / 温度 / 功耗 / GPU 与 Docker。"
+  },
+  "apps": {
+    "fnmonitor": {
+      "display_name": "飞牛监控",
+      "desc": "<b>fnOS 系统监控面板</b>：实时监控 CPU、内存、磁盘、网络、温度、功耗与 GPU，Docker 容器资源占用，端口占用与内置应用统计，支持历史趋势记录与数据持久化。<br><br>🏠 总览仪表盘（系统资源 + 硬盘 + 趋势合并一页）| 📊 流量统计 | ⚡ 功耗统计 | 🐳 Docker · 端口 | ⚙️ 设置",
+      "platform": ["x86", "arm"],
+      "categories": ["系统工具"],
+      "icon_url": "./fnmonitor/ICON.PNG",
+      "readme_url": "./fnmonitor/README.md",
+      "bug_report_url": "https://github.com/MisiteQ/fnmonitor/issues",
+      "maintainer": "Misite齊",
+      "maintainer_url": "https://github.com/MisiteQ",
+      "run_as": "root",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "8777",
+      "releases": {
+        "2.12.2": {
+          "changelog": "① 更新应用图标：更换为新的应用图标，桌面 / 应用中心 / 包内图标统一更新<br>② 修复内置更新后飞牛应用中心版本号不刷新：内置更新现在会把新版 manifest / ICON 同步到应用基础目录 /var/apps/{appname}/，应用中心版本号立即刷新<br>③ 修复处理器核心 / 线程数读取错误：改用 lscpu 拓扑 + cpuinfo 去重回退，物理核心 / 逻辑线程 / 插槽数均准确（x86 与 ARM 适配）<br>④ 修复 RAPL 总功耗虚高一倍：整机实测=封装+内存，实时功耗与功耗统计完全同源；AMD / ARM 无 RAPL 时统一显示模型估算值<br>⑤ 新增「飞牛桌面打开方式」设置：可选飞牛窗口内嵌（iframe）或浏览器新标签页独立打开（url）",
+          "updated_at": "2026-09-08T23:55:00+08:00",
+          "os_min_version": "0.9.0",
+          "packages": {
+            "x86": {
+              "download_url": "./fnmonitor/fpk/fnmonitor-2.12.2-x86.fpk",
+              "sha256": "c8974f9e9b89f634ef1d6e9e6dd8aaca7dfd2555e4090f148beb5b25614cf49c",
+              "size": 330837
+            },
+            "arm": {
+              "download_url": "./fnmonitor/fpk/fnmonitor-2.12.2-arm.fpk",
+              "sha256": "8671ff8dc830d6b2a5fbe0c0765c36bc50c6eaba103061c50d696d0ed0cdc02e",
+              "size": 330926
+            }
+          }
+        }
+      }
+    }
+  }
+}
