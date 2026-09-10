@@ -3,10 +3,44 @@
   "source_info": {
     "name": "MisiteQ 应用源",
     "author": "MisiteQ",
-    "homepage": "https://github.com/MisiteQ/fnmonitor",
-    "description": "飞牛监控 fnmonitor 官方发布源：fnOS 系统监控面板，实时监控 CPU / 内存 / 磁盘 / 网络 / 温度 / 功耗 / GPU 与 Docker。"
+    "homepage": "https://github.com/MisiteQ/FnDepot",
+    "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）。"
   },
   "apps": {
+    "qyread": {
+      "display_name": "惬意阅读",
+      "desc": "<b>飞牛上的私人书库与阅读中心</b>：搜书、管书、看书一站搞定，数据仅保存在 NAS 本机。<br><br>📚 多格式书库：TXT/EPUB/MOBI/AZW3/PDF/CBZ/CBR/CB7，拖拽批量导入，自动识别书名/作者/出版社；书架大/中/小封面与详细列表四种视图（列表显示作者、最新章节、阅读进度）<br>🔍 小说搜索下载：聚合多个书源，一键下载 EPUB/TXT 自动入库，可自由选择下载文件夹；全局任务面板支持暂停/继续/取消，卡死任务自动清理<br>📖 沉浸阅读：仿真翻页、多款字体与主题、划线高亮、批注笔记、进度自动保存<br>🔊 Edge 在线听书 · 📝 读后感与阅读统计<br><br>基于「落地长安 轻阅读」改造，小说下载整合 zsyo 的 go-novel。默认账号 admin / admin123（请及时修改）。",
+      "platform": ["x86", "arm"],
+      "categories": ["影音娱乐", "教育学习"],
+      "icon_url": "./qyread/ICON.PNG",
+      "readme_url": "./qyread/README.md",
+      "bug_report_url": "https://github.com/MisiteQ/QYRead/issues",
+      "maintainer": "Misite齊",
+      "maintainer_url": "https://github.com/MisiteQ",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "8344",
+      "releases": {
+        "0.1.9": {
+          "changelog": "① 修复书架「详细列表」视图书籍信息不显示的问题（书库数据中的书名带 .epub/.txt 扩展名、而页面显示名无扩展名，导致作者/章节/进度匹配失败），列表现在正确显示作者、读到的章节与阅读进度<br>② 详细列表视图不再显示封面缩略图，改为纯文本列表<br>③ 清理前端调试日志",
+          "updated_at": "2026-09-10T12:00:00+08:00",
+          "os_min_version": "1.1.8",
+          "packages": {
+            "x86": {
+              "download_url": "./qyread/fpk/qyread-0.1.9-x86.fpk",
+              "sha256": "7f5e37a05ca78b286942504db082993b7d483f9367e97f864e2596a2528721a3",
+              "size": 28197165
+            },
+            "arm": {
+              "download_url": "./qyread/fpk/qyread-0.1.9-arm.fpk",
+              "sha256": "09cc440caa8c846268286a19195a1fd63b3c8cfd517417dedb73d23c2a01857c",
+              "size": 28167095
+            }
+          }
+        }
+      }
+    },
     "fnmonitor": {
       "display_name": "飞牛监控",
       "desc": "<b>fnOS 系统监控面板</b>：实时监控 CPU、内存、磁盘、网络、温度、功耗与 GPU，Docker 容器资源占用，端口占用与内置应用统计，支持历史趋势记录与数据持久化。<br><br>🏠 总览仪表盘（系统资源 + 硬盘 + 趋势合并一页）| 📊 流量统计 | ⚡ 功耗统计 | 🐳 Docker · 端口 | ⚙️ 设置",
