@@ -24,20 +24,20 @@
       "is_docker": false,
       "service_port": "8344",
       "releases": {
-        "0.1.11": {
-          "changelog": "修复安装后偶发未自启动、书架详细列表作者章节进度偶发不显示；阅读器新增白噪音背景音。",
-          "updated_at": "2026-09-11T21:57:00+08:00",
+        "0.1.12": {
+          "changelog": "修复白噪音入口未显示；修复书架详细列表作者章节进度不显示；修复安装后偶发未自启动。",
+          "updated_at": "2026-09-11T22:40:00+08:00",
           "os_min_version": "1.1.8",
           "packages": {
             "x86": {
-              "download_url": "./qyread/fpk/qyread-0.1.11-x86.fpk",
-              "sha256": "edefa939bfe37a259aebdc2403aa6f04933d3ff8189735810799b978c20a49ce",
-              "size": 28203511
+              "download_url": "./qyread/fpk/qyread-0.1.12-x86.fpk",
+              "sha256": "5656ec92d1e6e1718de877c05be9849cbdd7546213c5a620973b93804b713395",
+              "size": 28205108
             },
             "arm": {
-              "download_url": "./qyread/fpk/qyread-0.1.11-arm.fpk",
-              "sha256": "c3ab3a1b91412c867eaac9080bd5d4016b89e38d74ca42b57d10cbfaaa84914f",
-              "size": 28176738
+              "download_url": "./qyread/fpk/qyread-0.1.12-arm.fpk",
+              "sha256": "56ea7610c3ca5ad42e3c3a92293454c1ce3e269d2dbff1b12199a6a9aec0ab3e",
+              "size": 28176666
             }
           }
         }
