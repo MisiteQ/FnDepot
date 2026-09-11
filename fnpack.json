@@ -24,20 +24,20 @@
       "is_docker": false,
       "service_port": "8344",
       "releases": {
-        "0.1.10": {
-          "changelog": "修复「我的」页点击用户卡片跳转已下线页面导致报错的问题。",
-          "updated_at": "2026-09-11T18:00:00+08:00",
+        "0.1.11": {
+          "changelog": "修复安装后偶发未自启动、书架详细列表作者章节进度偶发不显示；阅读器新增白噪音背景音。",
+          "updated_at": "2026-09-11T21:57:00+08:00",
           "os_min_version": "1.1.8",
           "packages": {
             "x86": {
-              "download_url": "./qyread/fpk/qyread-0.1.10-x86.fpk",
-              "sha256": "4aefa223d0bb8fcab7d21ba9dac6742b10dfafef24ed1c3a58f9eaadd8349f54",
-              "size": 28196676
+              "download_url": "./qyread/fpk/qyread-0.1.11-x86.fpk",
+              "sha256": "edefa939bfe37a259aebdc2403aa6f04933d3ff8189735810799b978c20a49ce",
+              "size": 28203511
             },
             "arm": {
-              "download_url": "./qyread/fpk/qyread-0.1.10-arm.fpk",
-              "sha256": "ae41ead1f7b5929013cd415282bec1ad5fb726c4afcf184fd97e943dfdfa613c",
-              "size": 28169590
+              "download_url": "./qyread/fpk/qyread-0.1.11-arm.fpk",
+              "sha256": "c3ab3a1b91412c867eaac9080bd5d4016b89e38d74ca42b57d10cbfaaa84914f",
+              "size": 28176738
             }
           }
         }
