@@ -24,20 +24,20 @@
       "is_docker": false,
       "service_port": "8344",
       "releases": {
-        "0.1.13": {
-          "changelog": "书架详细列表返回自动刷新；白噪音按钮浮动拖拽+播放速度+初始居中；新增在线自动更新。",
-          "updated_at": "2026-09-11T23:25:00+08:00",
+        "0.1.14": {
+          "changelog": "修复关于页当前版本读取错误及自动更新多项缺陷：manifest 路径、版本正则、HTTPS 重定向。",
+          "updated_at": "2026-09-11T11:33:10+08:00",
           "os_min_version": "1.1.8",
           "packages": {
             "x86": {
-              "download_url": "./qyread/fpk/qyread-0.1.13-x86.fpk",
-              "sha256": "9e5718acf4de1214d6bea9e26ee5956eda337ad5dad92793afa4969544d6b34b",
-              "size": 28212375
+              "download_url": "./qyread/fpk/qyread-0.1.14-x86.fpk",
+              "sha256": "e6a488d6c26bfb92dd968315f2c42e445506b4ddf6d173531b7e711a2284c1af",
+              "size": 28212742
             },
             "arm": {
-              "download_url": "./qyread/fpk/qyread-0.1.13-arm.fpk",
-              "sha256": "fc08e3d4d5690a4bd8e0d8d5772960fcbc995744f53329b7bbba47f9b2a9163f",
-              "size": 28181514
+              "download_url": "./qyread/fpk/qyread-0.1.14-arm.fpk",
+              "sha256": "fba437e820ca2273c9494002c164b6bb53fc231bcc33fe0fcc52fea43f23c333",
+              "size": 28183490
             }
           }
         }
