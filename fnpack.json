@@ -1,83 +1,94 @@
 {
-  "schema_version": "2",
-  "source_info": {
-    "name": "MisiteQ 应用源",
-    "author": "MisiteQ",
-    "homepage": "https://github.com/MisiteQ/FnDepot",
-    "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）。"
-  },
-  "apps": {
-    "qyread": {
-      "display_name": "惬意阅读",
-      "desc": "飞牛 fnOS 上的私人书库与阅读中心：聚合搜书下载、多格式书架管理与沉浸阅读听书，数据仅保存在 NAS 本机。",
-      "platform": ["x86", "arm"],
-      "categories": ["影音娱乐", "教育学习"],
-      "icon_url": "./qyread/ICON.PNG",
-      "readme_url": "./qyread/README.md",
-      "bug_report_url": "https://github.com/MisiteQ/QYRead/issues",
-      "maintainer": "Misite齊",
-      "maintainer_url": "https://github.com/MisiteQ",
-      "distributor": "MisiteQ",
-      "distributor_url": "https://github.com/MisiteQ/FnDepot",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "8344",
-      "releases": {
-        "0.1.14": {
-          "changelog": "修复关于页当前版本读取错误及自动更新多项缺陷：manifest 路径、版本正则、HTTPS 重定向。",
-          "updated_at": "2026-09-11T11:33:10+08:00",
-          "os_min_version": "1.1.8",
-          "packages": {
-            "x86": {
-              "download_url": "./qyread/fpk/qyread-0.1.14-x86.fpk",
-              "sha256": "e6a488d6c26bfb92dd968315f2c42e445506b4ddf6d173531b7e711a2284c1af",
-              "size": 28212742
-            },
-            "arm": {
-              "download_url": "./qyread/fpk/qyread-0.1.14-arm.fpk",
-              "sha256": "fba437e820ca2273c9494002c164b6bb53fc231bcc33fe0fcc52fea43f23c333",
-              "size": 28183490
-            }
-          }
-        }
-      }
-    },
-    "fnmonitor": {
-      "display_name": "飞牛监控",
-      "desc": "fnOS 系统监控面板：实时监控 CPU、内存、磁盘、网络、温度、功耗、GPU 与 Docker，支持历史趋势记录。",
-      "platform": ["x86", "arm"],
-      "categories": ["系统工具"],
-      "icon_url": "./fnmonitor/ICON.PNG",
-      "readme_url": "./fnmonitor/README.md",
-      "bug_report_url": "https://github.com/MisiteQ/fnmonitor/issues",
-      "maintainer": "Misite齊",
-      "maintainer_url": "https://github.com/MisiteQ",
-      "distributor": "MisiteQ",
-      "distributor_url": "https://github.com/MisiteQ/FnDepot",
-      "run_as": "root",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "8777",
-      "releases": {
-        "2.12.2": {
-          "changelog": "更新应用图标；修复内置更新后应用中心版本号不刷新、CPU 核心/线程数读取错误与 RAPL 总功耗虚高一倍；新增桌面打开方式设置。",
-          "updated_at": "2026-09-08T23:55:00+08:00",
-          "os_min_version": "0.9.0",
-          "packages": {
-            "x86": {
-              "download_url": "./fnmonitor/fpk/fnmonitor-2.12.2-x86.fpk",
-              "sha256": "c8974f9e9b89f634ef1d6e9e6dd8aaca7dfd2555e4090f148beb5b25614cf49c",
-              "size": 330837
-            },
-            "arm": {
-              "download_url": "./fnmonitor/fpk/fnmonitor-2.12.2-arm.fpk",
-              "sha256": "8671ff8dc830d6b2a5fbe0c0765c36bc50c6eaba103061c50d696d0ed0cdc02e",
-              "size": 330926
-            }
-          }
-        }
-      }
-    }
-  }
+    "schema_version":  "2",
+    "source_info":  {
+                        "name":  "MisiteQ 应用源",
+                        "author":  "MisiteQ",
+                        "homepage":  "https://github.com/MisiteQ/FnDepot",
+                        "description":  "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）。"
+                    },
+    "apps":  {
+                 "qyread":  {
+                                "display_name":  "惬意阅读",
+                                "desc":  "飞牛 fnOS 上的私人书库与阅读中心：聚合搜书下载、多格式书架管理与沉浸阅读听书，数据仅保存在 NAS 本机。",
+                                "platform":  [
+                                                 "x86",
+                                                 "arm"
+                                             ],
+                                "categories":  [
+                                                   "影音娱乐",
+                                                   "教育学习"
+                                               ],
+                                "icon_url":  "./qyread/ICON.PNG",
+                                "readme_url":  "./qyread/README.md",
+                                "bug_report_url":  "https://github.com/MisiteQ/QYRead/issues",
+                                "maintainer":  "Misite齊",
+                                "maintainer_url":  "https://github.com/MisiteQ",
+                                "distributor":  "MisiteQ",
+                                "distributor_url":  "https://github.com/MisiteQ/FnDepot",
+                                "run_as":  "package",
+                                "install_type":  "",
+                                "is_docker":  false,
+                                "service_port":  "8344",
+                                "releases":  {
+                                                 "0.1.15":  {
+                                                                "changelog":  "根修复版本读取全链路：manifest version= 去空格兼容 server.js 正则不再回退到 v2.9.6；enhancer.js 新增 XHR 拦截",
+                                                                "os_min_version":  "1.1.8",
+                                                                "packages":  {
+                                                                                 "x86":  {
+                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.15-x86.fpk",
+                                                                                             "sha256":  "996f4345ca5ff10d5154536e6882a50577db3c6873c810540f81e8fa4c132022",
+                                                                                             "size":  28213378
+                                                                                         },
+                                                                                 "arm":  {
+                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.15-arm.fpk",
+                                                                                             "sha256":  "155d95ca756d0dc85423705e83c93e2ffd7e1dbb864b3d13d7e1be74f24062a3",
+                                                                                             "size":  28186199
+                                                                                         }
+                                                                             },
+                                                                "updated_at":  "2026-09-11T12:04:26+08:00"
+                                                            }
+                                             }
+                            },
+                 "fnmonitor":  {
+                                   "display_name":  "飞牛监控",
+                                   "desc":  "fnOS 系统监控面板：实时监控 CPU、内存、磁盘、网络、温度、功耗、GPU 与 Docker，支持历史趋势记录。",
+                                   "platform":  [
+                                                    "x86",
+                                                    "arm"
+                                                ],
+                                   "categories":  [
+                                                      "系统工具"
+                                                  ],
+                                   "icon_url":  "./fnmonitor/ICON.PNG",
+                                   "readme_url":  "./fnmonitor/README.md",
+                                   "bug_report_url":  "https://github.com/MisiteQ/fnmonitor/issues",
+                                   "maintainer":  "Misite齊",
+                                   "maintainer_url":  "https://github.com/MisiteQ",
+                                   "distributor":  "MisiteQ",
+                                   "distributor_url":  "https://github.com/MisiteQ/FnDepot",
+                                   "run_as":  "root",
+                                   "install_type":  "",
+                                   "is_docker":  false,
+                                   "service_port":  "8777",
+                                   "releases":  {
+                                                    "2.12.2":  {
+                                                                   "changelog":  "更新应用图标；修复内置更新后应用中心版本号不刷新、CPU 核心/线程数读取错误与 RAPL 总功耗虚高一倍；新增桌面打开方式设置。",
+                                                                   "updated_at":  "2026-09-08T23:55:00+08:00",
+                                                                   "os_min_version":  "0.9.0",
+                                                                   "packages":  {
+                                                                                    "x86":  {
+                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.12.2-x86.fpk",
+                                                                                                "sha256":  "c8974f9e9b89f634ef1d6e9e6dd8aaca7dfd2555e4090f148beb5b25614cf49c",
+                                                                                                "size":  330837
+                                                                                            },
+                                                                                    "arm":  {
+                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.12.2-arm.fpk",
+                                                                                                "sha256":  "8671ff8dc830d6b2a5fbe0c0765c36bc50c6eaba103061c50d696d0ed0cdc02e",
+                                                                                                "size":  330926
+                                                                                            }
+                                                                                }
+                                                               }
+                                                }
+                               }
+             }
 }
