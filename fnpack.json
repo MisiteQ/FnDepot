@@ -22,20 +22,20 @@
       "is_docker": false,
       "service_port": "8344",
       "releases": {
-        "0.1.9": {
-          "changelog": "① 修复书架「详细列表」视图书籍信息不显示的问题（书库数据中的书名带 .epub/.txt 扩展名、而页面显示名无扩展名，导致作者/章节/进度匹配失败），列表现在正确显示作者、读到的章节与阅读进度<br>② 详细列表视图不再显示封面缩略图，改为纯文本列表<br>③ 清理前端调试日志",
-          "updated_at": "2026-09-10T12:00:00+08:00",
+        "0.1.10": {
+          "changelog": "① 彻底修复「我的」页点击顶部用户卡片仍跳转已下线的成就页并报 s.map is not a function 的问题：旧版拦截只扫描无子元素的 span，而「已阅读 N 分钟」实际带子元素节点导致从未命中；现改为文本节点遍历定位 + document 捕获阶段常驻拦截，不依赖标记时机，React 重渲染后也能拦住<br>② 卡片右侧的进入箭头同步隐藏，避免误导点击",
+          "updated_at": "2026-09-11T18:00:00+08:00",
           "os_min_version": "1.1.8",
           "packages": {
             "x86": {
-              "download_url": "./qyread/fpk/qyread-0.1.9-x86.fpk",
-              "sha256": "7f5e37a05ca78b286942504db082993b7d483f9367e97f864e2596a2528721a3",
-              "size": 28197165
+              "download_url": "./qyread/fpk/qyread-0.1.10-x86.fpk",
+              "sha256": "4aefa223d0bb8fcab7d21ba9dac6742b10dfafef24ed1c3a58f9eaadd8349f54",
+              "size": 28196676
             },
             "arm": {
-              "download_url": "./qyread/fpk/qyread-0.1.9-arm.fpk",
-              "sha256": "09cc440caa8c846268286a19195a1fd63b3c8cfd517417dedb73d23c2a01857c",
-              "size": 28167095
+              "download_url": "./qyread/fpk/qyread-0.1.10-arm.fpk",
+              "sha256": "ae41ead1f7b5929013cd415282bec1ad5fb726c4afcf184fd97e943dfdfa613c",
+              "size": 28169590
             }
           }
         }

@@ -31,8 +31,8 @@ FnDepot/
 │   ├── ICON.PNG     # 应用图标
 │   ├── README.md    # 应用详情说明
 │   └── fpk/         # 各架构安装包
-│       ├── qyread-0.1.9-x86.fpk
-│       └── qyread-0.1.9-arm.fpk
+│       ├── qyread-0.1.10-x86.fpk
+│       └── qyread-0.1.10-arm.fpk
 └── fnmonitor/       # 飞牛监控应用目录
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
