@@ -30,22 +30,22 @@
                                 "is_docker":  false,
                                 "service_port":  "8344",
                                 "releases":  {
-                                                 "0.1.16":  {
-                                                                "changelog":  "彻底根治更新面板当前版本读成其他应用版本号：改读自身 package.json；新增 GitHub 地址与手动下载入口；修复按钮无反应。",
+                                                 "0.1.17":  {
+                                                                "changelog":  "关于页调整板块顺序（软件更新移到致谢之前）；最新版也允许下载安装包重装。",
                                                                 "os_min_version":  "1.1.8",
                                                                 "packages":  {
                                                                                  "x86":  {
-                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.16-x86.fpk",
-                                                                                             "sha256":  "fdbf8614ab49f6762aaa689fcf7ab550bce9c6e5a30ff7d0675e1ce6312c8910",
-                                                                                             "size":  28214140
+                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.17-x86.fpk",
+                                                                                             "sha256":  "9e0acffea70596fa82f66fdfd73784d1133ac54ff6ba80b9ac57e8d7438e958b",
+                                                                                             "size":  28215649
                                                                                          },
                                                                                  "arm":  {
-                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.16-arm.fpk",
-                                                                                             "sha256":  "a4e1e90bbd9613ee0232ea1ca7afc23d650c33390c308642fe105f923218a4d2",
-                                                                                             "size":  28188346
+                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.17-arm.fpk",
+                                                                                             "sha256":  "270593af0133b591f1bbef16e581e320c47b97fc9fde5d9610a518d74c7e1ca4",
+                                                                                             "size":  28187154
                                                                                          }
                                                                              },
-                                                                "updated_at":  "2026-09-11T12:40:32+08:00"
+                                                                "updated_at":  "2026-09-11T12:56:21+08:00"
                                                             }
                                              }
                             },
