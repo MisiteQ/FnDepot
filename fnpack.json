@@ -26,18 +26,18 @@
       "releases": {
         "0.1.13": {
           "changelog": "书架详细列表返回自动刷新；白噪音按钮浮动拖拽+播放速度+初始居中；新增在线自动更新。",
-          "updated_at": "2026-09-11T23:10:00+08:00",
+          "updated_at": "2026-09-11T23:25:00+08:00",
           "os_min_version": "1.1.8",
           "packages": {
             "x86": {
               "download_url": "./qyread/fpk/qyread-0.1.13-x86.fpk",
-              "sha256": "e0ac9b457d440603cdd2940a30e602e6e4a4679b6f974d306bca728f6646ed70",
-              "size": 28210285
+              "sha256": "9e5718acf4de1214d6bea9e26ee5956eda337ad5dad92793afa4969544d6b34b",
+              "size": 28212375
             },
             "arm": {
               "download_url": "./qyread/fpk/qyread-0.1.13-arm.fpk",
-              "sha256": "cefa4d234f528d7efa49e2d1f22a95f5368fc3b36713298d590f063651016253",
-              "size": 28181490
+              "sha256": "fc08e3d4d5690a4bd8e0d8d5772960fcbc995744f53329b7bbba47f9b2a9163f",
+              "size": 28181514
             }
           }
         }
