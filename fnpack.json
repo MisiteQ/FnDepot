@@ -30,19 +30,19 @@
                                 "is_docker":  false,
                                 "service_port":  "8344",
                                 "releases":  {
-                                                 "0.1.20":  {
-                                                                "changelog":  "小说下载界面新增「下载源设置」管理页，可在线管理 go-novel 兼容规则书源，支持新增、编辑、删除与跨分类移动。",
+                                                 "0.1.21":  {
+                                                                "changelog":  "修复在线更新备份失败（Permission denied）与关于页内容过窄问题。",
                                                                 "os_min_version":  "1.1.8",
                                                                 "packages":  {
                                                                                  "x86":  {
-                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.20-x86.fpk",
-                                                                                             "sha256":  "6fe9f323eb19197eabfbd1ab3f55d81b2794f962d56aead7989d4dffbb51560c",
-                                                                                             "size":  28225551
+                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.21-x86.fpk",
+                                                                                             "sha256":  "bc562693c5845f40ee814c038846b21f9970315d6fcfadefeec0fce774444a0b",
+                                                                                             "size":  28226730
                                                                                          },
                                                                                  "arm":  {
-                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.20-arm.fpk",
-                                                                                             "sha256":  "522d7d59818692d55aee4c0bc48d3c1dd5ba11c7655bcfe273403fa38c75bda0",
-                                                                                             "size":  28200794
+                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.21-arm.fpk",
+                                                                                             "sha256":  "7b02af953fc69d8b624a03a48b6904790eb7dbff47bd4a77b6870d0f7775f7a9",
+                                                                                             "size":  28196711
                                                                                          }
                                                                              },
                                                                 "updated_at":  "2026-09-12T00:00:00+08:00"
