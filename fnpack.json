@@ -71,20 +71,20 @@
                                    "is_docker":  false,
                                    "service_port":  "8777",
                                    "releases":  {
-                                                    "2.12.3":  {
-                                                                   "changelog":  "修复部分主机「风扇平均转速」始终无数值：不再依赖 lm-sensors 命令，直接读取内核 /sys/class/hwmon 风扇通道，未安装 lm-sensors 的 fnOS 也能显示转速；兼容 Nuvoton/ITE 芯片 hwmonN/device 旧布局，风扇调速与恢复自动路径同步修正。",
-                                                                   "updated_at":  "2026-09-13T14:24:14+08:00",
+                                                    "2.13.0":  {
+                                                                   "changelog":  "风扇转速数据源通用扩展：在标准 hwmon 之外新增三类只读数据源并自动识别——IPMI/BMC（服务器等主机安装 ipmitool 后自动读取）、ThinkPad/ThinkCentre ACPI（/proc/acpi/ibm/fan 零依赖直读）、NEC 商用机私有 EC 邮箱（0xA20 三端口，按固件 GFAN 协议只读、与 BIOS 同源，DMI 白名单保证非 NEC 主机零影响）；完全无数据源时界面明确提示原因与解决建议，不再静默空白；新增 fans_source 字段。",
+                                                                   "updated_at":  "2026-09-13T23:40:00+08:00",
                                                                    "os_min_version":  "0.9.0",
                                                                    "packages":  {
                                                                                     "x86":  {
-                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.12.3-x86.fpk",
-                                                                                                "sha256":  "7c875c1ae8edc46bdbd2d98b5c919de58bf0b86b665989a6b880389f8fb0dfc3",
-                                                                                                "size":  332809
+                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.13.0-x86.fpk",
+                                                                                                "sha256":  "593c8383fa283a0314003378150425b5080abb68eae880e7471ad1fe1f455bd2",
+                                                                                                "size":  340244
                                                                                             },
                                                                                     "arm":  {
-                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.12.3-arm.fpk",
-                                                                                                "sha256":  "95aab87a43724c9f277cb8db941365a697552e7fb56fe7828b200ba01c52da09",
-                                                                                                "size":  333007
+                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.13.0-arm.fpk",
+                                                                                                "sha256":  "8523ac7adee7682ce7c017f40f9773343bd72d05182e2bb88492b858b8818ef8",
+                                                                                                "size":  340236
                                                                                             }
                                                                                 }
                                                                }
