@@ -71,20 +71,20 @@
                                    "is_docker":  false,
                                    "service_port":  "8777",
                                    "releases":  {
-                                                    "2.12.2":  {
-                                                                   "changelog":  "更新应用图标；修复内置更新后应用中心版本号不刷新、CPU 核心/线程数读取错误与 RAPL 总功耗虚高一倍；新增桌面打开方式设置。",
-                                                                   "updated_at":  "2026-09-08T23:55:00+08:00",
+                                                    "2.12.3":  {
+                                                                   "changelog":  "修复部分主机「风扇平均转速」始终无数值：不再依赖 lm-sensors 命令，直接读取内核 /sys/class/hwmon 风扇通道，未安装 lm-sensors 的 fnOS 也能显示转速；兼容 Nuvoton/ITE 芯片 hwmonN/device 旧布局，风扇调速与恢复自动路径同步修正。",
+                                                                   "updated_at":  "2026-09-13T14:24:14+08:00",
                                                                    "os_min_version":  "0.9.0",
                                                                    "packages":  {
                                                                                     "x86":  {
-                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.12.2-x86.fpk",
-                                                                                                "sha256":  "c8974f9e9b89f634ef1d6e9e6dd8aaca7dfd2555e4090f148beb5b25614cf49c",
-                                                                                                "size":  330837
+                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.12.3-x86.fpk",
+                                                                                                "sha256":  "7c875c1ae8edc46bdbd2d98b5c919de58bf0b86b665989a6b880389f8fb0dfc3",
+                                                                                                "size":  332809
                                                                                             },
                                                                                     "arm":  {
-                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.12.2-arm.fpk",
-                                                                                                "sha256":  "8671ff8dc830d6b2a5fbe0c0765c36bc50c6eaba103061c50d696d0ed0cdc02e",
-                                                                                                "size":  330926
+                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.12.3-arm.fpk",
+                                                                                                "sha256":  "95aab87a43724c9f277cb8db941365a697552e7fb56fe7828b200ba01c52da09",
+                                                                                                "size":  333007
                                                                                             }
                                                                                 }
                                                                }
