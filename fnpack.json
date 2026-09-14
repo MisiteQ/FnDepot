@@ -71,20 +71,20 @@
                                    "is_docker":  false,
                                    "service_port":  "8777",
                                    "releases":  {
-                                                    "2.13.0":  {
-                                                                   "changelog":  "风扇转速数据源通用扩展：在标准 hwmon 之外新增三类只读数据源并自动识别——IPMI/BMC（服务器等主机安装 ipmitool 后自动读取）、ThinkPad/ThinkCentre ACPI（/proc/acpi/ibm/fan 零依赖直读）、NEC 商用机私有 EC 邮箱（0xA20 三端口，按固件 GFAN 协议只读、与 BIOS 同源，DMI 白名单保证非 NEC 主机零影响）；完全无数据源时界面明确提示原因与解决建议，不再静默空白；新增 fans_source 字段。",
-                                                                   "updated_at":  "2026-09-13T23:40:00+08:00",
+                                                    "2.13.1":  {
+                                                                   "changelog":  "联想 ThinkCentre 等商用小主机风扇转速支持：实测 LENOVO ThinkCentre（3172/i5-10400）与 NEC Mate 的 EC 固件同源，均经 0xA20 三端口硬件监控邮箱暴露风扇转速（DSDT HWMB/HWMG/GFAN，bank1 0x40-0x47，与 BIOS 同源；空闲约 1640 RPM、满载约 1940 RPM 实时跟随）；原仅 NEC 放行，现改为 NEC/LENOVO 白名单 + 0a20 端口存在双闸口，无此硬件主机零影响，数据源标识 ec-hwm；读法全程只读、NEC 已装主机零变化。",
+                                                                   "updated_at":  "2026-09-14T22:30:00+08:00",
                                                                    "os_min_version":  "0.9.0",
                                                                    "packages":  {
                                                                                     "x86":  {
-                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.13.0-x86.fpk",
-                                                                                                "sha256":  "593c8383fa283a0314003378150425b5080abb68eae880e7471ad1fe1f455bd2",
-                                                                                                "size":  340244
+                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.13.1-x86.fpk",
+                                                                                                "sha256":  "dc948f612299426f9ef0bad61d64a8709996071e3920bec2f1e4a3d6aa962d4d",
+                                                                                                "size":  341322
                                                                                             },
                                                                                     "arm":  {
-                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.13.0-arm.fpk",
-                                                                                                "sha256":  "8523ac7adee7682ce7c017f40f9773343bd72d05182e2bb88492b858b8818ef8",
-                                                                                                "size":  340236
+                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.13.1-arm.fpk",
+                                                                                                "sha256":  "426df2f551f98f61cb8304953da68c2ff66426baaa586e61eb271ef016e96770",
+                                                                                                "size":  341330
                                                                                             }
                                                                                 }
                                                                }
