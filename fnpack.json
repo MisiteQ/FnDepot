@@ -71,20 +71,20 @@
                                    "is_docker":  false,
                                    "service_port":  "8777",
                                    "releases":  {
-                                                    "2.13.1":  {
-                                                                   "changelog":  "联想 ThinkCentre 等商用小主机风扇转速支持：实测 LENOVO ThinkCentre（3172/i5-10400）与 NEC Mate 的 EC 固件同源，均经 0xA20 三端口硬件监控邮箱暴露风扇转速（DSDT HWMB/HWMG/GFAN，bank1 0x40-0x47，与 BIOS 同源；空闲约 1640 RPM、满载约 1940 RPM 实时跟随）；原仅 NEC 放行，现改为 NEC/LENOVO 白名单 + 0a20 端口存在双闸口，无此硬件主机零影响，数据源标识 ec-hwm；读法全程只读、NEC 已装主机零变化。",
-                                                                   "updated_at":  "2026-09-14T22:30:00+08:00",
+                                                    "2.13.2":  {
+                                                                   "changelog":  "EC 硬件监控邮箱改为机型无关自动识别（通用补丁）：彻底移除 NEC/LENOVO 厂商白名单，任意品牌机器只要硬件存在 0xA20 监控邮箱即可读出风扇；为保证对无关主机零风险，启用改为三道纯硬件闸口——/proc/ioports 存在 0a20 端口区且由 PnP 固件设备占用（端口不存在芯片组直接丢弃 IO；被内核驱动占用则跳过避免冲突）、首次先读温度寄存器做应答合法性验证（空总线恒回 0xFF/0x00 一律拒绝）、风扇 300-30000 RPM 合理性校验；验证失败进程内缓存不再访问，数据口全程只读。联想机去白名单后实测读数不变（约 1643 RPM），NEC 及其他品牌同协议 ODM EC 即插即用。",
+                                                                   "updated_at":  "2026-09-14T23:30:00+08:00",
                                                                    "os_min_version":  "0.9.0",
                                                                    "packages":  {
                                                                                     "x86":  {
-                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.13.1-x86.fpk",
-                                                                                                "sha256":  "dc948f612299426f9ef0bad61d64a8709996071e3920bec2f1e4a3d6aa962d4d",
-                                                                                                "size":  341322
+                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.13.2-x86.fpk",
+                                                                                                "sha256":  "030d4484fbd1b690a6b6e7d99a65bb517a432fe2302dc121e3cab90bef147d55",
+                                                                                                "size":  343864
                                                                                             },
                                                                                     "arm":  {
-                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.13.1-arm.fpk",
-                                                                                                "sha256":  "426df2f551f98f61cb8304953da68c2ff66426baaa586e61eb271ef016e96770",
-                                                                                                "size":  341330
+                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.13.2-arm.fpk",
+                                                                                                "sha256":  "f4e6a57d5a7a3222b1d4c25593ffe0968a20dab1277f9f431de4622f3af81e75",
+                                                                                                "size":  343897
                                                                                             }
                                                                                 }
                                                                }
