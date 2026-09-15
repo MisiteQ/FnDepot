@@ -38,9 +38,7 @@ FnDepot/
     ├── README.md    # 应用详情说明
     └── fpk/         # 各架构安装包
         ├── fnmonitor-2.14.0-x86.fpk
-        ├── fnmonitor-2.14.0-arm.fpk
-        ├── fnmonitor-2.13.2-x86.fpk
-        └── fnmonitor-2.13.2-arm.fpk
+        └── fnmonitor-2.14.0-arm.fpk
 ```
 `fnpack.json` 中的资源与安装包均使用相对路径定位，随仓库一起分发，无需依赖外部下载地址。
 
