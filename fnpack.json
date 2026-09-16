@@ -4,7 +4,7 @@
                         "name":  "MisiteQ 应用源",
                         "author":  "MisiteQ",
                         "homepage":  "https://github.com/MisiteQ/FnDepot",
-                        "description":  "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）。"
+                        "description":  "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）。"
                     },
     "apps":  {
                  "qyread":  {
@@ -88,7 +88,48 @@
                                                                                             }
                                                                                 }
                                                                                }
-                                                }
-                               }
+                                             }
+                            },
+                 "github-plus-plus":  {
+                                          "display_name":  "GitHub++ 加速器",
+                                          "desc":  "飞牛 NAS 上的 GitHub / Docker 加速器：智能测速自动择优加速通道，支持 Git 克隆、网页加速、Release/raw 下载与 Docker 拉取加速，内置 Web 控制台。",
+                                          "platform":  [
+                                                           "x86",
+                                                           "arm"
+                                                       ],
+                                          "categories":  [
+                                                             "系统工具"
+                                                         ],
+                                          "icon_url":  "./github-plus-plus/ICON.PNG",
+                                          "readme_url":  "./github-plus-plus/README.md",
+                                          "bug_report_url":  "https://github.com/MisiteQ/github-plus-plus/issues",
+                                          "maintainer":  "Misite齊",
+                                          "maintainer_url":  "https://github.com/MisiteQ",
+                                          "distributor":  "MisiteQ",
+                                          "distributor_url":  "https://github.com/MisiteQ/FnDepot",
+                                          "run_as":  "root",
+                                          "install_type":  "",
+                                          "is_docker":  false,
+                                          "service_port":  "7717",
+                                          "releases":  {
+                                                           "1.0.2":  {
+                                                                         "changelog":  "直连链路加固：写客户端前的 512KB 吞吐探针识别 QoS 限速、直连快速熔断与半开恢复、启动预热避免重启后首批请求踩慢直连，慢链路自动走镜像通道；控制台默认密码改为 admin123 并修复密码未持久化导致重启后无法登录的问题。",
+                                                                         "os_min_version":  "1.0.0",
+                                                                         "packages":  {
+                                                                                          "x86":  {
+                                                                                                      "download_url":  "./github-plus-plus/fpk/github-plus-plus-1.0.2-x86.fpk",
+                                                                                                      "sha256":  "042b332b58b3df5d759dd74decdb1f42680f0d45a77f82b6c1f4955c116b7a97",
+                                                                                                      "size":  3630206
+                                                                                                  },
+                                                                                          "arm":  {
+                                                                                                      "download_url":  "./github-plus-plus/fpk/github-plus-plus-1.0.2-arm.fpk",
+                                                                                                      "sha256":  "be0ba293e705d197bb43a207e58ac331db3c49f5af0fb57eb2ccb485aeb74dcf",
+                                                                                                      "size":  3298382
+                                                                                                  }
+                                                                                      },
+                                                                         "updated_at":  "2026-09-16T08:52:00+08:00"
+                                                                     }
+                                                       }
+                                      }
              }
 }
