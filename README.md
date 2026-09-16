@@ -44,8 +44,8 @@ FnDepot/
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
     └── fpk/         # 各架构安装包
-        ├── github-plus-plus-1.0.2-x86.fpk
-        └── github-plus-plus-1.0.2-arm.fpk
+        ├── github-plus-plus-1.0.4-x86.fpk
+        └── github-plus-plus-1.0.4-arm.fpk
 ```
 `fnpack.json` 中的资源与安装包均使用相对路径定位，随仓库一起分发，无需依赖外部下载地址。
 

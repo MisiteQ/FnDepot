@@ -112,22 +112,22 @@
                                           "is_docker":  false,
                                           "service_port":  "7717",
                                           "releases":  {
-                                                           "1.0.2":  {
-                                                                         "changelog":  "直连链路加固：写客户端前的 512KB 吞吐探针识别 QoS 限速、直连快速熔断与半开恢复、启动预热避免重启后首批请求踩慢直连，慢链路自动走镜像通道；控制台默认密码改为 admin123 并修复密码未持久化导致重启后无法登录的问题。",
+                                                           "1.0.4":  {
+                                                                         "changelog":  "控制台视觉升级：使用真实应用图标、侧边栏支持折叠、新增 8 套主题切换；界面适配修复：环形图修正为正圆、窄屏侧边栏自动折叠为图标轨、静态资源改为 no-cache 升级后界面立即生效。",
                                                                          "os_min_version":  "1.0.0",
                                                                          "packages":  {
                                                                                           "x86":  {
-                                                                                                      "download_url":  "./github-plus-plus/fpk/github-plus-plus-1.0.2-x86.fpk",
-                                                                                                      "sha256":  "042b332b58b3df5d759dd74decdb1f42680f0d45a77f82b6c1f4955c116b7a97",
-                                                                                                      "size":  3630206
+                                                                                                      "download_url":  "./github-plus-plus/fpk/github-plus-plus-1.0.4-x86.fpk",
+                                                                                                      "sha256":  "e828ccc007e837f87d8023d198c0458fee8cf15c5555d2be4fad0504645d5952",
+                                                                                                      "size":  3652364
                                                                                                   },
                                                                                           "arm":  {
-                                                                                                      "download_url":  "./github-plus-plus/fpk/github-plus-plus-1.0.2-arm.fpk",
-                                                                                                      "sha256":  "be0ba293e705d197bb43a207e58ac331db3c49f5af0fb57eb2ccb485aeb74dcf",
-                                                                                                      "size":  3298382
+                                                                                                      "download_url":  "./github-plus-plus/fpk/github-plus-plus-1.0.4-arm.fpk",
+                                                                                                      "sha256":  "ba7773cf806bb57e5557e24851eb093d7389904c859c97fd811ba7ad75c7b58d",
+                                                                                                      "size":  3321190
                                                                                                   }
                                                                                       },
-                                                                         "updated_at":  "2026-09-16T08:52:00+08:00"
+                                                                         "updated_at":  "2026-09-16T10:48:00+08:00"
                                                                      }
                                                        }
                                       }
