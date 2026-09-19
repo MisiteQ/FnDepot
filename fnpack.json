@@ -155,21 +155,21 @@
             "service_port": "8181",
             "releases": {
                 "1.0.0": {
-                    "changelog": "首个版本：通用多显示接口支持（HDMI/DP/USB-C/VGA/DVI）、显示器热插拔守护、目标显示器切换、离线自包含镜像、窗口布局管理与截图。",
+                    "changelog": "首个版本：通用多显示接口支持（HDMI/DP/USB-C/VGA/DVI）、显示器热插拔守护、目标显示器切换、安装时自动测速择优拉取镜像、窗口布局管理与截图。",
                     "os_min_version": "0.9.27",
                     "packages": {
                         "x86": {
-                            "download_url": "./window-composer/fpk/window-composer-1.0.0-x86.fpk",
-                            "sha256": "2c459c25fbd3fbf46a2294dda0f1e347e173ef0bb93aee20a598b9b3ddf79cb7",
-                            "size": 461441643
+                            "download_url": "./window-composer/fpk/window-composer-1.0.0.fpk",
+                            "sha256": "bcc797a30716cc977333c81bea861a0da61a6ed4d43e0b52dde5187a98430bd8",
+                            "size": 133541
                         },
                         "arm": {
-                            "download_url": "./window-composer/fpk/window-composer-1.0.0-arm.fpk",
-                            "sha256": "09154f81ce02b3a9572228491cb0b83b9e6269b226669eee496436a827acc31c",
-                            "size": 461062940
+                            "download_url": "./window-composer/fpk/window-composer-1.0.0.fpk",
+                            "sha256": "bcc797a30716cc977333c81bea861a0da61a6ed4d43e0b52dde5187a98430bd8",
+                            "size": 133541
                         }
                     },
-                    "updated_at": "2026-09-19T14:06:01+08:00"
+                    "updated_at": "2026-09-19T16:20:00+08:00"
                 }
             }
         }
