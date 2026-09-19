@@ -39,8 +39,8 @@ FnDepot/
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
     └── fpk/         # 各架构安装包
-        ├── fnmonitor-2.14.0-x86.fpk
-        └── fnmonitor-2.14.0-arm.fpk
+        ├── fnmonitor-2.15.0-x86.fpk
+        └── fnmonitor-2.15.0-arm.fpk
 └── github-plus-plus/ # GitHub++ 加速器应用目录
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
