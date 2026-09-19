@@ -17,7 +17,8 @@
 
 在 FnDepot 客户端中添加本应用源后，搜索「Window Composer」安装即可。安装包很小（不含镜像），安装时会自动对多个 ghcr 加速源测速、择优下载与本机架构匹配的镜像（约 450 MB，仅一次）。安装后桌面打开 **Window Composer**，或直接访问 `http://<NAS_IP>:8181`。
 
-> 安装过程需要 NAS 可访问互联网；完全离线环境可从 [Releases](https://github.com/MisiteQ/window-composer/releases) 下载 `-offline.fpk` 离线包手动安装。
+> 安装过程需要 NAS 可访问互联网；完全离线环境可在有 docker 的机器上执行
+> `bash scripts/build-package.sh --offline` 自行构建镜像内置的 `-offline.fpk` 安装包。
 >
 > 应用以 root + privileged 运行：Xorg 的 modesetting 驱动需通过内核 KMS/DRM 打开 DRM master 才能把画面送到物理显示器。
 
