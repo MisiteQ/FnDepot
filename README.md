@@ -21,6 +21,7 @@ https://github.com/MisiteQ/FnDepot
 | [惬意阅读 (QYRead)](https://github.com/MisiteQ/FnDepot/blob/main/qyread/README.md) | 飞牛上的私人书库与阅读中心：多格式书库（TXT/EPUB/MOBI/AZW3/PDF/CBZ/CBR/CB7）、小说聚合搜索下载（可暂停/继续/取消）、沉浸阅读、Edge 听书、批注笔记与阅读统计 | x86 / arm |
 | [飞牛监控 (fnMonitor)](https://github.com/MisiteQ/FnDepot/blob/main/fnmonitor/README.md) | fnOS 系统监控面板：实时监控 CPU / 内存 / 磁盘 / 网络 / 温度 / 功耗 / GPU 与 Docker，支持流量统计、功耗统计、历史趋势与数据持久化 | x86 / arm |
 | [GitHub++ 加速器 (github-plus-plus)](https://github.com/MisiteQ/FnDepot/blob/main/github-plus-plus/README.md) | 飞牛 NAS 上的 GitHub / Docker 加速器：智能测速自动择优加速通道，支持 Git 克隆、网页加速、Release/raw 下载与 Docker 拉取加速，内置 Web 控制台 | x86 / arm |
+| [Window Composer](https://github.com/MisiteQ/FnDepot/blob/main/window-composer/README.md) | 把飞牛 NAS 上的应用以窗口形式编排输出到物理显示器：支持 HDMI/DP/USB-C/VGA/DVI 全接口、显示器热插拔、远程网页布局管理、多窗口不重叠、屏幕旋转与截图 | x86 / arm |
 
 ## 🗂 仓库结构
 
@@ -46,6 +47,12 @@ FnDepot/
     └── fpk/         # 各架构安装包
         ├── github-plus-plus-1.0.4-x86.fpk
         └── github-plus-plus-1.0.4-arm.fpk
+└── window-composer/ # Window Composer 应用目录
+    ├── ICON.PNG     # 应用图标
+    ├── README.md    # 应用详情说明
+    └── fpk/         # 各架构安装包
+        ├── window-composer-1.0.0-x86.fpk
+        └── window-composer-1.0.0-arm.fpk
 ```
 `fnpack.json` 中的资源与安装包均使用相对路径定位，随仓库一起分发，无需依赖外部下载地址。
 
