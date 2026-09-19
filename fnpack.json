@@ -1,135 +1,177 @@
 {
-    "schema_version":  "2",
-    "source_info":  {
-                        "name":  "MisiteQ 应用源",
-                        "author":  "MisiteQ",
-                        "homepage":  "https://github.com/MisiteQ/FnDepot",
-                        "description":  "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）。"
+    "schema_version": "2",
+    "source_info": {
+        "name": "MisiteQ 应用源",
+        "author": "MisiteQ",
+        "homepage": "https://github.com/MisiteQ/FnDepot",
+        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）。"
+    },
+    "apps": {
+        "qyread": {
+            "display_name": "惬意阅读",
+            "desc": "飞牛 fnOS 上的私人书库与阅读中心：聚合搜书下载、多格式书架管理与沉浸阅读听书，数据仅保存在 NAS 本机。",
+            "platform": [
+                "x86",
+                "arm"
+            ],
+            "categories": [
+                "影音娱乐",
+                "教育学习"
+            ],
+            "icon_url": "./qyread/ICON.PNG",
+            "readme_url": "./qyread/README.md",
+            "bug_report_url": "https://github.com/MisiteQ/QYRead/issues",
+            "maintainer": "Misite齊",
+            "maintainer_url": "https://github.com/MisiteQ",
+            "distributor": "MisiteQ",
+            "distributor_url": "https://github.com/MisiteQ/FnDepot",
+            "run_as": "package",
+            "install_type": "",
+            "is_docker": false,
+            "service_port": "8344",
+            "releases": {
+                "0.1.21": {
+                    "changelog": "修复在线更新备份失败（Permission denied）与关于页内容过窄问题。",
+                    "os_min_version": "1.1.8",
+                    "packages": {
+                        "x86": {
+                            "download_url": "./qyread/fpk/qyread-0.1.21-x86.fpk",
+                            "sha256": "bc562693c5845f40ee814c038846b21f9970315d6fcfadefeec0fce774444a0b",
+                            "size": 28226730
+                        },
+                        "arm": {
+                            "download_url": "./qyread/fpk/qyread-0.1.21-arm.fpk",
+                            "sha256": "7b02af953fc69d8b624a03a48b6904790eb7dbff47bd4a77b6870d0f7775f7a9",
+                            "size": 28196711
+                        }
                     },
-    "apps":  {
-                 "qyread":  {
-                                "display_name":  "惬意阅读",
-                                "desc":  "飞牛 fnOS 上的私人书库与阅读中心：聚合搜书下载、多格式书架管理与沉浸阅读听书，数据仅保存在 NAS 本机。",
-                                "platform":  [
-                                                 "x86",
-                                                 "arm"
-                                             ],
-                                "categories":  [
-                                                   "影音娱乐",
-                                                   "教育学习"
-                                               ],
-                                "icon_url":  "./qyread/ICON.PNG",
-                                "readme_url":  "./qyread/README.md",
-                                "bug_report_url":  "https://github.com/MisiteQ/QYRead/issues",
-                                "maintainer":  "Misite齊",
-                                "maintainer_url":  "https://github.com/MisiteQ",
-                                "distributor":  "MisiteQ",
-                                "distributor_url":  "https://github.com/MisiteQ/FnDepot",
-                                "run_as":  "package",
-                                "install_type":  "",
-                                "is_docker":  false,
-                                "service_port":  "8344",
-                                "releases":  {
-                                                 "0.1.21":  {
-                                                                "changelog":  "修复在线更新备份失败（Permission denied）与关于页内容过窄问题。",
-                                                                "os_min_version":  "1.1.8",
-                                                                "packages":  {
-                                                                                 "x86":  {
-                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.21-x86.fpk",
-                                                                                             "sha256":  "bc562693c5845f40ee814c038846b21f9970315d6fcfadefeec0fce774444a0b",
-                                                                                             "size":  28226730
-                                                                                         },
-                                                                                 "arm":  {
-                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.21-arm.fpk",
-                                                                                             "sha256":  "7b02af953fc69d8b624a03a48b6904790eb7dbff47bd4a77b6870d0f7775f7a9",
-                                                                                             "size":  28196711
-                                                                                         }
-                                                                             },
-                                                                "updated_at":  "2026-09-12T00:00:00+08:00"
-                                                            }
-                                             }
-                            },
-                 "fnmonitor":  {
-                                   "display_name":  "飞牛监控",
-                                   "desc":  "fnOS 系统监控面板：实时监控 CPU、内存、磁盘、网络、温度、功耗、GPU 与 Docker，支持历史趋势记录。",
-                                   "platform":  [
-                                                    "x86",
-                                                    "arm"
-                                                ],
-                                   "categories":  [
-                                                      "系统工具"
-                                                  ],
-                                   "icon_url":  "./fnmonitor/ICON.PNG",
-                                   "readme_url":  "./fnmonitor/README.md",
-                                   "bug_report_url":  "https://github.com/MisiteQ/fnmonitor/issues",
-                                   "maintainer":  "Misite齊",
-                                   "maintainer_url":  "https://github.com/MisiteQ",
-                                   "distributor":  "MisiteQ",
-                                   "distributor_url":  "https://github.com/MisiteQ/FnDepot",
-                                   "run_as":  "root",
-                                   "install_type":  "",
-                                   "is_docker":  false,
-                                   "service_port":  "8777",
-                                   "releases":  {
-                                                    "2.14.0":  {
-                                                                   "changelog":  "① 休眠硬盘保护：监控不再周期性唤醒已停转的机械硬盘——电源状态只通过非唤醒命令检测（smartctl -n standby / hdparm -C，带缓存与工具缺失退避）；休眠盘的容量 / SMART / 温度采集、历史库写入与清理、内置应用目录扫描全部跳过并沿用上一次活跃数据，历史采样在硬盘唤醒后自动补写不丢点；面板轮询触发的历史库 SELECT 同样门控，杜绝「开着监控页面硬盘就无法休眠」；设置页新增「休眠硬盘保护」开关（默认开启，可单独关闭）\u003cbr\u003e② 整机功耗口径修正：RAPL 仅测得 CPU 封装功耗（N5095 等 SoC 空闲仅 2-3W，远低于插座实测），现整机功耗 = CPU 封装 + 内存 + 主板/其他固定底座（默认 8W，可在设置中按插座实测补差）+ 活动硬盘功耗（休眠盘不计），实时面板分项展示并标注口径\u003cbr\u003e③ 应用端口显示实际监听值：不再只信 manifest 安装默认端口，改为 ss 监听端口 + /proc 进程归属交叉校验（默认 8000 实际 8899 这类情况显示实际端口并灰字标注默认值），新增「运行中/未运行」状态",
-                                                                   "updated_at":  "2026-09-15T20:00:00+08:00",
-                                                                   "os_min_version":  "0.9.0",
-                                                                   "packages":  {
-                                                                                    "x86":  {
-                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.14.0-x86.fpk",
-                                                                                                "sha256":  "80f9f5083914eb20554ffc90a98e050f1efd2f8b81e32ed2af3fef59c1eac264",
-                                                                                                "size":  235217
-                                                                                            },
-                                                                                    "arm":  {
-                                                                                                "download_url":  "./fnmonitor/fpk/fnmonitor-2.14.0-arm.fpk",
-                                                                                                "sha256":  "72ef06f7663dbfb8f24e4198dd44fddb034c14724630149a9f284a08fd57d0ec",
-                                                                                                "size":  235210
-                                                                                            }
-                                                                                }
-                                                                               }
-                                             }
-                            },
-                 "github-plus-plus":  {
-                                          "display_name":  "GitHub++ 加速器",
-                                          "desc":  "飞牛 NAS 上的 GitHub / Docker 加速器：智能测速自动择优加速通道，支持 Git 克隆、网页加速、Release/raw 下载与 Docker 拉取加速，内置 Web 控制台。",
-                                          "platform":  [
-                                                           "x86",
-                                                           "arm"
-                                                       ],
-                                          "categories":  [
-                                                             "系统工具"
-                                                         ],
-                                          "icon_url":  "./github-plus-plus/ICON.PNG",
-                                          "readme_url":  "./github-plus-plus/README.md",
-                                          "bug_report_url":  "https://github.com/MisiteQ/github-plus-plus/issues",
-                                          "maintainer":  "Misite齊",
-                                          "maintainer_url":  "https://github.com/MisiteQ",
-                                          "distributor":  "MisiteQ",
-                                          "distributor_url":  "https://github.com/MisiteQ/FnDepot",
-                                          "run_as":  "root",
-                                          "install_type":  "",
-                                          "is_docker":  false,
-                                          "service_port":  "7717",
-                                          "releases":  {
-                                                           "1.0.4":  {
-                                                                         "changelog":  "控制台视觉升级：使用真实应用图标、侧边栏支持折叠、新增 8 套主题切换；界面适配修复：环形图修正为正圆、窄屏侧边栏自动折叠为图标轨、静态资源改为 no-cache 升级后界面立即生效。",
-                                                                         "os_min_version":  "1.0.0",
-                                                                         "packages":  {
-                                                                                          "x86":  {
-                                                                                                      "download_url":  "./github-plus-plus/fpk/github-plus-plus-1.0.4-x86.fpk",
-                                                                                                      "sha256":  "e828ccc007e837f87d8023d198c0458fee8cf15c5555d2be4fad0504645d5952",
-                                                                                                      "size":  3652364
-                                                                                                  },
-                                                                                          "arm":  {
-                                                                                                      "download_url":  "./github-plus-plus/fpk/github-plus-plus-1.0.4-arm.fpk",
-                                                                                                      "sha256":  "ba7773cf806bb57e5557e24851eb093d7389904c859c97fd811ba7ad75c7b58d",
-                                                                                                      "size":  3321190
-                                                                                                  }
-                                                                                      },
-                                                                         "updated_at":  "2026-09-16T10:48:00+08:00"
-                                                                     }
-                                                       }
-                                      }
-             }
+                    "updated_at": "2026-09-12T00:00:00+08:00"
+                }
+            }
+        },
+        "fnmonitor": {
+            "display_name": "飞牛监控",
+            "desc": "fnOS 系统监控面板：实时监控 CPU、内存、磁盘、网络、温度、功耗、GPU 与 Docker，支持历史趋势记录。",
+            "platform": [
+                "x86",
+                "arm"
+            ],
+            "categories": [
+                "系统工具"
+            ],
+            "icon_url": "./fnmonitor/ICON.PNG",
+            "readme_url": "./fnmonitor/README.md",
+            "bug_report_url": "https://github.com/MisiteQ/fnmonitor/issues",
+            "maintainer": "Misite齊",
+            "maintainer_url": "https://github.com/MisiteQ",
+            "distributor": "MisiteQ",
+            "distributor_url": "https://github.com/MisiteQ/FnDepot",
+            "run_as": "root",
+            "install_type": "",
+            "is_docker": false,
+            "service_port": "8777",
+            "releases": {
+                "2.14.0": {
+                    "changelog": "① 休眠硬盘保护：监控不再周期性唤醒已停转的机械硬盘——电源状态只通过非唤醒命令检测（smartctl -n standby / hdparm -C，带缓存与工具缺失退避）；休眠盘的容量 / SMART / 温度采集、历史库写入与清理、内置应用目录扫描全部跳过并沿用上一次活跃数据，历史采样在硬盘唤醒后自动补写不丢点；面板轮询触发的历史库 SELECT 同样门控，杜绝「开着监控页面硬盘就无法休眠」；设置页新增「休眠硬盘保护」开关（默认开启，可单独关闭）<br>② 整机功耗口径修正：RAPL 仅测得 CPU 封装功耗（N5095 等 SoC 空闲仅 2-3W，远低于插座实测），现整机功耗 = CPU 封装 + 内存 + 主板/其他固定底座（默认 8W，可在设置中按插座实测补差）+ 活动硬盘功耗（休眠盘不计），实时面板分项展示并标注口径<br>③ 应用端口显示实际监听值：不再只信 manifest 安装默认端口，改为 ss 监听端口 + /proc 进程归属交叉校验（默认 8000 实际 8899 这类情况显示实际端口并灰字标注默认值），新增「运行中/未运行」状态",
+                    "updated_at": "2026-09-15T20:00:00+08:00",
+                    "os_min_version": "0.9.0",
+                    "packages": {
+                        "x86": {
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.14.0-x86.fpk",
+                            "sha256": "80f9f5083914eb20554ffc90a98e050f1efd2f8b81e32ed2af3fef59c1eac264",
+                            "size": 235217
+                        },
+                        "arm": {
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.14.0-arm.fpk",
+                            "sha256": "72ef06f7663dbfb8f24e4198dd44fddb034c14724630149a9f284a08fd57d0ec",
+                            "size": 235210
+                        }
+                    }
+                }
+            }
+        },
+        "github-plus-plus": {
+            "display_name": "GitHub++ 加速器",
+            "desc": "飞牛 NAS 上的 GitHub / Docker 加速器：智能测速自动择优加速通道，支持 Git 克隆、网页加速、Release/raw 下载与 Docker 拉取加速，内置 Web 控制台。",
+            "platform": [
+                "x86",
+                "arm"
+            ],
+            "categories": [
+                "系统工具"
+            ],
+            "icon_url": "./github-plus-plus/ICON.PNG",
+            "readme_url": "./github-plus-plus/README.md",
+            "bug_report_url": "https://github.com/MisiteQ/github-plus-plus/issues",
+            "maintainer": "Misite齊",
+            "maintainer_url": "https://github.com/MisiteQ",
+            "distributor": "MisiteQ",
+            "distributor_url": "https://github.com/MisiteQ/FnDepot",
+            "run_as": "root",
+            "install_type": "",
+            "is_docker": false,
+            "service_port": "7717",
+            "releases": {
+                "1.0.4": {
+                    "changelog": "控制台视觉升级：使用真实应用图标、侧边栏支持折叠、新增 8 套主题切换；界面适配修复：环形图修正为正圆、窄屏侧边栏自动折叠为图标轨、静态资源改为 no-cache 升级后界面立即生效。",
+                    "os_min_version": "1.0.0",
+                    "packages": {
+                        "x86": {
+                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.4-x86.fpk",
+                            "sha256": "e828ccc007e837f87d8023d198c0458fee8cf15c5555d2be4fad0504645d5952",
+                            "size": 3652364
+                        },
+                        "arm": {
+                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.4-arm.fpk",
+                            "sha256": "ba7773cf806bb57e5557e24851eb093d7389904c859c97fd811ba7ad75c7b58d",
+                            "size": 3321190
+                        }
+                    },
+                    "updated_at": "2026-09-16T10:48:00+08:00"
+                }
+            }
+        },
+        "window-composer": {
+            "display_name": "Window Composer",
+            "desc": "把飞牛 NAS 上的应用以窗口形式编排输出到物理显示器，支持 HDMI/DP/USB-C/VGA/DVI 全接口、热插拔、远程布局管理与截图。",
+            "platform": [
+                "x86",
+                "arm"
+            ],
+            "categories": [
+                "系统工具",
+                "影音娱乐"
+            ],
+            "icon_url": "./window-composer/ICON.PNG",
+            "readme_url": "./window-composer/README.md",
+            "bug_report_url": "https://github.com/MisiteQ/window-composer/issues",
+            "maintainer": "Misite齊",
+            "maintainer_url": "https://github.com/MisiteQ",
+            "distributor": "MisiteQ",
+            "distributor_url": "https://github.com/MisiteQ/FnDepot",
+            "run_as": "root",
+            "install_type": "",
+            "is_docker": true,
+            "service_port": "8181",
+            "releases": {
+                "1.0.0": {
+                    "changelog": "首个版本：通用多显示接口支持（HDMI/DP/USB-C/VGA/DVI）、显示器热插拔守护、目标显示器切换、离线自包含镜像、窗口布局管理与截图。",
+                    "os_min_version": "0.9.27",
+                    "packages": {
+                        "x86": {
+                            "download_url": "./window-composer/fpk/window-composer-1.0.0-x86.fpk",
+                            "sha256": "2c459c25fbd3fbf46a2294dda0f1e347e173ef0bb93aee20a598b9b3ddf79cb7",
+                            "size": 461441643
+                        },
+                        "arm": {
+                            "download_url": "./window-composer/fpk/window-composer-1.0.0-arm.fpk",
+                            "sha256": "09154f81ce02b3a9572228491cb0b83b9e6269b226669eee496436a827acc31c",
+                            "size": 461062940
+                        }
+                    },
+                    "updated_at": "2026-09-19T14:06:01+08:00"
+                }
+            }
+        }
+    }
 }
