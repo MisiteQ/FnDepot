@@ -160,13 +160,13 @@
                     "packages": {
                         "x86": {
                             "download_url": "./window-composer/fpk/window-composer-1.0.0.fpk",
-                            "sha256": "bcc797a30716cc977333c81bea861a0da61a6ed4d43e0b52dde5187a98430bd8",
-                            "size": 133541
+                            "sha256": "f267ded7052983ccd31346d1a18a0ff15b491af11300bfb3d4ab56ef4e14eb77",
+                            "size": 133602
                         },
                         "arm": {
                             "download_url": "./window-composer/fpk/window-composer-1.0.0.fpk",
-                            "sha256": "bcc797a30716cc977333c81bea861a0da61a6ed4d43e0b52dde5187a98430bd8",
-                            "size": 133541
+                            "sha256": "f267ded7052983ccd31346d1a18a0ff15b491af11300bfb3d4ab56ef4e14eb77",
+                            "size": 133602
                         }
                     },
                     "updated_at": "2026-09-19T16:20:00+08:00"
