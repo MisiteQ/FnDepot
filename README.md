@@ -50,11 +50,10 @@ FnDepot/
 └── window-composer/ # Window Composer 应用目录
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
-    └── fpk/         # 各架构安装包
-        ├── window-composer-1.0.0-x86.fpk
-        └── window-composer-1.0.0-arm.fpk
+    └── fpk/         # 通用安装包（x86/arm 共用；安装时联网拉取镜像）
+        └── window-composer-1.0.0.fpk
 ```
-`fnpack.json` 中的资源与安装包均使用相对路径定位，随仓库一起分发，无需依赖外部下载地址。
+`fnpack.json` 中的资源与安装包均使用相对路径定位，随仓库一起分发。Window Composer 安装包本身不含 Docker 镜像，安装时自动从 ghcr 加速源测速拉取。
 
 ## 🔧 规范
 
