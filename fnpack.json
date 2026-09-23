@@ -177,7 +177,8 @@
             "display_name": "天气预报",
             "desc": "桌面天气预报小部件，注入飞牛桌面直接显示，支持城市切换、透明度调节、拖动、调整大小，数据来源 Open-Meteo 无需 API Key。",
             "platform": [
-                "x86"
+                "x86",
+                "arm"
             ],
             "categories": [
                 "生活服务"
@@ -200,8 +201,13 @@
                     "packages": {
                         "x86": {
                             "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.5-x86.fpk",
-                            "sha256": "01c738fed291c2ce42983d59649ba891ce5b1aadef9d402f69f850fc438d167e",
-                            "size": 152587
+                            "sha256": "3dbc309a1d6d7db7ecc836c76c6fab2405ed9bf2bda7b1e00293895965dcd738",
+                            "size": 152588
+                        },
+                        "arm": {
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.5-arm.fpk",
+                            "sha256": "636a0acba3cb742ec6945341f3d3c546d0c4fa595e71cc6c887e764adf3109c3",
+                            "size": 152585
                         }
                     },
                     "updated_at": "2026-09-23T00:00:00+08:00"
