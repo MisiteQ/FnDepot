@@ -4,7 +4,7 @@
         "name": "MisiteQ 应用源",
         "author": "MisiteQ",
         "homepage": "https://github.com/MisiteQ/FnDepot",
-        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）。"
+        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）。"
     },
     "apps": {
         "qyread": {
@@ -170,6 +170,41 @@
                         }
                     },
                     "updated_at": "2026-09-19T16:20:00+08:00"
+                }
+            }
+        },
+        "com.qweather.widget": {
+            "display_name": "天气预报",
+            "desc": "桌面天气预报小部件，注入飞牛桌面直接显示，支持城市切换、透明度调节、拖动、调整大小，数据来源 Open-Meteo 无需 API Key。",
+            "platform": [
+                "x86"
+            ],
+            "categories": [
+                "生活服务"
+            ],
+            "icon_url": "./com.qweather.widget/ICON.PNG",
+            "readme_url": "./com.qweather.widget/README.md",
+            "bug_report_url": "https://github.com/MisiteQ/QWeather/issues",
+            "maintainer": "Misite齊",
+            "maintainer_url": "https://github.com/MisiteQ",
+            "distributor": "MisiteQ",
+            "distributor_url": "https://github.com/MisiteQ/FnDepot",
+            "run_as": "root",
+            "install_type": "",
+            "is_docker": false,
+            "service_port": "5698",
+            "releases": {
+                "2.2.5": {
+                    "changelog": "卡片布局优化：将「未来预报」区块移至「详情」区块之前，使预报信息更醒目。",
+                    "os_min_version": "1.0.0",
+                    "packages": {
+                        "x86": {
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.5-x86.fpk",
+                            "sha256": "01c738fed291c2ce42983d59649ba891ce5b1aadef9d402f69f850fc438d167e",
+                            "size": 152587
+                        }
+                    },
+                    "updated_at": "2026-09-23T00:00:00+08:00"
                 }
             }
         }
