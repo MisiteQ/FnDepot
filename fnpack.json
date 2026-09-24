@@ -4,7 +4,7 @@
         "name": "MisiteQ 应用源",
         "author": "MisiteQ",
         "homepage": "https://github.com/MisiteQ/FnDepot",
-        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）。"
+        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）。"
     },
     "apps": {
         "qyread": {
@@ -211,6 +211,48 @@
                         }
                     },
                     "updated_at": "2026-09-23T00:00:00+08:00"
+                }
+            }
+        },
+        "gstats": {
+            "display_name": "GStats",
+            "desc": "飞牛 fnOS 上的 GitHub 使用统计平台：记录每日登录人数、浏览仓库与停留时长，支持导出 CSV/JSON/HTML 报表。",
+            "platform": [
+                "x86",
+                "arm"
+            ],
+            "categories": [
+                "编程开发",
+                "系统工具"
+            ],
+            "icon_url": "./gstats/ICON.PNG",
+            "readme_url": "./gstats/README.md",
+            "bug_report_url": "https://github.com/MisiteQ/GStats/issues",
+            "maintainer": "Misite齊",
+            "maintainer_url": "https://github.com/MisiteQ",
+            "distributor": "MisiteQ",
+            "distributor_url": "https://github.com/MisiteQ/FnDepot",
+            "run_as": "package",
+            "install_type": "",
+            "is_docker": false,
+            "service_port": "",
+            "releases": {
+                "1.0.1": {
+                    "changelog": "首个版本：GitHub OAuth/PAT 登录浏览仓库与主页，自动统计每日登录人数、浏览项目与停留时长，内置 8 套主题，支持导出 CSV/JSON/HTML 报表与 GitHub API 镜像地址适配。",
+                    "os_min_version": "1.1.3100",
+                    "packages": {
+                        "x86": {
+                            "download_url": "./gstats/fpk/gstats-1.0.1-x86.fpk",
+                            "sha256": "0a2bf73697d7903fc596af4f3e47ba55fe1000a0662e121b533cfef89d70ad13",
+                            "size": 304218
+                        },
+                        "arm": {
+                            "download_url": "./gstats/fpk/gstats-1.0.1-arm.fpk",
+                            "sha256": "34695101c113491d221be81a04b5ddf2dc9468e6d0389fbddf714726cae1f8e7",
+                            "size": 304204
+                        }
+                    },
+                    "updated_at": "2026-09-24T09:35:00+08:00"
                 }
             }
         }
