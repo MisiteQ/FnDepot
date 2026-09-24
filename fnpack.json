@@ -195,22 +195,22 @@
             "is_docker": false,
             "service_port": "5698",
             "releases": {
-                "2.2.5": {
-                    "changelog": "卡片布局优化：将「未来预报」区块移至「详情」区块之前，使预报信息更醒目。",
+                "2.2.6": {
+                    "changelog": "字号优化：日期时间字号 11px→14px、底部更新时间 10px→11px，提升可读性。",
                     "os_min_version": "1.0.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.5-x86.fpk",
-                            "sha256": "3dbc309a1d6d7db7ecc836c76c6fab2405ed9bf2bda7b1e00293895965dcd738",
-                            "size": 152588
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.6-x86.fpk",
+                            "sha256": "b92d5e32e06782e8fc49453493f0a52f38390934f832cf3d96b27442c6134c49",
+                            "size": 152734
                         },
                         "arm": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.5-arm.fpk",
-                            "sha256": "636a0acba3cb742ec6945341f3d3c546d0c4fa595e71cc6c887e764adf3109c3",
-                            "size": 152585
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.6-arm.fpk",
+                            "sha256": "6137eb85d2608b2c59004046d397270875c88b802ef8a3e4ae6e7cbbbf1c3bef",
+                            "size": 152734
                         }
                     },
-                    "updated_at": "2026-09-23T00:00:00+08:00"
+                    "updated_at": "2026-09-24T00:00:00+08:00"
                 }
             }
         },
