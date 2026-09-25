@@ -4,7 +4,7 @@
         "name": "MisiteQ 应用源",
         "author": "MisiteQ",
         "homepage": "https://github.com/MisiteQ/FnDepot",
-        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）。"
+        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）。"
     },
     "apps": {
         "qyread": {
@@ -253,6 +253,47 @@
                         }
                     },
                     "updated_at": "2026-09-24T09:35:00+08:00"
+                }
+            }
+        },
+        "bombjackgame": {
+            "display_name": "炸弹杰克",
+            "desc": "经典 FC《Mighty Bomb Jack》离线版：飞牛桌面直接玩，6 槽位存档、改键、截图、全屏，纯本地无端口无后台。",
+            "platform": [
+                "x86",
+                "arm"
+            ],
+            "categories": [
+                "游戏地带"
+            ],
+            "icon_url": "./bombjackgame/ICON.PNG",
+            "readme_url": "./bombjackgame/README.md",
+            "bug_report_url": "https://github.com/MisiteQ/mighty-bomb-jack/issues",
+            "maintainer": "Misite齊",
+            "maintainer_url": "https://github.com/MisiteQ",
+            "distributor": "MisiteQ",
+            "distributor_url": "https://github.com/MisiteQ/FnDepot",
+            "run_as": "package",
+            "install_type": "",
+            "is_docker": false,
+            "service_port": "",
+            "releases": {
+                "1.0.3": {
+                    "changelog": "首个版本：经典 FC 游戏《Mighty Bomb Jack》完全离线版，6 槽位磁盘存档、自定义按键、暂停、截图、音量、全屏，无端口无后台，x86/arm 通用。",
+                    "os_min_version": "0.9.0",
+                    "packages": {
+                        "x86": {
+                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.3-x86.fpk",
+                            "sha256": "47c49eda7d71e1e965d3fd5bc98c85e2e524fa9d1f6932b6cc16b6e01949ab5c",
+                            "size": 1149386
+                        },
+                        "arm": {
+                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.3-arm.fpk",
+                            "sha256": "cb2b2f14211ad78a2977cd3b185a0ae5398084660dffec243436223f6a715ce7",
+                            "size": 1149268
+                        }
+                    },
+                    "updated_at": "2026-09-25T00:00:00+08:00"
                 }
             }
         }
