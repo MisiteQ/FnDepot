@@ -269,8 +269,8 @@
             "icon_url": "./bombjackgame/ICON.PNG",
             "readme_url": "./bombjackgame/README.md",
             "bug_report_url": "https://github.com/MisiteQ/mighty-bomb-jack/issues",
-            "maintainer": "Misite齊",
-            "maintainer_url": "https://github.com/MisiteQ",
+            "maintainer": "Tecmo / Tehkan (Koei Tecmo)",
+            "maintainer_url": "https://www.koeitecmo.co.jp/",
             "distributor": "MisiteQ",
             "distributor_url": "https://github.com/MisiteQ/FnDepot",
             "run_as": "package",
@@ -278,22 +278,22 @@
             "is_docker": false,
             "service_port": "",
             "releases": {
-                "1.0.4": {
-                    "changelog": "修正开发者/发布者署名：应用包 maintainer/distributor 由占位值更正为 MisiteQ，补充主页链接；游戏版权方标注统一为 Tecmo/Tehkan（1986 街机版，1987 FC/NES 版），游戏页面副标题与页脚署名同步更新。",
+                "1.0.5": {
+                    "changelog": "更正开发者/发布者身份标注：开发者（maintainer）为游戏权利方 Tecmo/Tehkan（Koei Tecmo），发布者（distributor）为离线包装发布者 MisiteQ；游戏页面页脚同步明确两重身份。",
                     "os_min_version": "0.9.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.4-x86.fpk",
-                            "sha256": "d2e13f94fb35e041a1a027b753d55ffc6041a7ca3e6c16a1157ed57e486d106f",
-                            "size": 1149295
+                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.5-x86.fpk",
+                            "sha256": "c9ef3ecff9fead4f6280d14053136abf49e5fea44f8f3e9b9d6c54ad2bae80b9",
+                            "size": 1149432
                         },
                         "arm": {
-                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.4-arm.fpk",
-                            "sha256": "8299baea146cfaf7b0934b6f26fd1dfbd984e0e0bc13cd9d43b09797424324e6",
-                            "size": 1149296
+                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.5-arm.fpk",
+                            "sha256": "8784233564044f2d1d244af531188e3eb5cb433d59946d3af9ccfd5b091d8f77",
+                            "size": 1149439
                         }
                     },
-                    "updated_at": "2026-09-25T19:19:36+08:00"
+                    "updated_at": "2026-09-25T19:43:05+08:00"
                 }
             }
         }
