@@ -24,7 +24,7 @@ https://github.com/MisiteQ/FnDepot
 | [Window Composer](https://github.com/MisiteQ/FnDepot/blob/main/window-composer/README.md) | 把飞牛 NAS 上的应用以窗口形式编排输出到物理显示器：支持 HDMI/DP/USB-C/VGA/DVI 全接口、显示器热插拔、远程网页布局管理、多窗口不重叠、屏幕旋转与截图 | x86 / arm |
 | [天气预报 (QWeather Widget)](https://github.com/MisiteQ/FnDepot/blob/main/com.qweather.widget/README.md) | 飞牛桌面天气预报小部件：直接注入飞牛桌面显示，支持实时天气、5 天预报、城市切换、拖动、透明度调节、调整大小，数据来源 Open-Meteo 无需 API Key | x86 / arm |
 | [GStats](https://github.com/MisiteQ/FnDepot/blob/main/gstats/README.md) | 飞牛 NAS 上的 GitHub 使用统计平台：登录 GitHub 浏览仓库 / 主页 / Issue，自动统计每日登录人数、浏览项目与停留时长，支持导出 CSV / JSON / HTML 报表 | x86 / arm |
-| [炸弹杰克 (bombjackgame)](https://github.com/MisiteQ/FnDepot/blob/main/bombjackgame/README.md) | 经典 FC 游戏《Mighty Bomb Jack》（Tecmo 1986）完全离线版：桌面窗口直接游玩，6 槽位磁盘存档、自定义按键、暂停、截图、音量、全屏，无端口无后台 | x86 / arm |
+| [炸弹杰克 (bombjackgame)](https://github.com/MisiteQ/FnDepot/blob/main/bombjackgame/README.md) | 经典 FC 游戏《Mighty Bomb Jack》（Tecmo/Tehkan，1986 街机/1987 FC）完全离线版：桌面窗口直接游玩，6 槽位磁盘存档、自定义按键、暂停、截图、音量、全屏，无端口无后台 | x86 / arm |
 
 ## 🗂 仓库结构
 
@@ -71,8 +71,8 @@ FnDepot/
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
     └── fpk/         # 各架构安装包（纯 WebAssembly，x86/arm 通用核心）
-        ├── bombjackgame-1.0.3-x86.fpk
-        └── bombjackgame-1.0.3-arm.fpk
+        ├── bombjackgame-1.0.4-x86.fpk
+        └── bombjackgame-1.0.4-arm.fpk
 ```
 `fnpack.json` 中的资源与安装包均使用相对路径定位，随仓库一起分发。Window Composer 安装包本身不含 Docker 镜像，安装时自动从 ghcr 加速源测速拉取。
 

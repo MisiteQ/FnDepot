@@ -278,22 +278,22 @@
             "is_docker": false,
             "service_port": "",
             "releases": {
-                "1.0.3": {
-                    "changelog": "首个版本：经典 FC 游戏《Mighty Bomb Jack》完全离线版，6 槽位磁盘存档、自定义按键、暂停、截图、音量、全屏，无端口无后台，x86/arm 通用。",
+                "1.0.4": {
+                    "changelog": "修正开发者/发布者署名：应用包 maintainer/distributor 由占位值更正为 MisiteQ，补充主页链接；游戏版权方标注统一为 Tecmo/Tehkan（1986 街机版，1987 FC/NES 版），游戏页面副标题与页脚署名同步更新。",
                     "os_min_version": "0.9.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.3-x86.fpk",
-                            "sha256": "47c49eda7d71e1e965d3fd5bc98c85e2e524fa9d1f6932b6cc16b6e01949ab5c",
-                            "size": 1149386
+                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.4-x86.fpk",
+                            "sha256": "d2e13f94fb35e041a1a027b753d55ffc6041a7ca3e6c16a1157ed57e486d106f",
+                            "size": 1149295
                         },
                         "arm": {
-                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.3-arm.fpk",
-                            "sha256": "cb2b2f14211ad78a2977cd3b185a0ae5398084660dffec243436223f6a715ce7",
-                            "size": 1149268
+                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.4-arm.fpk",
+                            "sha256": "8299baea146cfaf7b0934b6f26fd1dfbd984e0e0bc13cd9d43b09797424324e6",
+                            "size": 1149296
                         }
                     },
-                    "updated_at": "2026-09-25T00:00:00+08:00"
+                    "updated_at": "2026-09-25T19:19:36+08:00"
                 }
             }
         }
