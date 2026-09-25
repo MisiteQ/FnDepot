@@ -71,8 +71,8 @@ FnDepot/
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
     └── fpk/         # 各架构安装包（纯 WebAssembly，x86/arm 通用核心）
-        ├── bombjackgame-1.0.4-x86.fpk
-        └── bombjackgame-1.0.4-arm.fpk
+        ├── bombjackgame-1.0.5-x86.fpk
+        └── bombjackgame-1.0.5-arm.fpk
 ```
 `fnpack.json` 中的资源与安装包均使用相对路径定位，随仓库一起分发。Window Composer 安装包本身不含 Docker 镜像，安装时自动从 ghcr 加速源测速拉取。
 
