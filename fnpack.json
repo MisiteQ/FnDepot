@@ -195,22 +195,22 @@
             "is_docker": false,
             "service_port": "5698",
             "releases": {
-                "2.2.7": {
-                    "changelog": "修复跨显示器位置适配；新增天气本地缓存，登录秒显且遵循刷新间隔。",
+                "2.2.8": {
+                    "changelog": "修复城市搜索：内置中国行政区划坐标库（省/市/县3200+），国内城市本地秒搜且准确；国际城市走 Open-Meteo，双源合并。",
                     "os_min_version": "1.0.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.7-x86.fpk",
-                            "sha256": "84576f056b5e2f21e591bd32bd692c406687b03dd65b1cf67d47df3a6d4d5de3",
-                            "size": 154152
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.8-x86.fpk",
+                            "sha256": "fdecfe4b4b300dd49f5b7465f55aedcdfb13150e8a93575d25657bf573e73b27",
+                            "size": 202043
                         },
                         "arm": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.7-arm.fpk",
-                            "sha256": "c3b0836bda0da18ddf842199975ebe98fc0037c48dd33d551c2fd81190a00845",
-                            "size": 154151
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.8-arm.fpk",
+                            "sha256": "663968cafb130523275431dc87cf796f738c282c5b6c737a5268b5ae97e1dca2",
+                            "size": 202046
                         }
                     },
-                    "updated_at": "2026-09-25T00:00:00+08:00"
+                    "updated_at": "2026-09-26T00:00:00+08:00"
                 }
             }
         },
