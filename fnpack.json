@@ -1,180 +1,391 @@
 {
+
     "schema_version": "2",
+
     "source_info": {
+
         "name": "MisiteQ 应用源",
+
         "author": "MisiteQ",
+
         "homepage": "https://github.com/MisiteQ/FnDepot",
+
         "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）。"
+
     },
+
     "apps": {
+
         "qyread": {
+
             "display_name": "惬意阅读",
+
             "desc": "飞牛 fnOS 上的私人书库与阅读中心：聚合搜书下载、多格式书架管理与沉浸阅读听书，数据仅保存在 NAS 本机。",
+
             "platform": [
+
                 "x86",
+
                 "arm"
+
             ],
+
             "categories": [
+
                 "影音娱乐",
+
                 "教育学习"
+
             ],
+
             "icon_url": "./qyread/ICON.PNG",
+
             "readme_url": "./qyread/README.md",
+
             "bug_report_url": "https://github.com/MisiteQ/QYRead/issues",
+
             "maintainer": "Misite齊",
+
             "maintainer_url": "https://github.com/MisiteQ",
+
             "distributor": "MisiteQ",
+
             "distributor_url": "https://github.com/MisiteQ/FnDepot",
+
             "run_as": "package",
+
             "install_type": "",
+
             "is_docker": false,
+
             "service_port": "8344",
+
             "releases": {
+
                 "0.1.21": {
+
                     "changelog": "修复在线更新备份失败（Permission denied）与关于页内容过窄问题。",
+
                     "os_min_version": "1.1.8",
+
                     "packages": {
+
                         "x86": {
+
                             "download_url": "./qyread/fpk/qyread-0.1.21-x86.fpk",
+
                             "sha256": "bc562693c5845f40ee814c038846b21f9970315d6fcfadefeec0fce774444a0b",
+
                             "size": 28226730
+
                         },
+
                         "arm": {
+
                             "download_url": "./qyread/fpk/qyread-0.1.21-arm.fpk",
+
                             "sha256": "7b02af953fc69d8b624a03a48b6904790eb7dbff47bd4a77b6870d0f7775f7a9",
+
                             "size": 28196711
+
                         }
+
                     },
+
                     "updated_at": "2026-09-12T00:00:00+08:00"
+
                 }
+
             }
+
         },
+
         "fnmonitor": {
+
             "display_name": "飞牛监控",
+
             "desc": "fnOS 系统监控面板：实时监控 CPU、内存、磁盘、网络、温度、功耗、GPU 与 Docker，支持历史趋势记录。",
+
             "platform": [
+
                 "x86",
+
                 "arm"
+
             ],
+
             "categories": [
+
                 "系统工具"
+
             ],
+
             "icon_url": "./fnmonitor/ICON.PNG",
+
             "readme_url": "./fnmonitor/README.md",
+
             "bug_report_url": "https://github.com/MisiteQ/fnmonitor/issues",
+
             "maintainer": "Misite齊",
+
             "maintainer_url": "https://github.com/MisiteQ",
+
             "distributor": "MisiteQ",
+
             "distributor_url": "https://github.com/MisiteQ/FnDepot",
+
             "run_as": "root",
+
             "install_type": "",
+
             "is_docker": false,
+
             "service_port": "8777",
+
             "releases": {
-                "2.15.1": {
-                    "changelog": "修复天气城市搜索不准：新增内置中国行政区划坐标库（省/市/县三级 3200+，来源阿里 DataV GeoAtlas），国内城市名一律本地检索（名称精确 > 前缀 > 包含）——此前 Open-Meteo 地理编码基于 GeoNames，中国城市中文覆盖差，部分城市（如常州、温州、驻马店）搜不到、同名地点错配（如佛山解析到云南、东莞坐标偏到海南）；未命中再回退 Open-Meteo（国际城市/拼音），「纬度,经度」与自动定位逻辑不变；天气卡显示名带省份消歧（如「佛山市（广东省）」）",
-                    "updated_at": "2026-09-26T18:30:00+08:00",
+
+                "2.16.2": {
+
+                    "changelog": "① 修复「独立网页」模式点击桌面图标无反应 / 仍弹内嵌窗口的根因：飞牛桌面入口的真实数据源是系统数据库（应用中心 appcenter 与桌面服务 trim_sac 的入口表），磁盘 ui/config 仅在安装、升级时物化，此前只改写配置文件不可靠；现保存打开方式 / 端口时直接把类型与端口幂等同步进数据库，保存后刷新飞牛桌面（F5）即按所选方式打开——「独立网页」新标签页直开、不再弹内嵌窗口，「飞牛窗口」在内嵌窗口打开<br>② 保存不再重启应用中心服务，切换即时完成<br>③ 应用每次启动自动校验数据库入口一致性并自愈，重启 / 升级后无需手动干预",
+
+                    "updated_at": "2026-09-27T23:30:00+08:00",
+
                     "os_min_version": "0.9.0",
+
                     "packages": {
+
                         "x86": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.15.1-x86.fpk",
-                            "sha256": "867231789b029996dd9023f9061e7ef229bb374abb5a9dcc51d8a00cca220c2a",
-                            "size": 286194
+
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.16.2-x86.fpk",
+
+                            "sha256": "2b1864b5792e5c8a66f495e8bbf5d52bfd94dcc749654bc6a35d6c888c364140",
+
+                            "size": 434651
+
                         },
+
                         "arm": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.15.1-arm.fpk",
-                            "sha256": "2b0963975b0c34e1e7255eed2c61a4d2a7d20f8cf53245dda944ff96b62326c3",
-                            "size": 286190
+
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.16.2-arm.fpk",
+
+                            "sha256": "c9f91623d215fb6d4a5db881fc361dc4dbb374ac00985e1d72ed25dc1936c1ec",
+
+                            "size": 434651
+
                         }
+
                     }
+
                 },
-                "2.15.0": {
-                    "changelog": "① 新增硬 RAID 物理盘温度与健康监控（LSI/Broadcom storcli 通用）：MegaRAID（含 Dell PERC 贴牌）RAID 模式下物理盘不作为 /dev/sdX 暴露、smartctl 不可见，现经 storcli/perccli 的 JSON 输出结构化解析——阵列设定面板展示控制器型号与 ROC 芯片温度、虚拟阵列（VD）状态、每块物理盘的盘位/型号/介质/容量/状态/温度/健康/介质错误表格；健康自动分级（SMART 告警与离线/丢失 → 故障，介质或预测失败计数 > 0 → 警告，重建中 → 重建，其余正常）；键名大小写/空格/点号容错，兼容各 storcli 版本<br>② storcli64/storcli/perccli64/perccli 全自动查找（含 /opt/MegaRAID、/usr/local/bin 等常见路径），检测到阵列卡但未装工具时面板给出安装指引，装好即自动识别；HBA 直通卡（IT 模式）物理盘仍由内核直接接管、走标准 SMART 路径<br>③ 阵列卡识别按优先级修正（RAID > HBA/SAS > 存储控制器 > SATA 控制器），纯 SATA 主板不再误报为阵列卡；RAID 物理盘温度并入总览温度卡（名称形如「阵列 32:0」）；温度与 SMART 由阵列卡读取传感器数据、不需要盘片寻道，不会唤醒 STANDBY 休眠硬盘",
-                    "updated_at": "2026-09-19T18:00:00+08:00",
+
+                "2.15.1": {
+
+                    "changelog": "修复天气城市搜索不准：新增内置中国行政区划坐标库（省/市/县三级 3200+，来源阿里 DataV GeoAtlas），国内城市名一律本地检索（名称精确 > 前缀 > 包含）——此前 Open-Meteo 地理编码基于 GeoNames，中国城市中文覆盖差，部分城市（如常州、温州、驻马店）搜不到、同名地点错配（如佛山解析到云南、东莞坐标偏到海南）；未命中再回退 Open-Meteo（国际城市/拼音），「纬度,经度」与自动定位逻辑不变；天气卡显示名带省份消歧（如「佛山市（广东省）」）",
+
+                    "updated_at": "2026-09-26T18:30:00+08:00",
+
                     "os_min_version": "0.9.0",
+
                     "packages": {
+
                         "x86": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.15.0-x86.fpk",
-                            "sha256": "7f2593e37e6ff794138dbeb6e9c74978f21cbf877fb24e1705f6aa95fa756784",
-                            "size": 375264
+
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.15.1-x86.fpk",
+
+                            "sha256": "867231789b029996dd9023f9061e7ef229bb374abb5a9dcc51d8a00cca220c2a",
+
+                            "size": 286194
+
                         },
+
                         "arm": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.15.0-arm.fpk",
-                            "sha256": "ecfdcd1c563e5ea2e5112ab68ced5d6e8b399c3b5f6428041357c3e6c3a190ef",
-                            "size": 375273
+
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.15.1-arm.fpk",
+
+                            "sha256": "2b0963975b0c34e1e7255eed2c61a4d2a7d20f8cf53245dda944ff96b62326c3",
+
+                            "size": 286190
+
                         }
+
                     }
-                }
-            }
-        },
-        "github-plus-plus": {
-            "display_name": "GitHub++ 加速器",
-            "desc": "飞牛 NAS 上的 GitHub / Docker 加速器：智能测速自动择优加速通道，支持 Git 克隆、网页加速、Release/raw 下载与 Docker 拉取加速，内置 Web 控制台。",
-            "platform": [
-                "x86",
-                "arm"
-            ],
-            "categories": [
-                "系统工具"
-            ],
-            "icon_url": "./github-plus-plus/ICON.PNG",
-            "readme_url": "./github-plus-plus/README.md",
-            "bug_report_url": "https://github.com/MisiteQ/github-plus-plus/issues",
-            "maintainer": "Misite齊",
-            "maintainer_url": "https://github.com/MisiteQ",
-            "distributor": "MisiteQ",
-            "distributor_url": "https://github.com/MisiteQ/FnDepot",
-            "run_as": "root",
-            "install_type": "",
-            "is_docker": false,
-            "service_port": "7717",
-            "releases": {
-                "1.0.4": {
-                    "changelog": "控制台视觉升级：使用真实应用图标、侧边栏支持折叠、新增 8 套主题切换；界面适配修复：环形图修正为正圆、窄屏侧边栏自动折叠为图标轨、静态资源改为 no-cache 升级后界面立即生效。",
-                    "os_min_version": "1.0.0",
+
+                },
+
+                "2.15.0": {
+
+                    "changelog": "① 新增硬 RAID 物理盘温度与健康监控（LSI/Broadcom storcli 通用）：MegaRAID（含 Dell PERC 贴牌）RAID 模式下物理盘不作为 /dev/sdX 暴露、smartctl 不可见，现经 storcli/perccli 的 JSON 输出结构化解析——阵列设定面板展示控制器型号与 ROC 芯片温度、虚拟阵列（VD）状态、每块物理盘的盘位/型号/介质/容量/状态/温度/健康/介质错误表格；健康自动分级（SMART 告警与离线/丢失 → 故障，介质或预测失败计数 > 0 → 警告，重建中 → 重建，其余正常）；键名大小写/空格/点号容错，兼容各 storcli 版本<br>② storcli64/storcli/perccli64/perccli 全自动查找（含 /opt/MegaRAID、/usr/local/bin 等常见路径），检测到阵列卡但未装工具时面板给出安装指引，装好即自动识别；HBA 直通卡（IT 模式）物理盘仍由内核直接接管、走标准 SMART 路径<br>③ 阵列卡识别按优先级修正（RAID > HBA/SAS > 存储控制器 > SATA 控制器），纯 SATA 主板不再误报为阵列卡；RAID 物理盘温度并入总览温度卡（名称形如「阵列 32:0」）；温度与 SMART 由阵列卡读取传感器数据、不需要盘片寻道，不会唤醒 STANDBY 休眠硬盘",
+
+                    "updated_at": "2026-09-19T18:00:00+08:00",
+
+                    "os_min_version": "0.9.0",
+
                     "packages": {
+
                         "x86": {
-                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.4-x86.fpk",
-                            "sha256": "e828ccc007e837f87d8023d198c0458fee8cf15c5555d2be4fad0504645d5952",
-                            "size": 3652364
+
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.15.0-x86.fpk",
+
+                            "sha256": "7f2593e37e6ff794138dbeb6e9c74978f21cbf877fb24e1705f6aa95fa756784",
+
+                            "size": 375264
+
                         },
+
                         "arm": {
-                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.4-arm.fpk",
-                            "sha256": "ba7773cf806bb57e5557e24851eb093d7389904c859c97fd811ba7ad75c7b58d",
-                            "size": 3321190
+
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.15.0-arm.fpk",
+
+                            "sha256": "ecfdcd1c563e5ea2e5112ab68ced5d6e8b399c3b5f6428041357c3e6c3a190ef",
+
+                            "size": 375273
+
                         }
-                    },
-                    "updated_at": "2026-09-16T10:48:00+08:00"
+
+                    }
+
                 }
+
             }
+
         },
-        "window-composer": {
-            "display_name": "Window Composer",
-            "desc": "把飞牛 NAS 上的应用以窗口形式编排输出到物理显示器，支持 HDMI/DP/USB-C/VGA/DVI 全接口、热插拔、远程布局管理与截图。",
+
+        "github-plus-plus": {
+
+            "display_name": "GitHub++ 加速器",
+
+            "desc": "飞牛 NAS 上的 GitHub / Docker 加速器：智能测速自动择优加速通道，支持 Git 克隆、网页加速、Release/raw 下载与 Docker 拉取加速，内置 Web 控制台。",
+
             "platform": [
+
                 "x86",
+
                 "arm"
+
             ],
+
             "categories": [
-                "系统工具",
-                "影音娱乐"
+
+                "系统工具"
+
             ],
-            "icon_url": "./window-composer/ICON.PNG",
-            "readme_url": "./window-composer/README.md",
-            "bug_report_url": "https://github.com/MisiteQ/window-composer/issues",
+
+            "icon_url": "./github-plus-plus/ICON.PNG",
+
+            "readme_url": "./github-plus-plus/README.md",
+
+            "bug_report_url": "https://github.com/MisiteQ/github-plus-plus/issues",
+
             "maintainer": "Misite齊",
+
             "maintainer_url": "https://github.com/MisiteQ",
+
             "distributor": "MisiteQ",
+
             "distributor_url": "https://github.com/MisiteQ/FnDepot",
+
             "run_as": "root",
+
             "install_type": "",
-            "is_docker": true,
-            "service_port": "8181",
+
+            "is_docker": false,
+
+            "service_port": "7717",
+
             "releases": {
-                "1.0.0": {
-                    "changelog": "首个版本：通用多显示接口支持（HDMI/DP/USB-C/VGA/DVI）、显示器热插拔守护、目标显示器切换、安装时自动测速择优拉取镜像、窗口布局管理与截图。",
-                    "os_min_version": "0.9.27",
+
+                "1.0.4": {
+
+                    "changelog": "控制台视觉升级：使用真实应用图标、侧边栏支持折叠、新增 8 套主题切换；界面适配修复：环形图修正为正圆、窄屏侧边栏自动折叠为图标轨、静态资源改为 no-cache 升级后界面立即生效。",
+
+                    "os_min_version": "1.0.0",
+
                     "packages": {
+
+                        "x86": {
+
+                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.4-x86.fpk",
+
+                            "sha256": "e828ccc007e837f87d8023d198c0458fee8cf15c5555d2be4fad0504645d5952",
+
+                            "size": 3652364
+
+                        },
+
+                        "arm": {
+
+                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.4-arm.fpk",
+
+                            "sha256": "ba7773cf806bb57e5557e24851eb093d7389904c859c97fd811ba7ad75c7b58d",
+
+                            "size": 3321190
+
+                        }
+
+                    },
+
+                    "updated_at": "2026-09-16T10:48:00+08:00"
+
+                }
+
+            }
+
+        },
+
+        "window-composer": {
+
+            "display_name": "Window Composer",
+
+            "desc": "把飞牛 NAS 上的应用以窗口形式编排输出到物理显示器，支持 HDMI/DP/USB-C/VGA/DVI 全接口、热插拔、远程布局管理与截图。",
+
+            "platform": [
+
+                "x86",
+
+                "arm"
+
+            ],
+
+            "categories": [
+
+                "系统工具",
+
+                "影音娱乐"
+
+            ],
+
+            "icon_url": "./window-composer/ICON.PNG",
+
+            "readme_url": "./window-composer/README.md",
+
+            "bug_report_url": "https://github.com/MisiteQ/window-composer/issues",
+
+            "maintainer": "Misite齊",
+
+            "maintainer_url": "https://github.com/MisiteQ",
+
+            "distributor": "MisiteQ",
+
+            "distributor_url": "https://github.com/MisiteQ/FnDepot",
+
+            "run_as": "root",
+
+            "install_type": "",
+
+            "is_docker": true,
+
+            "service_port": "8181",
+
+            "releases": {
+
+                "1.0.0": {
+
+                    "changelog": "首个版本：通用多显示接口支持（HDMI/DP/USB-C/VGA/DVI）、显示器热插拔守护、目标显示器切换、安装时自动测速择优拉取镜像、窗口布局管理与截图。",
+
+                    "os_min_version": "0.9.27",
+
+                    "packages": {
+
                         "x86": {
                             "download_url": "./window-composer/fpk/window-composer-1.0.0.fpk",
                             "sha256": "f267ded7052983ccd31346d1a18a0ff15b491af11300bfb3d4ab56ef4e14eb77",
@@ -187,132 +398,261 @@
                         }
                     },
                     "updated_at": "2026-09-19T16:20:00+08:00"
+
                 }
+
             }
+
         },
+
         "com.qweather.widget": {
+
             "display_name": "天气预报",
+
             "desc": "桌面天气预报小部件，注入飞牛桌面直接显示，支持城市切换、透明度调节、拖动、调整大小，数据来源 Open-Meteo 无需 API Key。",
+
             "platform": [
+
                 "x86",
+
                 "arm"
+
             ],
+
             "categories": [
+
                 "生活服务"
+
             ],
+
             "icon_url": "./com.qweather.widget/ICON.PNG",
+
             "readme_url": "./com.qweather.widget/README.md",
+
             "bug_report_url": "https://github.com/MisiteQ/QWeather/issues",
+
             "maintainer": "Misite齊",
+
             "maintainer_url": "https://github.com/MisiteQ",
+
             "distributor": "MisiteQ",
+
             "distributor_url": "https://github.com/MisiteQ/FnDepot",
+
             "run_as": "root",
+
             "install_type": "",
+
             "is_docker": false,
+
             "service_port": "5698",
+
             "releases": {
+
                 "2.2.8": {
+
                     "changelog": "修复城市搜索：内置中国行政区划坐标库（省/市/县3200+），国内城市本地秒搜且准确；国际城市走 Open-Meteo，双源合并。",
+
                     "os_min_version": "1.0.0",
+
                     "packages": {
+
                         "x86": {
+
                             "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.8-x86.fpk",
+
                             "sha256": "fdecfe4b4b300dd49f5b7465f55aedcdfb13150e8a93575d25657bf573e73b27",
+
                             "size": 202043
+
                         },
+
                         "arm": {
+
                             "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.2.8-arm.fpk",
+
                             "sha256": "663968cafb130523275431dc87cf796f738c282c5b6c737a5268b5ae97e1dca2",
+
                             "size": 202046
+
                         }
+
                     },
+
                     "updated_at": "2026-09-26T00:00:00+08:00"
+
                 }
+
             }
+
         },
+
         "gstats": {
+
             "display_name": "GStats",
+
             "desc": "飞牛 fnOS 上的 GitHub 使用统计平台：记录每日登录人数、浏览仓库与停留时长，支持导出 CSV/JSON/HTML 报表。",
+
             "platform": [
+
                 "x86",
+
                 "arm"
+
             ],
+
             "categories": [
+
                 "编程开发",
+
                 "系统工具"
+
             ],
+
             "icon_url": "./gstats/ICON.PNG",
+
             "readme_url": "./gstats/README.md",
+
             "bug_report_url": "https://github.com/MisiteQ/GStats/issues",
+
             "maintainer": "Misite齊",
+
             "maintainer_url": "https://github.com/MisiteQ",
+
             "distributor": "MisiteQ",
+
             "distributor_url": "https://github.com/MisiteQ/FnDepot",
+
             "run_as": "package",
+
             "install_type": "",
+
             "is_docker": false,
+
             "service_port": "",
+
             "releases": {
+
                 "1.0.1": {
+
                     "changelog": "首个版本：GitHub OAuth/PAT 登录浏览仓库与主页，自动统计每日登录人数、浏览项目与停留时长，内置 8 套主题，支持导出 CSV/JSON/HTML 报表与 GitHub API 镜像地址适配。",
+
                     "os_min_version": "1.1.3100",
+
                     "packages": {
+
                         "x86": {
+
                             "download_url": "./gstats/fpk/gstats-1.0.1-x86.fpk",
+
                             "sha256": "0a2bf73697d7903fc596af4f3e47ba55fe1000a0662e121b533cfef89d70ad13",
+
                             "size": 304218
+
                         },
+
                         "arm": {
+
                             "download_url": "./gstats/fpk/gstats-1.0.1-arm.fpk",
+
                             "sha256": "34695101c113491d221be81a04b5ddf2dc9468e6d0389fbddf714726cae1f8e7",
+
                             "size": 304204
+
                         }
+
                     },
+
                     "updated_at": "2026-09-24T09:35:00+08:00"
+
                 }
+
             }
+
         },
+
         "bombjackgame": {
+
             "display_name": "炸弹杰克",
+
             "desc": "经典 FC《Mighty Bomb Jack》离线版：飞牛桌面直接玩，6 槽位存档、改键、截图、全屏，纯本地无端口无后台。",
+
             "platform": [
+
                 "x86",
+
                 "arm"
+
             ],
+
             "categories": [
+
                 "游戏地带"
+
             ],
+
             "icon_url": "./bombjackgame/ICON.PNG",
+
             "readme_url": "./bombjackgame/README.md",
+
             "bug_report_url": "https://github.com/MisiteQ/mighty-bomb-jack/issues",
+
             "maintainer": "Tecmo / Tehkan (Koei Tecmo)",
+
             "maintainer_url": "https://www.koeitecmo.co.jp/",
+
             "distributor": "MisiteQ",
+
             "distributor_url": "https://github.com/MisiteQ/FnDepot",
+
             "run_as": "package",
+
             "install_type": "",
+
             "is_docker": false,
+
             "service_port": "",
+
             "releases": {
+
                 "1.0.5": {
+
                     "changelog": "更正开发者/发布者身份标注：开发者（maintainer）为游戏权利方 Tecmo/Tehkan（Koei Tecmo），发布者（distributor）为离线包装发布者 MisiteQ；游戏页面页脚同步明确两重身份。",
+
                     "os_min_version": "0.9.0",
+
                     "packages": {
+
                         "x86": {
+
                             "download_url": "./bombjackgame/fpk/bombjackgame-1.0.5-x86.fpk",
+
                             "sha256": "c9ef3ecff9fead4f6280d14053136abf49e5fea44f8f3e9b9d6c54ad2bae80b9",
+
                             "size": 1149432
+
                         },
+
                         "arm": {
+
                             "download_url": "./bombjackgame/fpk/bombjackgame-1.0.5-arm.fpk",
+
                             "sha256": "8784233564044f2d1d244af531188e3eb5cb433d59946d3af9ccfd5b091d8f77",
+
                             "size": 1149439
+
                         }
+
                     },
+
                     "updated_at": "2026-09-25T19:43:05+08:00"
+
                 }
+
             }
+
         }
+
     }
+
 }
