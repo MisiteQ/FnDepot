@@ -158,9 +158,9 @@
 
                             "download_url": "./fnmonitor/fpk/fnmonitor-2.16.2-x86.fpk",
 
-                            "sha256": "2b1864b5792e5c8a66f495e8bbf5d52bfd94dcc749654bc6a35d6c888c364140",
+                            "sha256": "6c355b92e62c5452066e5eb0d27634f465fcbeaa3f31dcd3173a0ee236dde7b1",
 
-                            "size": 434651
+                            "size": 435709
 
                         },
 
@@ -168,9 +168,9 @@
 
                             "download_url": "./fnmonitor/fpk/fnmonitor-2.16.2-arm.fpk",
 
-                            "sha256": "c9f91623d215fb6d4a5db881fc361dc4dbb374ac00985e1d72ed25dc1936c1ec",
+                            "sha256": "df3d79de161f6048b6c33ccd91533c732fafeb76548b61d7fb466b9ec0761a4d",
 
-                            "size": 434651
+                            "size": 435708
 
                         }
 
