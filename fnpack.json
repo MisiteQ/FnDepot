@@ -217,7 +217,7 @@
         },
         "gstats": {
             "display_name": "GStats",
-            "desc": "飞牛 fnOS 上的 GitHub 使用统计平台：记录每日登录人数、浏览仓库与停留时长，支持导出 CSV/JSON/HTML 报表。",
+            "desc": "飞牛 fnOS 上的 GitHub 仓库流量统计平台：统计仓库外部访客 PV/UV、克隆次数、来源网站与热门路径，每日快照存档突破 14 天限制，支持导出报表。",
             "platform": [
                 "x86",
                 "arm"
@@ -238,22 +238,22 @@
             "is_docker": false,
             "service_port": "",
             "releases": {
-                "1.0.1": {
-                    "changelog": "首个版本：GitHub OAuth/PAT 登录浏览仓库与主页，自动统计每日登录人数、浏览项目与停留时长，内置 8 套主题，支持导出 CSV/JSON/HTML 报表与 GitHub API 镜像地址适配。",
+                "1.2.2": {
+                    "changelog": "重构为 GitHub 仓库流量统计平台：接入官方 Repo Traffic API，统计仓库外部访客 PV/UV、克隆次数、来源网站与热门路径，每日自动快照存档突破 14 天限制；新增免登录搜索浏览公开仓库，报表调整为 daily/repos/referrers/paths，绑定账号自动同步 + 每 6 小时全量同步。",
                     "os_min_version": "1.1.3100",
                     "packages": {
                         "x86": {
-                            "download_url": "./gstats/fpk/gstats-1.0.1-x86.fpk",
-                            "sha256": "0a2bf73697d7903fc596af4f3e47ba55fe1000a0662e121b533cfef89d70ad13",
-                            "size": 304218
+                            "download_url": "./gstats/fpk/gstats-1.2.2-x86.fpk",
+                            "sha256": "9ac1c284db968044c02caaf8104aebae1a5a23653e93b4a9b9f6e3be02a1d11a",
+                            "size": 307270
                         },
                         "arm": {
-                            "download_url": "./gstats/fpk/gstats-1.0.1-arm.fpk",
-                            "sha256": "34695101c113491d221be81a04b5ddf2dc9468e6d0389fbddf714726cae1f8e7",
-                            "size": 304204
+                            "download_url": "./gstats/fpk/gstats-1.2.2-arm.fpk",
+                            "sha256": "08386fe01a5b2c2db60777a4ef923309b30ffde4fa255833c27b132ce12d607f",
+                            "size": 307269
                         }
                     },
-                    "updated_at": "2026-09-24T09:35:00+08:00"
+                    "updated_at": "2026-09-29T08:55:00+08:00"
                 }
             }
         },
