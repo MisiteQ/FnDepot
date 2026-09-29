@@ -48,8 +48,8 @@ FnDepot/
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
     └── fpk/         # 各架构安装包
-        ├── github-plus-plus-1.0.4-x86.fpk
-        └── github-plus-plus-1.0.4-arm.fpk
+        ├── github-plus-plus-1.0.6-x86.fpk
+        └── github-plus-plus-1.0.6-arm.fpk
 └── window-composer/ # Window Composer 应用目录
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明

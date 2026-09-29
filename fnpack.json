@@ -113,22 +113,22 @@
             "is_docker": false,
             "service_port": "7717",
             "releases": {
-                "1.0.4": {
-                    "changelog": "控制台视觉升级：使用真实应用图标、侧边栏支持折叠、新增 8 套主题切换；界面适配修复：环形图修正为正圆、窄屏侧边栏自动折叠为图标轨、静态资源改为 no-cache 升级后界面立即生效。",
+                "1.0.6": {
+                    "changelog": "接入方式支持局域网/外网切换（主机地址下拉+保存外网地址）；Docker 加速固定 127.0.0.1 走 NAS 本机 loopback；新增应用加速页整合三种被动加速方式（hosts/Docker 一键应用/系统级 HTTP 代理开关），第三方软件无需配置即可加速；后台常驻修复（setsid 脱离会话+崩溃自动重启看门狗），关闭桌面窗口/登出飞牛账号服务不退出；侧边栏折叠 logo 偏移修复。",
                     "os_min_version": "1.0.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.4-x86.fpk",
-                            "sha256": "e828ccc007e837f87d8023d198c0458fee8cf15c5555d2be4fad0504645d5952",
-                            "size": 3652364
+                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.6-x86.fpk",
+                            "sha256": "0d994be1650dad0883ff31c6a4aef34e496629677d389383c61ce42a85d8608c",
+                            "size": 3714210
                         },
                         "arm": {
-                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.4-arm.fpk",
-                            "sha256": "ba7773cf806bb57e5557e24851eb093d7389904c859c97fd811ba7ad75c7b58d",
-                            "size": 3321190
+                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.6-arm.fpk",
+                            "sha256": "1fa5d68a7426c4df8105bc5cd389b831b01f32696542907e32397d5b43aa139e",
+                            "size": 3376748
                         }
                     },
-                    "updated_at": "2026-09-16T10:48:00+08:00"
+                    "updated_at": "2026-09-29T10:30:00+08:00"
                 }
             }
         },
