@@ -30,22 +30,22 @@
             "is_docker": false,
             "service_port": "8344",
             "releases": {
-                "0.1.21": {
-                    "changelog": "修复在线更新备份失败（Permission denied）与关于页内容过窄问题。",
+                "0.1.24": {
+                    "changelog": "修复 x86 机型 sqlite3 原生模块异常导致书库打不开、Node 22 下服务启动失败等问题；新增小说下载 HTTP/HTTPS 代理设置，阅读器悬浮按钮靠边自动缩进。",
                     "os_min_version": "1.1.8",
                     "packages": {
                         "x86": {
-                            "download_url": "./qyread/fpk/qyread-0.1.21-x86.fpk",
-                            "sha256": "bc562693c5845f40ee814c038846b21f9970315d6fcfadefeec0fce774444a0b",
-                            "size": 28226730
+                            "download_url": "./qyread/fpk/qyread-0.1.24-x86.fpk",
+                            "sha256": "d7b4433c73746dd4a3a5d0cb4ae19b2d49fc2106344a4c0d2c63c818857bf835",
+                            "size": 28030426
                         },
                         "arm": {
-                            "download_url": "./qyread/fpk/qyread-0.1.21-arm.fpk",
-                            "sha256": "7b02af953fc69d8b624a03a48b6904790eb7dbff47bd4a77b6870d0f7775f7a9",
-                            "size": 28196711
+                            "download_url": "./qyread/fpk/qyread-0.1.24-arm.fpk",
+                            "sha256": "d4736dc059c8c0da13a9f3f0416f825b869ecca1cf0cb4a9f7b2a529f35a6817",
+                            "size": 27999170
                         }
                     },
-                    "updated_at": "2026-09-12T00:00:00+08:00"
+                    "updated_at": "2026-09-30T23:45:00+08:00"
                 }
             }
         },
