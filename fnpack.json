@@ -4,7 +4,7 @@
         "name": "MisiteQ 应用源",
         "author": "MisiteQ",
         "homepage": "https://github.com/MisiteQ/FnDepot",
-        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）。"
+        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）。"
     },
     "apps": {
         "qyread": {
@@ -295,6 +295,47 @@
                         }
                     },
                     "updated_at": "2026-09-25T19:43:05+08:00"
+                }
+            }
+        },
+        "qlink2desktop": {
+            "display_name": "QLink2Desktop",
+            "desc": "把本机端口、Docker 容器、局域网或公网服务一键放到飞牛桌面：支持反向代理、SSH 隧道与网页快捷方式，统一网关零端口接入。",
+            "platform": [
+                "x86",
+                "arm"
+            ],
+            "categories": [
+                "系统工具"
+            ],
+            "icon_url": "./qlink2desktop/ICON.PNG",
+            "readme_url": "./qlink2desktop/README.md",
+            "bug_report_url": "https://github.com/MisiteQ/QLink2Desktop/issues",
+            "maintainer": "Misite齊",
+            "maintainer_url": "https://github.com/MisiteQ",
+            "distributor": "MisiteQ",
+            "distributor_url": "https://github.com/MisiteQ/FnDepot",
+            "run_as": "root",
+            "install_type": "",
+            "is_docker": false,
+            "service_port": "",
+            "releases": {
+                "1.0.0": {
+                    "changelog": "首个版本：本机端口与 Docker 容器自动发现，一键注册为飞牛原生桌面应用；支持局域网/公网服务反向代理、远程主机 SSH 隧道、网页快捷方式与文字图标生成；兼容 Watchcow 容器标签；飞牛统一网关零端口接入，面板内可一键重启服务。",
+                    "os_min_version": "0.9.0",
+                    "packages": {
+                        "x86": {
+                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.0.0-x86.fpk",
+                            "sha256": "373d0e0533c8b78288c2c6f8d977f19addb6cc09a86442d0cb9fbd371113e643",
+                            "size": 4134010
+                        },
+                        "arm": {
+                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.0.0-arm.fpk",
+                            "sha256": "35a5ab71e8fa923b79eb84d3a6d88ae957c5c8f6f27285c35d941f047e681647",
+                            "size": 3775604
+                        }
+                    },
+                    "updated_at": "2026-10-01T00:30:00+08:00"
                 }
             }
         }
