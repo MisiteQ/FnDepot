@@ -30,22 +30,22 @@
             "is_docker": false,
             "service_port": "8344",
             "releases": {
-                "0.1.24": {
-                    "changelog": "修复 x86 机型 sqlite3 原生模块异常导致书库打不开、Node 22 下服务启动失败等问题；新增小说下载 HTTP/HTTPS 代理设置，阅读器悬浮按钮靠边自动缩进。",
+                "0.1.26": {
+                    "changelog": "彻底移除已下线的读后感与成就残留代码（后端路由/接口、前端入口与弹窗），修复启动清理脚本静默失败并清理旧版残留数据表。",
                     "os_min_version": "1.1.8",
                     "packages": {
                         "x86": {
-                            "download_url": "./qyread/fpk/qyread-0.1.24-x86.fpk",
-                            "sha256": "d7b4433c73746dd4a3a5d0cb4ae19b2d49fc2106344a4c0d2c63c818857bf835",
-                            "size": 28030426
+                            "download_url": "./qyread/fpk/qyread-0.1.26-x86.fpk",
+                            "sha256": "9f9f5c3045ccb7ada167060a0ce8c4c7dc9bc18b1dbb7ec676eb696aa0af3fec",
+                            "size": 28008707
                         },
                         "arm": {
-                            "download_url": "./qyread/fpk/qyread-0.1.24-arm.fpk",
-                            "sha256": "d4736dc059c8c0da13a9f3f0416f825b869ecca1cf0cb4a9f7b2a529f35a6817",
-                            "size": 27999170
+                            "download_url": "./qyread/fpk/qyread-0.1.26-arm.fpk",
+                            "sha256": "a5c901179e517ef2f26dbd7da513a7635c713d9d4a23a6c2d9d99a2bede1310a",
+                            "size": 27980417
                         }
                     },
-                    "updated_at": "2026-09-30T23:45:00+08:00"
+                    "updated_at": "2026-10-01T10:30:00+08:00"
                 }
             }
         },
