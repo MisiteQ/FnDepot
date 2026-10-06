@@ -30,22 +30,22 @@
             "is_docker": false,
             "service_port": "8344",
             "releases": {
-                "0.1.26": {
-                    "changelog": "彻底移除已下线的读后感与成就残留代码（后端路由/接口、前端入口与弹窗），修复启动清理脚本静默失败并清理旧版残留数据表。",
+                "0.1.27": {
+                    "changelog": "应用介绍新增「请给书籍路径添加权限」重要提示：安装后需在 fnOS 应用中心为书籍/下载文件夹逐一添加存储空间访问授权。",
                     "os_min_version": "1.1.8",
                     "packages": {
                         "x86": {
-                            "download_url": "./qyread/fpk/qyread-0.1.26-x86.fpk",
-                            "sha256": "9f9f5c3045ccb7ada167060a0ce8c4c7dc9bc18b1dbb7ec676eb696aa0af3fec",
-                            "size": 28008707
+                            "download_url": "./qyread/fpk/qyread-0.1.27-x86.fpk",
+                            "sha256": "6c1e5014c20ec0176fb7658037c96283f8b7906d1f1fb7ceb1d7bc5a19f07a97",
+                            "size": 28008813
                         },
                         "arm": {
-                            "download_url": "./qyread/fpk/qyread-0.1.26-arm.fpk",
-                            "sha256": "a5c901179e517ef2f26dbd7da513a7635c713d9d4a23a6c2d9d99a2bede1310a",
-                            "size": 27980417
+                            "download_url": "./qyread/fpk/qyread-0.1.27-arm.fpk",
+                            "sha256": "f454725b909c5ab970e8efbbaab5d8125fd7d6535c618e95631a8a443d0dfd3c",
+                            "size": 27980761
                         }
                     },
-                    "updated_at": "2026-10-01T10:30:00+08:00"
+                    "updated_at": "2026-10-06T11:00:00+08:00"
                 }
             }
         },
