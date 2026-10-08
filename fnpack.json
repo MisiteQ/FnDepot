@@ -30,22 +30,22 @@
             "is_docker": false,
             "service_port": "8344",
             "releases": {
-                "0.1.27": {
-                    "changelog": "应用介绍新增「请给书籍路径添加权限」重要提示：安装后需在 fnOS 应用中心为书籍/下载文件夹逐一添加存储空间访问授权。",
+                "0.1.28": {
+                    "changelog": "书架封面与作者自动补全：优先提取 EPUB/MOBI/漫画等文件内嵌封面与自带作者；TXT 等无内嵌信息的书籍自动按书名在聚合书源网络搜索（严格匹配），命中后下载封面并补全作者；只填空缺字段，不覆盖已有数据。",
                     "os_min_version": "1.1.8",
                     "packages": {
                         "x86": {
-                            "download_url": "./qyread/fpk/qyread-0.1.27-x86.fpk",
-                            "sha256": "6c1e5014c20ec0176fb7658037c96283f8b7906d1f1fb7ceb1d7bc5a19f07a97",
-                            "size": 28008813
+                            "download_url": "./qyread/fpk/qyread-0.1.28-x86.fpk",
+                            "sha256": "aecf4e9e2ab6751a2622b6adc5e6b7879aafd6b2f6f5f6a44218ad1bd269819f",
+                            "size": 28014585
                         },
                         "arm": {
-                            "download_url": "./qyread/fpk/qyread-0.1.27-arm.fpk",
-                            "sha256": "f454725b909c5ab970e8efbbaab5d8125fd7d6535c618e95631a8a443d0dfd3c",
-                            "size": 27980761
+                            "download_url": "./qyread/fpk/qyread-0.1.28-arm.fpk",
+                            "sha256": "7ea0f8cb1f989d7b9c3c88dcb13122d0f8456868dd82cd80d22c8fc1049381a7",
+                            "size": 27989600
                         }
                     },
-                    "updated_at": "2026-10-06T11:00:00+08:00"
+                    "updated_at": "2026-10-08T17:00:00+08:00"
                 }
             }
         },
