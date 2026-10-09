@@ -196,22 +196,22 @@
             "is_docker": false,
             "service_port": "5698",
             "releases": {
-                "2.3.0": {
-                    "changelog": "修复设置持久化失效：settings API 改走 nginx 直接反代绕开 fnOS 网关 404，设置真正落盘 NAS settings.json；修复选城市后设置面板自动关闭问题。",
+                "2.3.1": {
+                    "changelog": "紧急修复 v2.3.0 导致桌面 widget 不显示：移除 nginx proxy_pass（可能致 nginx 重启失败），settings API 改走应用子域 + CORS 凭据；widget 立即挂载不等服务端 API，确保始终显示。",
                     "os_min_version": "1.0.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.0-x86.fpk",
-                            "sha256": "af8208c2ecf8066fbe80f94690fa65ba81e878c18e83842fa4155c84f9d96588",
-                            "size": 204338
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.1-x86.fpk",
+                            "sha256": "829fdb486c961c884f48eb0b25ca3f6e617c7170d2f08eef7ea7d73e8931700a",
+                            "size": 204692
                         },
                         "arm": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.0-arm.fpk",
-                            "sha256": "1dfd87f0068352e725fcc587ffbe0cbb5582894d68dda363f86aad4e8733ccb3",
-                            "size": 204336
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.1-arm.fpk",
+                            "sha256": "59deac27021330df009cde294a0e4bb24c64837399dbcec9ca277b12fbc8afb2",
+                            "size": 204692
                         }
                     },
-                    "updated_at": "2026-09-30T23:30:00+08:00"
+                    "updated_at": "2026-10-09T11:30:00+08:00"
                 }
             }
         },
