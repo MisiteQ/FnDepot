@@ -30,22 +30,22 @@
             "is_docker": false,
             "service_port": "8344",
             "releases": {
-                "0.1.28": {
-                    "changelog": "书架封面与作者自动补全：优先提取 EPUB/MOBI/漫画等文件内嵌封面与自带作者；TXT 等无内嵌信息的书籍自动按书名在聚合书源网络搜索（严格匹配），命中后下载封面并补全作者；只填空缺字段，不覆盖已有数据。",
+                "0.1.29": {
+                    "changelog": "修复 Edge TTS 听书第二次起必报错（Cannot read properties of undefined (reading 'voiceLocale')）：msedge-tts 库 setMetadata 未传第三参数，首次朗读后 voiceLocale 已设值导致条件短路失效、转而访问 undefined 抛错；调用处补传空对象绕过，连续朗读恢复正常。",
                     "os_min_version": "1.1.8",
                     "packages": {
                         "x86": {
-                            "download_url": "./qyread/fpk/qyread-0.1.28-x86.fpk",
-                            "sha256": "aecf4e9e2ab6751a2622b6adc5e6b7879aafd6b2f6f5f6a44218ad1bd269819f",
-                            "size": 28014585
+                            "download_url": "./qyread/fpk/qyread-0.1.29-x86.fpk",
+                            "sha256": "903545aa6c49a6b335f6157e384324e2d7b5b50c112ceb903bb15a39f754603c",
+                            "size": 28015568
                         },
                         "arm": {
-                            "download_url": "./qyread/fpk/qyread-0.1.28-arm.fpk",
-                            "sha256": "7ea0f8cb1f989d7b9c3c88dcb13122d0f8456868dd82cd80d22c8fc1049381a7",
-                            "size": 27989600
+                            "download_url": "./qyread/fpk/qyread-0.1.29-arm.fpk",
+                            "sha256": "c3ae7c5d3579b42a17e96a70709e4ca8f5faf58bc2b48dd3e6a3263e2e722da1",
+                            "size": 27990356
                         }
                     },
-                    "updated_at": "2026-10-08T17:00:00+08:00"
+                    "updated_at": "2026-10-10T15:03:00+08:00"
                 }
             }
         },
