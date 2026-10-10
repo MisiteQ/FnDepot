@@ -196,22 +196,22 @@
             "is_docker": false,
             "service_port": "5698",
             "releases": {
-                "2.3.1": {
-                    "changelog": "紧急修复 v2.3.0 导致桌面 widget 不显示：移除 nginx proxy_pass（可能致 nginx 重启失败），settings API 改走应用子域 + CORS 凭据；widget 立即挂载不等服务端 API，确保始终显示。",
+                "2.3.2": {
+                    "changelog": "修复卸载残留：uninstall_callback 兜底清理 nginx conf.d + ng.conf.zip 条目 + 注入页，解决卸载后孤儿配置永久占用桌面路由的问题。",
                     "os_min_version": "1.0.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.1-x86.fpk",
-                            "sha256": "829fdb486c961c884f48eb0b25ca3f6e617c7170d2f08eef7ea7d73e8931700a",
-                            "size": 204692
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.2-x86.fpk",
+                            "sha256": "dd58711340104999674cc05b10a097891e40b0888ae5790418fc1d90b804bf9e",
+                            "size": 206501
                         },
                         "arm": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.1-arm.fpk",
-                            "sha256": "59deac27021330df009cde294a0e4bb24c64837399dbcec9ca277b12fbc8afb2",
-                            "size": 204692
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.2-arm.fpk",
+                            "sha256": "1b7d72ba4ce9da73bb720b97a88e141a1e50917f21a7b3f9b09a15ea07521650",
+                            "size": 206500
                         }
                     },
-                    "updated_at": "2026-10-09T11:30:00+08:00"
+                    "updated_at": "2026-10-10T01:00:00+08:00"
                 }
             }
         },
