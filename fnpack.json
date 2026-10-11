@@ -300,7 +300,7 @@
         },
         "qlink2desktop": {
             "display_name": "QLink2Desktop",
-            "desc": "把本机端口、Docker 容器、局域网或公网服务一键放到飞牛桌面：支持反向代理、SSH 隧道与网页快捷方式，统一网关零端口接入。",
+            "desc": "把端口、Docker、局域网或公网服务一键放到飞牛桌面：反向代理、SSH 隧道、TCP/UDP 端口转发，零端口接入。",
             "platform": [
                 "x86",
                 "arm"
@@ -320,22 +320,22 @@
             "is_docker": false,
             "service_port": "",
             "releases": {
-                "1.0.0": {
-                    "changelog": "首个版本：本机端口与 Docker 容器自动发现，一键注册为飞牛原生桌面应用；支持局域网/公网服务反向代理、远程主机 SSH 隧道、网页快捷方式与文字图标生成；兼容 Watchcow 容器标签；飞牛统一网关零端口接入，面板内可一键重启服务。",
+                "1.2.2": {
+                    "changelog": "新增四层端口转发：TCP/UDP 任意服务转发，支持 IP/CIDR 黑白名单、并发上限与实时连接记录；自转发与环路落盘前拦截；Linux 监听双栈→IPv4→IPv6 自动退让并反查端口占用者；修复转发绑定形态兼容性。",
                     "os_min_version": "0.9.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.0.0-x86.fpk",
-                            "sha256": "373d0e0533c8b78288c2c6f8d977f19addb6cc09a86442d0cb9fbd371113e643",
-                            "size": 4134010
+                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.2-x86.fpk",
+                            "sha256": "09989b327de928ef20f8ce8830d66496f4bed605ae6826a48963e894faf64b19",
+                            "size": 4213156
                         },
                         "arm": {
-                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.0.0-arm.fpk",
-                            "sha256": "35a5ab71e8fa923b79eb84d3a6d88ae957c5c8f6f27285c35d941f047e681647",
-                            "size": 3775604
+                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.2-arm.fpk",
+                            "sha256": "eb6034884442463545af713e32cdad2c07e43df0c499b835210f068448dea14d",
+                            "size": 3848285
                         }
                     },
-                    "updated_at": "2026-10-01T00:30:00+08:00"
+                    "updated_at": "2026-10-11T16:58:00+08:00"
                 }
             }
         }
