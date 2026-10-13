@@ -326,13 +326,13 @@
                     "packages": {
                         "x86": {
                             "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.4-x86.fpk",
-                            "sha256": "249e2ffd6d3568da87bf80d68beaeecab6c0511a29c6e0d7f274ec7166c44f5d",
-                            "size": 3936476
+                            "sha256": "cc39681a9dd50f78544c96894d310765534cc23d28c987107cce55444b0a0e71",
+                            "size": 4217645
                         },
                         "arm": {
                             "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.4-arm.fpk",
-                            "sha256": "ab2a0cf34a36ad89321d5d407a364727fb312d9c3967df0d79d2e6029fdf65ea",
-                            "size": 3598742
+                            "sha256": "0b135cefc628af84872df75f8a5864092caeb21f4a9ab967224159c1c905acef",
+                            "size": 3851454
                         }
                     },
                     "updated_at": "2026-10-13T16:10:00+08:00"
