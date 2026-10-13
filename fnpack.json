@@ -320,22 +320,22 @@
             "is_docker": false,
             "service_port": "",
             "releases": {
-                "1.2.2": {
-                    "changelog": "新增四层端口转发：TCP/UDP 任意服务转发，支持 IP/CIDR 黑白名单、并发上限与实时连接记录；自转发与环路落盘前拦截；Linux 监听双栈→IPv4→IPv6 自动退让并反查端口占用者；修复转发绑定形态兼容性。",
+                "1.2.4": {
+                    "changelog": "修复手机端导航整体消失（窄屏规则误藏图标 span 致七功能项变空白按钮，改为底部固定导航条）并继续打磨：等分布局、圆角柔底选中态、safe-area 避开手势条与虚拟导航键、软键盘压缩内容不顶起视口；修复侧边栏计数徽标启动时不显示；补尺寸类回归守卫。",
                     "os_min_version": "0.9.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.2-x86.fpk",
-                            "sha256": "09989b327de928ef20f8ce8830d66496f4bed605ae6826a48963e894faf64b19",
-                            "size": 4213156
+                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.4-x86.fpk",
+                            "sha256": "249e2ffd6d3568da87bf80d68beaeecab6c0511a29c6e0d7f274ec7166c44f5d",
+                            "size": 3936476
                         },
                         "arm": {
-                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.2-arm.fpk",
-                            "sha256": "eb6034884442463545af713e32cdad2c07e43df0c499b835210f068448dea14d",
-                            "size": 3848285
+                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.4-arm.fpk",
+                            "sha256": "ab2a0cf34a36ad89321d5d407a364727fb312d9c3967df0d79d2e6029fdf65ea",
+                            "size": 3598742
                         }
                     },
-                    "updated_at": "2026-10-11T16:58:00+08:00"
+                    "updated_at": "2026-10-13T16:10:00+08:00"
                 }
             }
         }
