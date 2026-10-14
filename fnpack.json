@@ -1,343 +1,342 @@
 {
-    "schema_version": "2",
-    "source_info": {
-        "name": "MisiteQ 应用源",
-        "author": "MisiteQ",
-        "homepage": "https://github.com/MisiteQ/FnDepot",
-        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）。"
-    },
-    "apps": {
-        "qyread": {
-            "display_name": "惬意阅读",
-            "desc": "飞牛 fnOS 上的私人书库与阅读中心：聚合搜书下载、多格式书架管理与沉浸阅读听书，数据仅保存在 NAS 本机。",
-            "platform": [
-                "x86",
-                "arm"
-            ],
-            "categories": [
-                "影音娱乐",
-                "教育学习"
-            ],
-            "icon_url": "./qyread/ICON.PNG",
-            "readme_url": "./qyread/README.md",
-            "bug_report_url": "https://github.com/MisiteQ/QYRead/issues",
-            "maintainer": "Misite齊",
-            "maintainer_url": "https://github.com/MisiteQ",
-            "distributor": "MisiteQ",
-            "distributor_url": "https://github.com/MisiteQ/FnDepot",
-            "run_as": "package",
-            "install_type": "",
-            "is_docker": false,
-            "service_port": "8344",
-            "releases": {
-                "0.1.29": {
-                    "changelog": "修复 Edge TTS 听书第二次起必报错（Cannot read properties of undefined (reading 'voiceLocale')）：msedge-tts 库 setMetadata 未传第三参数，首次朗读后 voiceLocale 已设值导致条件短路失效、转而访问 undefined 抛错；调用处补传空对象绕过，连续朗读恢复正常。",
-                    "os_min_version": "1.1.8",
-                    "packages": {
-                        "x86": {
-                            "download_url": "./qyread/fpk/qyread-0.1.29-x86.fpk",
-                            "sha256": "903545aa6c49a6b335f6157e384324e2d7b5b50c112ceb903bb15a39f754603c",
-                            "size": 28015568
-                        },
-                        "arm": {
-                            "download_url": "./qyread/fpk/qyread-0.1.29-arm.fpk",
-                            "sha256": "c3ae7c5d3579b42a17e96a70709e4ca8f5faf58bc2b48dd3e6a3263e2e722da1",
-                            "size": 27990356
-                        }
-                    },
-                    "updated_at": "2026-10-10T15:03:00+08:00"
-                }
-            }
-        },
-        "fnmonitor": {
-            "display_name": "飞牛监控",
-            "desc": "fnOS 系统监控面板：实时监控 CPU、内存、磁盘、网络、温度、功耗、GPU 与 Docker，支持历史趋势记录。",
-            "platform": [
-                "x86",
-                "arm"
-            ],
-            "categories": [
-                "系统工具"
-            ],
-            "icon_url": "./fnmonitor/ICON.PNG",
-            "readme_url": "./fnmonitor/README.md",
-            "bug_report_url": "https://github.com/MisiteQ/fnmonitor/issues",
-            "maintainer": "Misite齊",
-            "maintainer_url": "https://github.com/MisiteQ",
-            "distributor": "MisiteQ",
-            "distributor_url": "https://github.com/MisiteQ/FnDepot",
-            "run_as": "root",
-            "install_type": "",
-            "is_docker": false,
-            "service_port": "8777",
-            "releases": {
-                "2.18.2": {
-                    "changelog": "v2.18.2<br>① 修复飞牛官方手机 app 内嵌打开面板仍报 csrf_rejected 的问题：放行 Origin: null 与 app 内部 scheme 等 WebView 特征来源（此前仅放行局域网 Origin 不够），跨站防护不降级<br>② 新增 CSRF 拒绝日志：POST 请求被拒时在 server.log 记录具体闸门与来源，便于定位 app 内嵌等特殊访问场景",
-                    "updated_at": "2026-10-14T22:40:00+08:00",
-                    "os_min_version": "0.9.0",
-                    "packages": {
-                        "x86": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.18.2-x86.fpk",
-                            "sha256": "e4dc18e2827073f278a6e18b121540c4727c3d2cc74287a43124a010008f9ed6",
-                            "size": 523329
-                        },
-                        "arm": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.18.2-arm.fpk",
-                            "sha256": "d37de5b2425e3013db726e507532ab78e70ca43e40a1cbafe73c85c67236aa21",
-                            "size": 523331
-                        }
-                    },
-                    "published_at": "2026-10-14"
-                }
-            }
-        },
-        "github-plus-plus": {
-            "display_name": "GitHub++ 加速器",
-            "desc": "飞牛 NAS 上的 GitHub / Docker 加速器：智能测速自动择优加速通道，支持 Git 克隆、网页加速、Release/raw 下载与 Docker 拉取加速，内置 Web 控制台。",
-            "platform": [
-                "x86",
-                "arm"
-            ],
-            "categories": [
-                "系统工具"
-            ],
-            "icon_url": "./github-plus-plus/ICON.PNG",
-            "readme_url": "./github-plus-plus/README.md",
-            "bug_report_url": "https://github.com/MisiteQ/github-plus-plus/issues",
-            "maintainer": "Misite齊",
-            "maintainer_url": "https://github.com/MisiteQ",
-            "distributor": "MisiteQ",
-            "distributor_url": "https://github.com/MisiteQ/FnDepot",
-            "run_as": "root",
-            "install_type": "",
-            "is_docker": false,
-            "service_port": "7717",
-            "releases": {
-                "1.0.6": {
-                    "changelog": "接入方式支持局域网/外网切换（主机地址下拉+保存外网地址）；Docker 加速固定 127.0.0.1 走 NAS 本机 loopback；新增应用加速页整合三种被动加速方式（hosts/Docker 一键应用/系统级 HTTP 代理开关），第三方软件无需配置即可加速；后台常驻修复（setsid 脱离会话+崩溃自动重启看门狗），关闭桌面窗口/登出飞牛账号服务不退出；侧边栏折叠 logo 偏移修复。",
-                    "os_min_version": "1.0.0",
-                    "packages": {
-                        "x86": {
-                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.6-x86.fpk",
-                            "sha256": "0d994be1650dad0883ff31c6a4aef34e496629677d389383c61ce42a85d8608c",
-                            "size": 3714210
-                        },
-                        "arm": {
-                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.6-arm.fpk",
-                            "sha256": "1fa5d68a7426c4df8105bc5cd389b831b01f32696542907e32397d5b43aa139e",
-                            "size": 3376748
-                        }
-                    },
-                    "updated_at": "2026-09-29T10:30:00+08:00"
-                }
-            }
-        },
-        "window-composer": {
-            "display_name": "Window Composer",
-            "desc": "把飞牛 NAS 上的应用以窗口形式编排输出到物理显示器，支持 HDMI/DP/USB-C/VGA/DVI 全接口、热插拔、远程布局管理与截图。",
-            "platform": [
-                "x86",
-                "arm"
-            ],
-            "categories": [
-                "系统工具",
-                "影音娱乐"
-            ],
-            "icon_url": "./window-composer/ICON.PNG",
-            "readme_url": "./window-composer/README.md",
-            "bug_report_url": "https://github.com/MisiteQ/window-composer/issues",
-            "maintainer": "Misite齊",
-            "maintainer_url": "https://github.com/MisiteQ",
-            "distributor": "MisiteQ",
-            "distributor_url": "https://github.com/MisiteQ/FnDepot",
-            "run_as": "root",
-            "install_type": "",
-            "is_docker": true,
-            "service_port": "8181",
-            "releases": {
-                "1.0.0": {
-                    "changelog": "首个版本：通用多显示接口支持（HDMI/DP/USB-C/VGA/DVI）、显示器热插拔守护、目标显示器切换、安装时自动测速择优拉取镜像、窗口布局管理与截图。",
-                    "os_min_version": "0.9.27",
-                    "packages": {
-                        "x86": {
-                            "download_url": "./window-composer/fpk/window-composer-1.0.0.fpk",
-                            "sha256": "f267ded7052983ccd31346d1a18a0ff15b491af11300bfb3d4ab56ef4e14eb77",
-                            "size": 133602
-                        },
-                        "arm": {
-                            "download_url": "./window-composer/fpk/window-composer-1.0.0.fpk",
-                            "sha256": "f267ded7052983ccd31346d1a18a0ff15b491af11300bfb3d4ab56ef4e14eb77",
-                            "size": 133602
-                        }
-                    },
-                    "updated_at": "2026-09-19T16:20:00+08:00"
-                }
-            }
-        },
-        "com.qweather.widget": {
-            "display_name": "天气预报",
-            "desc": "桌面天气预报小部件，注入飞牛桌面直接显示，支持城市切换、透明度调节、拖动、调整大小，数据来源 Open-Meteo 无需 API Key。",
-            "platform": [
-                "x86",
-                "arm"
-            ],
-            "categories": [
-                "生活服务"
-            ],
-            "icon_url": "./com.qweather.widget/ICON.PNG",
-            "readme_url": "./com.qweather.widget/README.md",
-            "bug_report_url": "https://github.com/MisiteQ/QWeather/issues",
-            "maintainer": "Misite齊",
-            "maintainer_url": "https://github.com/MisiteQ",
-            "distributor": "MisiteQ",
-            "distributor_url": "https://github.com/MisiteQ/FnDepot",
-            "run_as": "root",
-            "install_type": "",
-            "is_docker": false,
-            "service_port": "5698",
-            "releases": {
-                "2.3.2": {
-                    "changelog": "修复卸载残留：uninstall_callback 兜底清理 nginx conf.d + ng.conf.zip 条目 + 注入页，解决卸载后孤儿配置永久占用桌面路由的问题。",
-                    "os_min_version": "1.0.0",
-                    "packages": {
-                        "x86": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.2-x86.fpk",
-                            "sha256": "dd58711340104999674cc05b10a097891e40b0888ae5790418fc1d90b804bf9e",
-                            "size": 206501
-                        },
-                        "arm": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.2-arm.fpk",
-                            "sha256": "1b7d72ba4ce9da73bb720b97a88e141a1e50917f21a7b3f9b09a15ea07521650",
-                            "size": 206500
-                        }
-                    },
-                    "updated_at": "2026-10-10T01:00:00+08:00"
-                }
-            }
-        },
-        "gstats": {
-            "display_name": "GStats",
-            "desc": "飞牛 fnOS 上的 GitHub 仓库流量统计平台：统计仓库外部访客 PV/UV、克隆次数、来源网站与热门路径，每日快照存档突破 14 天限制，支持导出报表。",
-            "platform": [
-                "x86",
-                "arm"
-            ],
-            "categories": [
-                "编程开发",
-                "系统工具"
-            ],
-            "icon_url": "./gstats/ICON.PNG",
-            "readme_url": "./gstats/README.md",
-            "bug_report_url": "https://github.com/MisiteQ/GStats/issues",
-            "maintainer": "Misite齊",
-            "maintainer_url": "https://github.com/MisiteQ",
-            "distributor": "MisiteQ",
-            "distributor_url": "https://github.com/MisiteQ/FnDepot",
-            "run_as": "package",
-            "install_type": "",
-            "is_docker": false,
-            "service_port": "",
-            "releases": {
-                "1.2.2": {
-                    "changelog": "重构为 GitHub 仓库流量统计平台：接入官方 Repo Traffic API，统计仓库外部访客 PV/UV、克隆次数、来源网站与热门路径，每日自动快照存档突破 14 天限制；新增免登录搜索浏览公开仓库，报表调整为 daily/repos/referrers/paths，绑定账号自动同步 + 每 6 小时全量同步。",
-                    "os_min_version": "1.1.3100",
-                    "packages": {
-                        "x86": {
-                            "download_url": "./gstats/fpk/gstats-1.2.2-x86.fpk",
-                            "sha256": "9ac1c284db968044c02caaf8104aebae1a5a23653e93b4a9b9f6e3be02a1d11a",
-                            "size": 307270
-                        },
-                        "arm": {
-                            "download_url": "./gstats/fpk/gstats-1.2.2-arm.fpk",
-                            "sha256": "08386fe01a5b2c2db60777a4ef923309b30ffde4fa255833c27b132ce12d607f",
-                            "size": 307269
-                        }
-                    },
-                    "updated_at": "2026-09-29T08:55:00+08:00"
-                }
-            }
-        },
-        "bombjackgame": {
-            "display_name": "炸弹杰克",
-            "desc": "经典 FC《Mighty Bomb Jack》离线版：飞牛桌面直接玩，6 槽位存档、改键、截图、全屏，纯本地无端口无后台。",
-            "platform": [
-                "x86",
-                "arm"
-            ],
-            "categories": [
-                "游戏地带"
-            ],
-            "icon_url": "./bombjackgame/ICON.PNG",
-            "readme_url": "./bombjackgame/README.md",
-            "bug_report_url": "https://github.com/MisiteQ/mighty-bomb-jack/issues",
-            "maintainer": "Tecmo / Tehkan (Koei Tecmo)",
-            "maintainer_url": "https://www.koeitecmo.co.jp/",
-            "distributor": "MisiteQ",
-            "distributor_url": "https://github.com/MisiteQ/FnDepot",
-            "run_as": "package",
-            "install_type": "",
-            "is_docker": false,
-            "service_port": "",
-            "releases": {
-                "1.0.5": {
-                    "changelog": "更正开发者/发布者身份标注：开发者（maintainer）为游戏权利方 Tecmo/Tehkan（Koei Tecmo），发布者（distributor）为离线包装发布者 MisiteQ；游戏页面页脚同步明确两重身份。",
-                    "os_min_version": "0.9.0",
-                    "packages": {
-                        "x86": {
-                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.5-x86.fpk",
-                            "sha256": "c9ef3ecff9fead4f6280d14053136abf49e5fea44f8f3e9b9d6c54ad2bae80b9",
-                            "size": 1149432
-                        },
-                        "arm": {
-                            "download_url": "./bombjackgame/fpk/bombjackgame-1.0.5-arm.fpk",
-                            "sha256": "8784233564044f2d1d244af531188e3eb5cb433d59946d3af9ccfd5b091d8f77",
-                            "size": 1149439
-                        }
-                    },
-                    "updated_at": "2026-09-25T19:43:05+08:00"
-                }
-            }
-        },
-        "qlink2desktop": {
-            "display_name": "QLink2Desktop",
-            "desc": "把端口、Docker、局域网或公网服务一键放到飞牛桌面：反向代理、SSH 隧道、TCP/UDP 端口转发，零端口接入。",
-            "platform": [
-                "x86",
-                "arm"
-            ],
-            "categories": [
-                "系统工具"
-            ],
-            "icon_url": "./qlink2desktop/ICON.PNG",
-            "readme_url": "./qlink2desktop/README.md",
-            "bug_report_url": "https://github.com/MisiteQ/QLink2Desktop/issues",
-            "maintainer": "Misite齊",
-            "maintainer_url": "https://github.com/MisiteQ",
-            "distributor": "MisiteQ",
-            "distributor_url": "https://github.com/MisiteQ/FnDepot",
-            "run_as": "root",
-            "install_type": "",
-            "is_docker": false,
-            "service_port": "",
-            "releases": {
-                "1.2.4": {
-                    "changelog": "修复手机端导航整体消失（窄屏规则误藏图标 span 致七功能项变空白按钮，改为底部固定导航条）并继续打磨：等分布局、圆角柔底选中态、safe-area 避开手势条与虚拟导航键、软键盘压缩内容不顶起视口；修复侧边栏计数徽标启动时不显示；补尺寸类回归守卫。",
-                    "os_min_version": "0.9.0",
-                    "packages": {
-                        "x86": {
-                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.4-x86.fpk",
-                            "sha256": "cc39681a9dd50f78544c96894d310765534cc23d28c987107cce55444b0a0e71",
-                            "size": 4217645
-                        },
-                        "arm": {
-                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.4-arm.fpk",
-                            "sha256": "0b135cefc628af84872df75f8a5864092caeb21f4a9ab967224159c1c905acef",
-                            "size": 3851454
-                        }
-                    },
-                    "updated_at": "2026-10-13T16:10:00+08:00"
-                }
-            }
-        }
+ "schema_version": "2",
+ "source_info": {
+  "name": "MisiteQ 应用源",
+  "author": "MisiteQ",
+  "homepage": "https://github.com/MisiteQ/FnDepot",
+  "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）。"
+ },
+ "apps": {
+  "qyread": {
+   "display_name": "惬意阅读",
+   "desc": "飞牛 fnOS 上的私人书库与阅读中心：聚合搜书下载、多格式书架管理与沉浸阅读听书，数据仅保存在 NAS 本机。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "影音娱乐",
+    "教育学习"
+   ],
+   "icon_url": "./qyread/ICON.PNG",
+   "readme_url": "./qyread/README.md",
+   "bug_report_url": "https://github.com/MisiteQ/QYRead/issues",
+   "maintainer": "Misite齊",
+   "maintainer_url": "https://github.com/MisiteQ",
+   "distributor": "MisiteQ",
+   "distributor_url": "https://github.com/MisiteQ/FnDepot",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "8344",
+   "releases": {
+    "0.1.29": {
+     "changelog": "修复 Edge TTS 听书第二次起必报错（Cannot read properties of undefined (reading 'voiceLocale')）：msedge-tts 库 setMetadata 未传第三参数，首次朗读后 voiceLocale 已设值导致条件短路失效、转而访问 undefined 抛错；调用处补传空对象绕过，连续朗读恢复正常。",
+     "os_min_version": "1.1.8",
+     "packages": {
+      "x86": {
+       "download_url": "./qyread/fpk/qyread-0.1.29-x86.fpk",
+       "sha256": "903545aa6c49a6b335f6157e384324e2d7b5b50c112ceb903bb15a39f754603c",
+       "size": 28015568
+      },
+      "arm": {
+       "download_url": "./qyread/fpk/qyread-0.1.29-arm.fpk",
+       "sha256": "c3ae7c5d3579b42a17e96a70709e4ca8f5faf58bc2b48dd3e6a3263e2e722da1",
+       "size": 27990356
+      }
+     },
+     "updated_at": "2026-10-10T15:03:00+08:00"
     }
+   }
+  },
+  "fnmonitor": {
+   "display_name": "飞牛监控",
+   "desc": "fnOS 系统监控面板：实时监控 CPU、内存、磁盘、网络、温度、功耗、GPU 与 Docker，支持历史趋势记录。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "./fnmonitor/ICON.PNG",
+   "readme_url": "./fnmonitor/README.md",
+   "bug_report_url": "https://github.com/MisiteQ/fnmonitor/issues",
+   "maintainer": "Misite齊",
+   "maintainer_url": "https://github.com/MisiteQ",
+   "distributor": "MisiteQ",
+   "distributor_url": "https://github.com/MisiteQ/FnDepot",
+   "run_as": "root",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "8777",
+   "releases": {
+    "2.18.3": {
+     "changelog": "v2.18.3<br>① 修复飞牛官方手机 app 打开面板仍报 csrf_rejected 的问题（v2.18.1 / 2.18.2 修复不彻底）：手机 app 的面板经飞牛官方远程域名 + fnOS 本机代理组件转发到本服务，请求来源是本机回环（::1），其 Origin 是官方域名、与被代理改写后的 Host 不一致，撞上公网跨站拒绝规则；现对本机回环来源（127.x / ::1）直接信任 CSRF 检查——该来源由内核网络栈决定，外部浏览器跨站请求不可能伪造，公网防护不受影响",
+     "updated_at": "2026-10-14T23:30:00+08:00",
+     "os_min_version": "0.9.0",
+     "packages": {
+      "x86": {
+       "download_url": "./fnmonitor/fpk/fnmonitor-2.18.3-x86.fpk",
+       "sha256": "44c125774ab6e41924b6133ec644fe13327723069572f024e6be10ce8148565b",
+       "size": 524013
+      },
+      "arm": {
+       "download_url": "./fnmonitor/fpk/fnmonitor-2.18.3-arm.fpk",
+       "sha256": "630465148039190c18467730ce87ad03c0e0ddebb2342f9a960568279348b302",
+       "size": 524016
+      }
+     }
+    }
+   }
+  },
+  "github-plus-plus": {
+   "display_name": "GitHub++ 加速器",
+   "desc": "飞牛 NAS 上的 GitHub / Docker 加速器：智能测速自动择优加速通道，支持 Git 克隆、网页加速、Release/raw 下载与 Docker 拉取加速，内置 Web 控制台。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "./github-plus-plus/ICON.PNG",
+   "readme_url": "./github-plus-plus/README.md",
+   "bug_report_url": "https://github.com/MisiteQ/github-plus-plus/issues",
+   "maintainer": "Misite齊",
+   "maintainer_url": "https://github.com/MisiteQ",
+   "distributor": "MisiteQ",
+   "distributor_url": "https://github.com/MisiteQ/FnDepot",
+   "run_as": "root",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "7717",
+   "releases": {
+    "1.0.6": {
+     "changelog": "接入方式支持局域网/外网切换（主机地址下拉+保存外网地址）；Docker 加速固定 127.0.0.1 走 NAS 本机 loopback；新增应用加速页整合三种被动加速方式（hosts/Docker 一键应用/系统级 HTTP 代理开关），第三方软件无需配置即可加速；后台常驻修复（setsid 脱离会话+崩溃自动重启看门狗），关闭桌面窗口/登出飞牛账号服务不退出；侧边栏折叠 logo 偏移修复。",
+     "os_min_version": "1.0.0",
+     "packages": {
+      "x86": {
+       "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.6-x86.fpk",
+       "sha256": "0d994be1650dad0883ff31c6a4aef34e496629677d389383c61ce42a85d8608c",
+       "size": 3714210
+      },
+      "arm": {
+       "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.6-arm.fpk",
+       "sha256": "1fa5d68a7426c4df8105bc5cd389b831b01f32696542907e32397d5b43aa139e",
+       "size": 3376748
+      }
+     },
+     "updated_at": "2026-09-29T10:30:00+08:00"
+    }
+   }
+  },
+  "window-composer": {
+   "display_name": "Window Composer",
+   "desc": "把飞牛 NAS 上的应用以窗口形式编排输出到物理显示器，支持 HDMI/DP/USB-C/VGA/DVI 全接口、热插拔、远程布局管理与截图。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "系统工具",
+    "影音娱乐"
+   ],
+   "icon_url": "./window-composer/ICON.PNG",
+   "readme_url": "./window-composer/README.md",
+   "bug_report_url": "https://github.com/MisiteQ/window-composer/issues",
+   "maintainer": "Misite齊",
+   "maintainer_url": "https://github.com/MisiteQ",
+   "distributor": "MisiteQ",
+   "distributor_url": "https://github.com/MisiteQ/FnDepot",
+   "run_as": "root",
+   "install_type": "",
+   "is_docker": true,
+   "service_port": "8181",
+   "releases": {
+    "1.0.0": {
+     "changelog": "首个版本：通用多显示接口支持（HDMI/DP/USB-C/VGA/DVI）、显示器热插拔守护、目标显示器切换、安装时自动测速择优拉取镜像、窗口布局管理与截图。",
+     "os_min_version": "0.9.27",
+     "packages": {
+      "x86": {
+       "download_url": "./window-composer/fpk/window-composer-1.0.0.fpk",
+       "sha256": "f267ded7052983ccd31346d1a18a0ff15b491af11300bfb3d4ab56ef4e14eb77",
+       "size": 133602
+      },
+      "arm": {
+       "download_url": "./window-composer/fpk/window-composer-1.0.0.fpk",
+       "sha256": "f267ded7052983ccd31346d1a18a0ff15b491af11300bfb3d4ab56ef4e14eb77",
+       "size": 133602
+      }
+     },
+     "updated_at": "2026-09-19T16:20:00+08:00"
+    }
+   }
+  },
+  "com.qweather.widget": {
+   "display_name": "天气预报",
+   "desc": "桌面天气预报小部件，注入飞牛桌面直接显示，支持城市切换、透明度调节、拖动、调整大小，数据来源 Open-Meteo 无需 API Key。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "生活服务"
+   ],
+   "icon_url": "./com.qweather.widget/ICON.PNG",
+   "readme_url": "./com.qweather.widget/README.md",
+   "bug_report_url": "https://github.com/MisiteQ/QWeather/issues",
+   "maintainer": "Misite齊",
+   "maintainer_url": "https://github.com/MisiteQ",
+   "distributor": "MisiteQ",
+   "distributor_url": "https://github.com/MisiteQ/FnDepot",
+   "run_as": "root",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "5698",
+   "releases": {
+    "2.3.2": {
+     "changelog": "修复卸载残留：uninstall_callback 兜底清理 nginx conf.d + ng.conf.zip 条目 + 注入页，解决卸载后孤儿配置永久占用桌面路由的问题。",
+     "os_min_version": "1.0.0",
+     "packages": {
+      "x86": {
+       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.2-x86.fpk",
+       "sha256": "dd58711340104999674cc05b10a097891e40b0888ae5790418fc1d90b804bf9e",
+       "size": 206501
+      },
+      "arm": {
+       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.2-arm.fpk",
+       "sha256": "1b7d72ba4ce9da73bb720b97a88e141a1e50917f21a7b3f9b09a15ea07521650",
+       "size": 206500
+      }
+     },
+     "updated_at": "2026-10-10T01:00:00+08:00"
+    }
+   }
+  },
+  "gstats": {
+   "display_name": "GStats",
+   "desc": "飞牛 fnOS 上的 GitHub 仓库流量统计平台：统计仓库外部访客 PV/UV、克隆次数、来源网站与热门路径，每日快照存档突破 14 天限制，支持导出报表。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "编程开发",
+    "系统工具"
+   ],
+   "icon_url": "./gstats/ICON.PNG",
+   "readme_url": "./gstats/README.md",
+   "bug_report_url": "https://github.com/MisiteQ/GStats/issues",
+   "maintainer": "Misite齊",
+   "maintainer_url": "https://github.com/MisiteQ",
+   "distributor": "MisiteQ",
+   "distributor_url": "https://github.com/MisiteQ/FnDepot",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "1.2.2": {
+     "changelog": "重构为 GitHub 仓库流量统计平台：接入官方 Repo Traffic API，统计仓库外部访客 PV/UV、克隆次数、来源网站与热门路径，每日自动快照存档突破 14 天限制；新增免登录搜索浏览公开仓库，报表调整为 daily/repos/referrers/paths，绑定账号自动同步 + 每 6 小时全量同步。",
+     "os_min_version": "1.1.3100",
+     "packages": {
+      "x86": {
+       "download_url": "./gstats/fpk/gstats-1.2.2-x86.fpk",
+       "sha256": "9ac1c284db968044c02caaf8104aebae1a5a23653e93b4a9b9f6e3be02a1d11a",
+       "size": 307270
+      },
+      "arm": {
+       "download_url": "./gstats/fpk/gstats-1.2.2-arm.fpk",
+       "sha256": "08386fe01a5b2c2db60777a4ef923309b30ffde4fa255833c27b132ce12d607f",
+       "size": 307269
+      }
+     },
+     "updated_at": "2026-09-29T08:55:00+08:00"
+    }
+   }
+  },
+  "bombjackgame": {
+   "display_name": "炸弹杰克",
+   "desc": "经典 FC《Mighty Bomb Jack》离线版：飞牛桌面直接玩，6 槽位存档、改键、截图、全屏，纯本地无端口无后台。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "游戏地带"
+   ],
+   "icon_url": "./bombjackgame/ICON.PNG",
+   "readme_url": "./bombjackgame/README.md",
+   "bug_report_url": "https://github.com/MisiteQ/mighty-bomb-jack/issues",
+   "maintainer": "Tecmo / Tehkan (Koei Tecmo)",
+   "maintainer_url": "https://www.koeitecmo.co.jp/",
+   "distributor": "MisiteQ",
+   "distributor_url": "https://github.com/MisiteQ/FnDepot",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "1.0.5": {
+     "changelog": "更正开发者/发布者身份标注：开发者（maintainer）为游戏权利方 Tecmo/Tehkan（Koei Tecmo），发布者（distributor）为离线包装发布者 MisiteQ；游戏页面页脚同步明确两重身份。",
+     "os_min_version": "0.9.0",
+     "packages": {
+      "x86": {
+       "download_url": "./bombjackgame/fpk/bombjackgame-1.0.5-x86.fpk",
+       "sha256": "c9ef3ecff9fead4f6280d14053136abf49e5fea44f8f3e9b9d6c54ad2bae80b9",
+       "size": 1149432
+      },
+      "arm": {
+       "download_url": "./bombjackgame/fpk/bombjackgame-1.0.5-arm.fpk",
+       "sha256": "8784233564044f2d1d244af531188e3eb5cb433d59946d3af9ccfd5b091d8f77",
+       "size": 1149439
+      }
+     },
+     "updated_at": "2026-09-25T19:43:05+08:00"
+    }
+   }
+  },
+  "qlink2desktop": {
+   "display_name": "QLink2Desktop",
+   "desc": "把端口、Docker、局域网或公网服务一键放到飞牛桌面：反向代理、SSH 隧道、TCP/UDP 端口转发，零端口接入。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "./qlink2desktop/ICON.PNG",
+   "readme_url": "./qlink2desktop/README.md",
+   "bug_report_url": "https://github.com/MisiteQ/QLink2Desktop/issues",
+   "maintainer": "Misite齊",
+   "maintainer_url": "https://github.com/MisiteQ",
+   "distributor": "MisiteQ",
+   "distributor_url": "https://github.com/MisiteQ/FnDepot",
+   "run_as": "root",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "1.2.4": {
+     "changelog": "修复手机端导航整体消失（窄屏规则误藏图标 span 致七功能项变空白按钮，改为底部固定导航条）并继续打磨：等分布局、圆角柔底选中态、safe-area 避开手势条与虚拟导航键、软键盘压缩内容不顶起视口；修复侧边栏计数徽标启动时不显示；补尺寸类回归守卫。",
+     "os_min_version": "0.9.0",
+     "packages": {
+      "x86": {
+       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.4-x86.fpk",
+       "sha256": "cc39681a9dd50f78544c96894d310765534cc23d28c987107cce55444b0a0e71",
+       "size": 4217645
+      },
+      "arm": {
+       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.4-arm.fpk",
+       "sha256": "0b135cefc628af84872df75f8a5864092caeb21f4a9ab967224159c1c905acef",
+       "size": 3851454
+      }
+     },
+     "updated_at": "2026-10-13T16:10:00+08:00"
+    }
+   }
+  }
+ }
 }
