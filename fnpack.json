@@ -319,22 +319,22 @@
    "is_docker": false,
    "service_port": "",
    "releases": {
-    "1.2.4": {
-     "changelog": "修复手机端导航整体消失（窄屏规则误藏图标 span 致七功能项变空白按钮，改为底部固定导航条）并继续打磨：等分布局、圆角柔底选中态、safe-area 避开手势条与虚拟导航键、软键盘压缩内容不顶起视口；修复侧边栏计数徽标启动时不显示；补尺寸类回归守卫。",
+    "1.2.6": {
+     "changelog": "新增「自动」图标抓取站点自身 favicon（读页面 rel=icon / apple-touch-icon，再退到根目录 /favicon.ico，内置 ICO 解码，内网服务也能有对的图标）；图标解析过程对用户可见——切「自动」即真查找并显示「正在查找图标…」与结论来龙去脉，附「重新查找」，桌面缩略图改用实际解析结果；移除侧边栏计数徽标；修复解析接口严格解码导致的误报。",
      "os_min_version": "0.9.0",
      "packages": {
       "x86": {
-       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.4-x86.fpk",
-       "sha256": "cc39681a9dd50f78544c96894d310765534cc23d28c987107cce55444b0a0e71",
-       "size": 4217645
+       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.6-x86.fpk",
+       "sha256": "2cff9dda376a09d28b5e3498f70d0e1f9f4f94f22411a8ea67aacde101e36af9",
+       "size": 4241651
       },
       "arm": {
-       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.4-arm.fpk",
-       "sha256": "0b135cefc628af84872df75f8a5864092caeb21f4a9ab967224159c1c905acef",
-       "size": 3851454
+       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.6-arm.fpk",
+       "sha256": "481119fecb52d979e014a0a9a5d128ff2551ff269f30387fe2f75420310e342e",
+       "size": 3875834
       }
      },
-     "updated_at": "2026-10-13T16:10:00+08:00"
+     "updated_at": "2026-10-14T16:45:00+08:00"
     }
    }
   }
