@@ -4,7 +4,7 @@
   "name": "MisiteQ 应用源",
   "author": "MisiteQ",
   "homepage": "https://github.com/MisiteQ/FnDepot",
-  "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）。"
+  "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）、签到助手 QDAssistant（WorkBuddy 与 Trae 双平台自动签到，7×24 常驻 NAS）。"
  },
  "apps": {
   "qyread": {
@@ -335,6 +335,47 @@
       }
      },
      "updated_at": "2026-10-14T16:45:00+08:00"
+    }
+   }
+  },
+  "qdassistant": {
+   "display_name": "QDAssistant",
+   "desc": "飞牛 fnOS 上的签到助手：把 WorkBuddy 与 Trae 双平台每日签到搬到 NAS 上 7×24 常驻，到点自动完成，凭据仅保存在本机。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "./qdassistant/ICON.PNG",
+   "readme_url": "./qdassistant/README.md",
+   "bug_report_url": "https://github.com/MisiteQ/qdassistant/issues",
+   "maintainer": "Misite齊",
+   "maintainer_url": "https://github.com/MisiteQ",
+   "distributor": "MisiteQ",
+   "distributor_url": "https://github.com/MisiteQ/FnDepot",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "8790",
+   "releases": {
+    "1.0.0": {
+     "changelog": "v1.0.0 首个正式版本：WorkBuddy 与 Trae 双平台自动签到 7×24 常驻 NAS——双平台签到与凭据自动续期、OAuth 登录 / Trae 客户端凭据导入 / 手动粘贴三种录入、积分与 Token 用量统计、一键签到、配置导出导入。",
+     "updated_at": "2026-10-15T17:21:39+08:00",
+     "os_min_version": "0.9.0",
+     "packages": {
+      "x86": {
+       "download_url": "./qdassistant/fpk/qdassistant-1.0.0-x86.fpk",
+       "sha256": "8515124b99d7ea17692b3cfa0092f97dc17fee9a4b36711dd1b4e9fe8f83584c",
+       "size": 568427
+      },
+      "arm": {
+       "download_url": "./qdassistant/fpk/qdassistant-1.0.0-arm.fpk",
+       "sha256": "2aad92e1c2734c01298a857baf16c303251c3c05f0d0470688f51f359bc94315",
+       "size": 568419
+      }
+     }
     }
    }
   }
