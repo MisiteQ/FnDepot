@@ -195,22 +195,22 @@
    "is_docker": false,
    "service_port": "5698",
    "releases": {
-    "2.3.3": {
-     "changelog": "设置唯一数据源改为 NAS 本机 settings.json（nginx 同源路由读写，绕开应用网关），彻底移除 localStorage，换浏览器/换电脑/清缓存后仍恢复保存的城市；修复隐藏态下恢复按钮在桌面重建后丢失的缺陷。",
+    "2.3.4": {
+     "changelog": "时间·天气模块移植时钟卡片样式：大号时钟 + 农历 + 离线 SVG 天气图标；修复安装/升级后桌面反复断链（nginx 改为 reload 优先不断连接）；透明度下限降到 0% 可全透明且无磨砂残影；设置面板新增文字/图标/定位图标三个取色器；更新时间移入设置面板。",
      "os_min_version": "1.0.0",
      "packages": {
       "x86": {
-       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.3-x86.fpk",
-       "sha256": "d45a08c572507fbeb281f9b7fe176ea988f48959986f2abe6ba32a8739f4428f",
-       "size": 207499
+       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.4-x86.fpk",
+       "sha256": "b8cbed8de6110ce7c489feb173c0dc13aae0e867bbbb67a8a938d942baac3559",
+       "size": 213009
       },
       "arm": {
-       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.3-arm.fpk",
-       "sha256": "6f6136d9138dfd39c8b94a6bbba1be0be525f4405b7cbc6fd3b2ed131ddb454b",
-       "size": 207498
+       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.4-arm.fpk",
+       "sha256": "460a8669f3f7c71889111663e2c45987facd1881562781748f0c5ec87da518cf",
+       "size": 213009
       }
      },
-     "updated_at": "2026-10-16T11:37:39+08:00"
+     "updated_at": "2026-10-16T13:20:00+08:00"
     }
    }
   },
