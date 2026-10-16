@@ -1,4 +1,4 @@
-﻿{
+{
     "schema_version":  "2",
     "source_info":  {
                         "name":  "MisiteQ 应用源",
@@ -196,18 +196,18 @@
                                              "service_port":  "5698",
                                              "releases":  {
                                                               "3.0.2":  {
-                                                                            "changelog":  "修复网关路由前缀校验失败导致 Not Found——appname 含点号被系统判定为非法 prefix，改为 /app/qweather 避开校验；修复启动时旧进程未清理导致端口冲突。",
-                                                                            "updated_at":  "2026-10-17T01:30:00+08:00",
+                                                                            "changelog":  "修复 build_fp.py 漏打包 ui/ 目录导致设置界面 Not Found；恢复 gatewayPrefix 为 /app/qweather 避开 trim_app_center 校验；修复启动时旧进程未清理导致端口冲突。",
+                                                                            "updated_at":  "2026-10-17T02:50:00+08:00",
                                                                             "packages":  {
                                                                                              "x86":  {
                                                                                                          "download_url":  "./com.qweather.widget/fpk/com.qweather.widget-3.0.2-x86.fpk",
-                                                                                                         "sha256":  "78949803639e8d4aeb426e060be00eba45ce13fee83178b1ba00534a282d8250",
-                                                                                                         "size":  339212
+                                                                                                         "sha256":  "aabb691a4ea0dca8b9d158b0dad83a3796643924ef3154bb9dd333228ae00be8",
+                                                                                                         "size":  452794
                                                                                                      },
                                                                                              "arm":  {
                                                                                                          "download_url":  "./com.qweather.widget/fpk/com.qweather.widget-3.0.2-arm.fpk",
-                                                                                                         "sha256":  "5ab20eb1bbfabc38a628feefe3da244a713862135ac0bf742ae9bc37038046bd",
-                                                                                                         "size":  339212
+                                                                                                         "sha256":  "8b5b7ce9c626e4dba555d04edf251e75a77f8f82288173dbb20bb285922d6971",
+                                                                                                         "size":  452794
                                                                                                      }
                                                                                          },
                                                                             "os_min_version":  "1.0.0"
