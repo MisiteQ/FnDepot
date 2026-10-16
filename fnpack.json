@@ -319,22 +319,22 @@
    "is_docker": false,
    "service_port": "",
    "releases": {
-    "1.2.6": {
-     "changelog": "新增「自动」图标抓取站点自身 favicon（读页面 rel=icon / apple-touch-icon，再退到根目录 /favicon.ico，内置 ICO 解码，内网服务也能有对的图标）；图标解析过程对用户可见——切「自动」即真查找并显示「正在查找图标…」与结论来龙去脉，附「重新查找」，桌面缩略图改用实际解析结果；移除侧边栏计数徽标；修复解析接口严格解码导致的误报。",
+    "1.2.7": {
+     "changelog": "「本机端口」列表不再一屏重复：按「进程 + 端口」把内核套接字合并成服务展示——协议恒显于端口号下方（TCP / UDP / TCP+UDP），绑定地址归纳为「全网卡可见 / 仅本机 / N 个网卡地址」（悬停看完整清单），统计卡改称「监听服务」并标注合并前的套接字总数；同时更新软件 logo 并修复图标缩至 64px 时不够清晰的问题。",
      "os_min_version": "0.9.0",
      "packages": {
       "x86": {
-       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.6-x86.fpk",
-       "sha256": "2cff9dda376a09d28b5e3498f70d0e1f9f4f94f22411a8ea67aacde101e36af9",
-       "size": 4241651
+       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.7-x86.fpk",
+       "sha256": "1e2d89b8342789bbc8f5e909b0736cdd0a6963db4957a1cd563a3054c5707602",
+       "size": 4345743
       },
       "arm": {
-       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.6-arm.fpk",
-       "sha256": "481119fecb52d979e014a0a9a5d128ff2551ff269f30387fe2f75420310e342e",
-       "size": 3875834
+       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.7-arm.fpk",
+       "sha256": "54c4a4c51cc03f2a1f1bce61e3015c23cd493bbc64666ca6fa3bce1f6f36fdb5",
+       "size": 3975252
       }
      },
-     "updated_at": "2026-10-14T16:45:00+08:00"
+     "updated_at": "2026-10-16T10:38:28+08:00"
     }
    }
   },

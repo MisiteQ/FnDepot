@@ -79,8 +79,8 @@ FnDepot/
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
     └── fpk/         # 各架构安装包
-        ├── qlink2desktop-1.2.6-x86.fpk
-        └── qlink2desktop-1.2.6-arm.fpk
+        ├── qlink2desktop-1.2.7-x86.fpk
+        └── qlink2desktop-1.2.7-arm.fpk
 └── qdassistant/     # QDAssistant 签到助手应用目录
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
