@@ -22,7 +22,7 @@ https://github.com/MisiteQ/FnDepot
 | [飞牛监控 (fnMonitor)](https://github.com/MisiteQ/FnDepot/blob/main/fnmonitor/README.md) | fnOS 系统监控面板：实时监控 CPU / 内存 / 磁盘 / 网络 / 温度 / 功耗 / GPU 与 Docker，支持流量统计、功耗统计、历史趋势与数据持久化 | x86 / arm |
 | [GitHub++ 加速器 (github-plus-plus)](https://github.com/MisiteQ/FnDepot/blob/main/github-plus-plus/README.md) | 飞牛 NAS 上的 GitHub / Docker 加速器：智能测速自动择优加速通道，支持 Git 克隆、网页加速、Release/raw 下载与 Docker 拉取加速，内置 Web 控制台 | x86 / arm |
 | [Window Composer](https://github.com/MisiteQ/FnDepot/blob/main/window-composer/README.md) | 把飞牛 NAS 上的应用以窗口形式编排输出到物理显示器：支持 HDMI/DP/USB-C/VGA/DVI 全接口、显示器热插拔、远程网页布局管理、多窗口不重叠、屏幕旋转与截图 | x86 / arm |
-| [天气预报 (QWeather Widget)](https://github.com/MisiteQ/FnDepot/blob/main/com.qweather.widget/README.md) | 飞牛桌面天气预报小部件：直接注入飞牛桌面显示，支持实时天气、5 天预报、城市切换、拖动、透明度调节、调整大小，数据来源 Open-Meteo 无需 API Key | x86 / arm |
+| [时钟天气 QTWeather](https://github.com/MisiteQ/FnDepot/blob/main/com.qweather.widget/README.md) | 飞牛桌面时钟+天气小部件：大号时钟（秒/公历/农历）与实时天气、5 天预报可独立开关，设置中心支持全透明、配色、字号与自定义字体，Open-Meteo 无需 API Key | x86 / arm |
 | [GStats](https://github.com/MisiteQ/FnDepot/blob/main/gstats/README.md) | 飞牛 NAS 上的 GitHub 仓库流量统计平台：通过官方 Repo Traffic API 统计仓库外部访客的 PV / UV / 克隆次数、来源网站与热门路径，每日快照存档突破 14 天限制，支持导出 CSV / JSON / HTML 报表 | x86 / arm |
 | [QLink2Desktop](https://github.com/MisiteQ/FnDepot/blob/main/qlink2desktop/README.md) | 把本机端口、Docker 容器、局域网或公网服务一键放到飞牛桌面：自动发现本机端口与容器一键注册为原生桌面应用，支持反向代理、SSH 隧道、四层端口转发（TCP/UDP）、网页快捷方式、文字图标生成、自动抓取站点图标（查找过程可见），飞牛统一网关零端口接入 | x86 / arm |
 | [签到助手 (QDAssistant)](https://github.com/MisiteQ/FnDepot/blob/main/qdassistant/README.md) | 飞牛 fnOS 上的签到助手：把 WorkBuddy 与 Trae 双平台每日签到搬到 NAS 上 7×24 常驻、到点自动完成，支持凭据自动续期、积分 / Token 用量统计、一键签到与配置导出导入 | x86 / arm |
@@ -57,12 +57,12 @@ FnDepot/
     ├── README.md    # 应用详情说明
     └── fpk/         # 通用安装包（x86/arm 共用；安装时联网拉取镜像）
         └── window-composer-1.0.0.fpk
-├── com.qweather.widget/ # 天气预报应用目录
+├── com.qweather.widget/ # 时钟天气 QTWeather 应用目录（内部标识沿用 com.qweather.widget）
 │   ├── ICON.PNG     # 应用图标
 │   ├── README.md    # 应用详情说明
 │   └── fpk/         # 各架构安装包
-│       ├── com.qweather.widget-2.3.4-x86.fpk
-│       └── com.qweather.widget-2.3.4-arm.fpk
+│       ├── com.qweather.widget-3.0.0-x86.fpk
+│       └── com.qweather.widget-3.0.0-arm.fpk
 ├── gstats/          # GStats 应用目录
 │   ├── ICON.PNG     # 应用图标
 │   ├── README.md    # 应用详情说明

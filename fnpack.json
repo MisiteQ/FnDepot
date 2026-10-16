@@ -174,8 +174,8 @@
    }
   },
   "com.qweather.widget": {
-   "display_name": "天气预报",
-   "desc": "桌面天气预报小部件，注入飞牛桌面直接显示，支持城市切换、透明度调节、拖动、调整大小，数据来源 Open-Meteo 无需 API Key。",
+   "display_name": "时钟天气QTWeather",
+   "desc": "桌面时钟+天气小部件：大号时钟带农历，与实时天气、5天预报可独立开关；支持全透明、配色、字号与自定义字体，Open-Meteo 数据无需 Key。",
    "platform": [
     "x86",
     "arm"
@@ -185,7 +185,7 @@
    ],
    "icon_url": "./com.qweather.widget/ICON.PNG",
    "readme_url": "./com.qweather.widget/README.md",
-   "bug_report_url": "https://github.com/MisiteQ/QWeather/issues",
+   "bug_report_url": "https://github.com/MisiteQ/QTWeather/issues",
    "maintainer": "Misite齊",
    "maintainer_url": "https://github.com/MisiteQ",
    "distributor": "MisiteQ",
@@ -195,22 +195,22 @@
    "is_docker": false,
    "service_port": "5698",
    "releases": {
-    "2.3.4": {
-     "changelog": "时间·天气模块移植时钟卡片样式：大号时钟 + 农历 + 离线 SVG 天气图标；修复安装/升级后桌面反复断链（nginx 改为 reload 优先不断连接）；透明度下限降到 0% 可全透明且无磨砂残影；设置面板新增文字/图标/定位图标三个取色器；更新时间移入设置面板。",
+    "3.0.0": {
+     "changelog": "大版本改版并更名「时钟天气 QTWeather」：新增独立设置中心窗口（时钟/天气模块独立开关、字号50%-200%、自定义字体上传、关于页与版本更新检查），保存后数秒内热生效；修复窄宽度预报溢出；可由旧版直接覆盖升级。",
      "os_min_version": "1.0.0",
      "packages": {
       "x86": {
-       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.4-x86.fpk",
-       "sha256": "b8cbed8de6110ce7c489feb173c0dc13aae0e867bbbb67a8a938d942baac3559",
-       "size": 213009
+       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-3.0.0-x86.fpk",
+       "sha256": "f4c126d30a582b491bcc2659a7a5b50e41ed3730638e98a5149571f0a2f20199",
+       "size": 337177
       },
       "arm": {
-       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.4-arm.fpk",
-       "sha256": "460a8669f3f7c71889111663e2c45987facd1881562781748f0c5ec87da518cf",
-       "size": 213009
+       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-3.0.0-arm.fpk",
+       "sha256": "83a7e98492a4190556f0815d6b1414b74ce6923772e94712b25233dea1453674",
+       "size": 337177
       }
      },
-     "updated_at": "2026-10-16T13:20:00+08:00"
+     "updated_at": "2026-10-16T15:45:00+08:00"
     }
    }
   },
