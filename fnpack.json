@@ -196,18 +196,18 @@
                                              "service_port":  "5698",
                                              "releases":  {
                                                               "3.0.2":  {
-                                                                            "changelog":  "修复 build_fp.py 漏打包 ui/ 目录导致设置界面 Not Found；恢复 gatewayPrefix 为 /app/qweather 避开 trim_app_center 校验；修复启动时旧进程未清理导致端口冲突。",
-                                                                            "updated_at":  "2026-10-17T02:50:00+08:00",
+                                                                            "changelog":  "修复 build_fp.py 漏打包 ui/ 目录导致设置界面 Not Found；恢复 gatewayPrefix 为 /app/com-qweather-widget 匹配 trim_app_center 注册前缀；修复启动时旧进程未清理导致端口冲突。",
+                                                                            "updated_at":  "2026-10-17T03:00:00+08:00",
                                                                             "packages":  {
                                                                                              "x86":  {
                                                                                                          "download_url":  "./com.qweather.widget/fpk/com.qweather.widget-3.0.2-x86.fpk",
-                                                                                                         "sha256":  "aabb691a4ea0dca8b9d158b0dad83a3796643924ef3154bb9dd333228ae00be8",
-                                                                                                         "size":  452794
+                                                                                                         "sha256":  "c66ad824948e3995e04a7ed119cce34dbc973a6734a99352184acb1bd536550a",
+                                                                                                         "size":  453008
                                                                                                      },
                                                                                              "arm":  {
                                                                                                          "download_url":  "./com.qweather.widget/fpk/com.qweather.widget-3.0.2-arm.fpk",
-                                                                                                         "sha256":  "8b5b7ce9c626e4dba555d04edf251e75a77f8f82288173dbb20bb285922d6971",
-                                                                                                         "size":  452794
+                                                                                                         "sha256":  "a7195b7446ffb6fce57e8e8341b91ff194a3e83dda4847ab5a34d39584eb1489",
+                                                                                                         "size":  453007
                                                                                                      }
                                                                                          },
                                                                             "os_min_version":  "1.0.0"
