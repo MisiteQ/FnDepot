@@ -195,22 +195,22 @@
    "is_docker": false,
    "service_port": "5698",
    "releases": {
-    "2.3.2": {
-     "changelog": "修复卸载残留：uninstall_callback 兜底清理 nginx conf.d + ng.conf.zip 条目 + 注入页，解决卸载后孤儿配置永久占用桌面路由的问题。",
+    "2.3.3": {
+     "changelog": "设置唯一数据源改为 NAS 本机 settings.json（nginx 同源路由读写，绕开应用网关），彻底移除 localStorage，换浏览器/换电脑/清缓存后仍恢复保存的城市；修复隐藏态下恢复按钮在桌面重建后丢失的缺陷。",
      "os_min_version": "1.0.0",
      "packages": {
       "x86": {
-       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.2-x86.fpk",
-       "sha256": "dd58711340104999674cc05b10a097891e40b0888ae5790418fc1d90b804bf9e",
-       "size": 206501
+       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.3-x86.fpk",
+       "sha256": "d45a08c572507fbeb281f9b7fe176ea988f48959986f2abe6ba32a8739f4428f",
+       "size": 207499
       },
       "arm": {
-       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.2-arm.fpk",
-       "sha256": "1b7d72ba4ce9da73bb720b97a88e141a1e50917f21a7b3f9b09a15ea07521650",
-       "size": 206500
+       "download_url": "./com.qweather.widget/fpk/com.qweather.widget-2.3.3-arm.fpk",
+       "sha256": "6f6136d9138dfd39c8b94a6bbba1be0be525f4405b7cbc6fd3b2ed131ddb454b",
+       "size": 207498
       }
      },
-     "updated_at": "2026-10-10T01:00:00+08:00"
+     "updated_at": "2026-10-16T11:37:39+08:00"
     }
    }
   },

@@ -61,8 +61,8 @@ FnDepot/
 │   ├── ICON.PNG     # 应用图标
 │   ├── README.md    # 应用详情说明
 │   └── fpk/         # 各架构安装包
-│       ├── com.qweather.widget-2.3.2-x86.fpk
-│       └── com.qweather.widget-2.3.2-arm.fpk
+│       ├── com.qweather.widget-2.3.3-x86.fpk
+│       └── com.qweather.widget-2.3.3-arm.fpk
 ├── gstats/          # GStats 应用目录
 │   ├── ICON.PNG     # 应用图标
 │   ├── README.md    # 应用详情说明
