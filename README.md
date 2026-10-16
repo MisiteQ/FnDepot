@@ -79,14 +79,14 @@ FnDepot/
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
     └── fpk/         # 各架构安装包
-        ├── qlink2desktop-1.2.7-x86.fpk
-        └── qlink2desktop-1.2.7-arm.fpk
+        ├── qlink2desktop-1.2.8-x86.fpk
+        └── qlink2desktop-1.2.8-arm.fpk
 └── qdassistant/     # QDAssistant 签到助手应用目录
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
     └── fpk/         # 各架构安装包
-        ├── qdassistant-1.0.0-x86.fpk
-        └── qdassistant-1.0.0-arm.fpk
+        ├── qdassistant-1.0.2-x86.fpk
+        └── qdassistant-1.0.2-arm.fpk
 ```
 `fnpack.json` 中的资源与安装包均使用相对路径定位，随仓库一起分发。Window Composer 安装包本身不含 Docker 镜像，安装时自动从 ghcr 加速源测速拉取。
 

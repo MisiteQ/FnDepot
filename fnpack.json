@@ -319,22 +319,22 @@
    "is_docker": false,
    "service_port": "",
    "releases": {
-    "1.2.7": {
-     "changelog": "「本机端口」列表不再一屏重复：按「进程 + 端口」把内核套接字合并成服务展示——协议恒显于端口号下方（TCP / UDP / TCP+UDP），绑定地址归纳为「全网卡可见 / 仅本机 / N 个网卡地址」（悬停看完整清单），统计卡改称「监听服务」并标注合并前的套接字总数；同时更新软件 logo 并修复图标缩至 64px 时不够清晰的问题。",
+    "1.2.8": {
+     "changelog": "编辑器新增「图标库」选图档：给链接选图标时可直接从已上传图标中挑一枚（带选中描边、对勾与文件名提示），同一张图跨链接复用，不必反复重传；与「上传」档共用同一套数据，列表缩略图、桌面图标与打包路径不变。",
      "os_min_version": "0.9.0",
      "packages": {
       "x86": {
-       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.7-x86.fpk",
-       "sha256": "1e2d89b8342789bbc8f5e909b0736cdd0a6963db4957a1cd563a3054c5707602",
-       "size": 4345743
+       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.8-x86.fpk",
+       "sha256": "c3d4db33bfc311d18d00214f3f77894883f634e4020cc3a04abc3e0162dc0336",
+       "size": 4347857
       },
       "arm": {
-       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.7-arm.fpk",
-       "sha256": "54c4a4c51cc03f2a1f1bce61e3015c23cd493bbc64666ca6fa3bce1f6f36fdb5",
-       "size": 3975252
+       "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.8-arm.fpk",
+       "sha256": "299f152b5329c4a3006d0b8478c26a8f10d8a878d55e3cb8cf015c55460eb9c8",
+       "size": 3977442
       }
      },
-     "updated_at": "2026-10-16T10:38:28+08:00"
+     "updated_at": "2026-10-16T23:05:32+08:00"
     }
    }
   },
@@ -360,20 +360,20 @@
    "is_docker": false,
    "service_port": "8790",
    "releases": {
-    "1.0.0": {
-     "changelog": "v1.0.0 首个正式版本：WorkBuddy 与 Trae 双平台自动签到 7×24 常驻 NAS——双平台签到与凭据自动续期、OAuth 登录 / Trae 客户端凭据导入 / 手动粘贴三种录入、积分与 Token 用量统计、一键签到、配置导出导入。",
-     "updated_at": "2026-10-15T17:21:39+08:00",
+    "1.0.2": {
+     "changelog": "v1.0.2：桌面入口改走飞牛统一网关（/app/qdassistant/ + 应用内置 Unix 套接字）修复域名访问加载失败；TCP 端口保留作局域网直连，与网关组成双通道，套接字异常时自动回退端口；启动 / 停止 / 安装 / 升级 / 卸载各环节统一清理残留套接字。另含 1.0.1 修复（未单独发布）：首屏改为单请求 bootstrap 聚合，规避统一网关并发转发悬停；覆盖安装 10 分钟数据保护窗口。",
+     "updated_at": "2026-10-16T23:05:32+08:00",
      "os_min_version": "0.9.0",
      "packages": {
       "x86": {
-       "download_url": "./qdassistant/fpk/qdassistant-1.0.0-x86.fpk",
-       "sha256": "8515124b99d7ea17692b3cfa0092f97dc17fee9a4b36711dd1b4e9fe8f83584c",
-       "size": 568427
+       "download_url": "./qdassistant/fpk/qdassistant-1.0.2-x86.fpk",
+       "sha256": "b42885b9fb4319a727c70cbef32567406c1b780b514ebdfe946fd459b2c317fb",
+       "size": 424465
       },
       "arm": {
-       "download_url": "./qdassistant/fpk/qdassistant-1.0.0-arm.fpk",
-       "sha256": "2aad92e1c2734c01298a857baf16c303251c3c05f0d0470688f51f359bc94315",
-       "size": 568419
+       "download_url": "./qdassistant/fpk/qdassistant-1.0.2-arm.fpk",
+       "sha256": "b821af9bfdd789d659e71d2ddae036e9be205aff370038a68051d813ebc200a0",
+       "size": 424464
       }
      }
     }
