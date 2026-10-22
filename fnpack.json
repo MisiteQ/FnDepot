@@ -4,7 +4,7 @@
                         "name":  "MisiteQ 应用源",
                         "author":  "MisiteQ",
                         "homepage":  "https://github.com/MisiteQ/FnDepot",
-                        "description":  "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）、签到助手 QDAssistant（WorkBuddy 与 Trae 双平台自动签到，7×24 常驻 NAS）。"
+                        "description":  "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）、签到助手 QDAssistant（WorkBuddy 与 Trae 双平台自动签到，7×24 常驻 NAS）。、QDD 文档分发（轻量文档分发管理与授权工具）。"
                     },
     "apps":  {
                  "qyread":  {
@@ -378,6 +378,48 @@
                                                                                  }
                                                                 }
                                                   }
-                                 }
+                                 },
+                 "qdd":  {
+                             "display_name":  "QDD 文档分发",
+                             "desc":  "轻量文档分发管理工具：多目录扫描、按类型与关键词自动分类、全类型在线预览、批量打包、多用户与目录授权。",
+                             "platform":  [
+                                              "x86",
+                                              "arm"
+                                          ],
+                             "categories":  [
+                                                "系统工具",
+                                                "教育学习"
+                                            ],
+                             "icon_url":  "./qdd/ICON.PNG",
+                             "readme_url":  "./qdd/README.md",
+                             "bug_report_url":  "https://github.com/MisiteQ/QDocument-Distributor/issues",
+                             "maintainer":  "Misite齊",
+                             "maintainer_url":  "https://github.com/MisiteQ",
+                             "distributor":  "MisiteQ",
+                             "distributor_url":  "https://github.com/MisiteQ/FnDepot",
+                             "run_as":  "package",
+                             "install_type":  "",
+                             "is_docker":  false,
+                             "service_port":  "9585",
+                             "releases":  {
+                                              "1.0.6":  {
+                                                            "changelog":  "v1.0.6 全新上架：轻量文档分发工具，多目录扫描 + 按类型 / 关键词自动分类 + 全类型在线预览（图片/PDF/Office/音视频）+ 批量打包 + 多用户目录授权。支持 IPv4/IPv6 双栈监听 + 飞牛中继子域名正确访问（不再硬拼端口）。默认管理员 admin/admin123，支持改密码与改账号（需验证原密码）。",
+                                                            "os_min_version":  "0.9.0",
+                                                            "packages":  {
+                                                                             "x86":  {
+                                                                                         "download_url":  "./qdd/fpk/qdd-1.0.6-x86.fpk",
+                                                                                         "sha256":  "363975ff10b83342916cad8b156009ae81116c88eaa4a0f927461c958ecdf6d9",
+                                                                                         "size":  6113286
+                                                                                     },
+                                                                             "arm":  {
+                                                                                         "download_url":  "./qdd/fpk/qdd-1.0.6-arm.fpk",
+                                                                                         "sha256":  "a7d3552878bf57121bc1cd42eee20ec963fd4d962dd910698daa297925c50dc8",
+                                                                                         "size":  5888354
+                                                                                     }
+                                                                         },
+                                                            "updated_at":  "2026-10-22T14:15:00+08:00"
+                                                        }
+                                          }
+                         }
              }
 }
