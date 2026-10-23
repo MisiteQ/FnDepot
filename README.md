@@ -24,7 +24,7 @@ https://github.com/MisiteQ/FnDepot
 | [Window Composer](https://github.com/MisiteQ/FnDepot/blob/main/window-composer/README.md) | 把飞牛 NAS 上的应用以窗口形式编排输出到物理显示器：支持 HDMI/DP/USB-C/VGA/DVI 全接口、显示器热插拔、远程网页布局管理、多窗口不重叠、屏幕旋转与截图 | x86 / arm |
 | [时钟天气 QTWeather](https://github.com/MisiteQ/FnDepot/blob/main/com.qweather.widget/README.md) | 飞牛桌面时钟+天气小部件：大号时钟（秒/公历/农历）与实时天气、5 天预报可独立开关，设置中心支持全透明、配色、字号与自定义字体，Open-Meteo 无需 API Key | x86 / arm |
 | [GStats](https://github.com/MisiteQ/FnDepot/blob/main/gstats/README.md) | 飞牛 NAS 上的 GitHub 仓库流量统计平台：通过官方 Repo Traffic API 统计仓库外部访客的 PV / UV / 克隆次数、来源网站与热门路径，每日快照存档突破 14 天限制，支持导出 CSV / JSON / HTML 报表 | x86 / arm |
-| [QLink2Desktop](https://github.com/MisiteQ/FnDepot/blob/main/qlink2desktop/README.md) | 把本机端口、Docker 容器、局域网或公网服务一键放到飞牛桌面：自动发现本机端口与容器一键注册为原生桌面应用，支持反向代理、SSH 隧道、四层端口转发（TCP/UDP）、网页快捷方式、文字图标生成、自动抓取站点图标（查找过程可见），飞牛统一网关零端口接入 | x86 / arm |
+| [QLink2Desktop](https://github.com/MisiteQ/FnDepot/blob/main/qlink2desktop/README.md) | 把本机端口、Docker 容器、局域网或公网服务一键放到飞牛桌面：自动发现本机端口与容器一键注册为原生桌面应用，支持反向代理、SSH 隧道、四层端口转发（TCP/UDP）、网页快捷方式、文字图标生成、自动抓取站点图标（查找过程可见）、外网访问三模式可选（飞牛 ID / fnOS 反代 / 自定义公网反代），飞牛统一网关零端口接入 | x86 / arm |
 | [签到助手 (QDAssistant)](https://github.com/MisiteQ/FnDepot/blob/main/qdassistant/README.md) | 飞牛 fnOS 上的签到助手：把 WorkBuddy 与 Trae 双平台每日签到搬到 NAS 上 7×24 常驻、到点自动完成，支持凭据自动续期、积分 / Token 用量统计、一键签到与配置导出导入 | x86 / arm |
 | [炸弹杰克 (bombjackgame)](https://github.com/MisiteQ/FnDepot/blob/main/bombjackgame/README.md) | 经典 FC 游戏《Mighty Bomb Jack》（Tecmo/Tehkan，1986 街机/1987 FC）完全离线版：桌面窗口直接游玩，6 槽位磁盘存档、自定义按键、暂停、截图、音量、全屏，无端口无后台 | x86 / arm |
 
@@ -79,8 +79,8 @@ FnDepot/
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
     └── fpk/         # 各架构安装包
-        ├── qlink2desktop-1.2.8-x86.fpk
-        └── qlink2desktop-1.2.8-arm.fpk
+        ├── qlink2desktop-1.2.9-x86.fpk
+        └── qlink2desktop-1.2.9-arm.fpk
 └── qdassistant/     # QDAssistant 签到助手应用目录
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明

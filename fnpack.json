@@ -319,22 +319,22 @@
                                        "is_docker":  false,
                                        "service_port":  "",
                                        "releases":  {
-                                                        "1.2.8":  {
-                                                                      "changelog":  "编辑器新增「图标库」选图档：给链接选图标时可直接从已上传图标中挑一枚（带选中描边、对勾与文件名提示），同一张图跨链接复用，不必反复重传；与「上传」档共用同一套数据，列表缩略图、桌面图标与打包路径不变。",
+                                                        "1.2.9":  {
+                                                                      "changelog":  "外网访问三模式逐链接可选：飞牛 ID（默认，行为不变）/ fnOS 反代（桌面入口不声明端口，由 fnOS 内置 Nginx 按应用端口反代）/ 自定义公网反代（CGI 按访问来源 Host 分流：内网直连本机端口，外网 302 跳到反代地址）；桌面列表标注每条链接外网走向。",
                                                                       "os_min_version":  "0.9.0",
                                                                       "packages":  {
                                                                                        "x86":  {
-                                                                                                   "download_url":  "./qlink2desktop/fpk/qlink2desktop-1.2.8-x86.fpk",
-                                                                                                   "sha256":  "c3d4db33bfc311d18d00214f3f77894883f634e4020cc3a04abc3e0162dc0336",
-                                                                                                   "size":  4347857
+                                                                                                   "download_url":  "./qlink2desktop/fpk/qlink2desktop-1.2.9-x86.fpk",
+                                                                                                   "sha256":  "bd99b84153aab3d829e38f0eb16a243ed356f66771500be747fe9d4510e58e6a",
+                                                                                                   "size":  4355220
                                                                                                },
                                                                                        "arm":  {
-                                                                                                   "download_url":  "./qlink2desktop/fpk/qlink2desktop-1.2.8-arm.fpk",
-                                                                                                   "sha256":  "299f152b5329c4a3006d0b8478c26a8f10d8a878d55e3cb8cf015c55460eb9c8",
-                                                                                                   "size":  3977442
+                                                                                                   "download_url":  "./qlink2desktop/fpk/qlink2desktop-1.2.9-arm.fpk",
+                                                                                                   "sha256":  "97297a7034352ed046708c5a18ae6ee4d49412f3b0367d281e93b791a5bc0a1a",
+                                                                                                   "size":  3985407
                                                                                                }
                                                                                    },
-                                                                      "updated_at":  "2026-10-16T23:05:32+08:00"
+                                                                      "updated_at":  "2026-10-23T10:45:00+08:00"
                                                                   }
                                                     }
                                    },
