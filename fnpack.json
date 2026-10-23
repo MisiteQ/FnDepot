@@ -30,22 +30,22 @@
                                 "is_docker":  false,
                                 "service_port":  "8344",
                                 "releases":  {
-                                                 "0.1.29":  {
-                                                                "changelog":  "修复 Edge TTS 听书第二次起必报错（Cannot read properties of undefined (reading \u0027voiceLocale\u0027)）：msedge-tts 库 setMetadata 未传第三参数，首次朗读后 voiceLocale 已设值导致条件短路失效、转而访问 undefined 抛错；调用处补传空对象绕过，连续朗读恢复正常。",
+                                                 "0.1.30":  {
+                                                                "changelog":  "修复小说下载全部失败（部分书源书籍链接为相对路径未补全，fetch 直接报错，#3）；新增阅读「上下边距」调节，手机全屏阅读避开挖孔/刘海遮挡文字（#4）。",
                                                                 "os_min_version":  "1.1.8",
                                                                 "packages":  {
                                                                                  "x86":  {
-                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.29-x86.fpk",
-                                                                                             "sha256":  "903545aa6c49a6b335f6157e384324e2d7b5b50c112ceb903bb15a39f754603c",
-                                                                                             "size":  28015568
+                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.30-x86.fpk",
+                                                                                             "sha256":  "a5cc61a6d066d479b5b019daa14e4713217af4710d839cc690ace89a0f8ef994",
+                                                                                             "size":  28015143
                                                                                          },
                                                                                  "arm":  {
-                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.29-arm.fpk",
-                                                                                             "sha256":  "c3ae7c5d3579b42a17e96a70709e4ca8f5faf58bc2b48dd3e6a3263e2e722da1",
-                                                                                             "size":  27990356
+                                                                                             "download_url":  "./qyread/fpk/qyread-0.1.30-arm.fpk",
+                                                                                             "sha256":  "ca00df7b6f6f41363ae50741cac3802d585e0497251ac0fa69299f258d5cc3be",
+                                                                                             "size":  27988527
                                                                                          }
                                                                              },
-                                                                "updated_at":  "2026-10-10T15:03:00+08:00"
+                                                                "updated_at":  "2026-10-23T10:10:12+08:00"
                                                             }
                                              }
                             },
@@ -72,7 +72,7 @@
                                    "service_port":  "8777",
                                    "releases":  {
                                                     "2.19.0":  {
-                                                                   "changelog":  "v2.19.0<br>① SAS/SCSI 企业级硬盘 SMART 全面支持（社区贡献者 ttkl9559-cell，PR #17）：SAS 盘 smartctl 字段名与 SATA 完全不同（Serial number、Current Drive Temperature、Accumulated power on time、Elements in grown defect list、Error counter log 三向表），此前一律读不到；现完整解析并映射既有 SMART 键，前端零改动判色，含 -n standby 休眠保护<br>② 硬盘后台巡检与健康告警（PR #18）：DiskScanner 后台线程按可配置周期巡检全部硬盘，健康分级与缺陷计数变化落 sqlite 持久化；SMTP 邮件 + Server酱 双通道告警，状态机去重——首次只记基线、变化才通知、恢复也告知<br>③ iDRAC Redfish 带外监控（PR #19）：Dell 服务器 iDRAC 只读接入——温度 / 风扇 / 电源冗余 / SEL 硬件日志（发生与恢复配对），快慢组采集线程 + 请求单飞；设置页一键测试连接并逐步报出失败原因<br>④ 审查修复：standby 结果不缓存（避免盘唤醒后假休眠）、同盘详情请求单飞、巡检「最后变化时间」NULL 安全比较、iDRAC 失败原因透传、盘位表 0 号插槽显示修复",
+                                                                   "changelog":  "v2.19.0\u003cbr\u003e① SAS/SCSI 企业级硬盘 SMART 全面支持（社区贡献者 ttkl9559-cell，PR #17）：SAS 盘 smartctl 字段名与 SATA 完全不同（Serial number、Current Drive Temperature、Accumulated power on time、Elements in grown defect list、Error counter log 三向表），此前一律读不到；现完整解析并映射既有 SMART 键，前端零改动判色，含 -n standby 休眠保护\u003cbr\u003e② 硬盘后台巡检与健康告警（PR #18）：DiskScanner 后台线程按可配置周期巡检全部硬盘，健康分级与缺陷计数变化落 sqlite 持久化；SMTP 邮件 + Server酱 双通道告警，状态机去重——首次只记基线、变化才通知、恢复也告知\u003cbr\u003e③ iDRAC Redfish 带外监控（PR #19）：Dell 服务器 iDRAC 只读接入——温度 / 风扇 / 电源冗余 / SEL 硬件日志（发生与恢复配对），快慢组采集线程 + 请求单飞；设置页一键测试连接并逐步报出失败原因\u003cbr\u003e④ 审查修复：standby 结果不缓存（避免盘唤醒后假休眠）、同盘详情请求单飞、巡检「最后变化时间」NULL 安全比较、iDRAC 失败原因透传、盘位表 0 号插槽显示修复",
                                                                    "updated_at":  "2026-10-23T10:00:00+08:00",
                                                                    "os_min_version":  "0.9.0",
                                                                    "packages":  {
