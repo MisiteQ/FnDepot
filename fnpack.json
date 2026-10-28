@@ -4,7 +4,7 @@
                         "name":  "MisiteQ 应用源",
                         "author":  "MisiteQ",
                         "homepage":  "https://github.com/MisiteQ/FnDepot",
-                        "description":  "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、GStats（GitHub 使用统计平台）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）、签到助手 QDAssistant（WorkBuddy 与 Trae 双平台自动签到，7×24 常驻 NAS）。、QDD 文档分发（轻量文档分发管理与授权工具）。"
+                        "description":  "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）、QDD 文档分发（轻量文档分发管理与授权工具）。"
                     },
     "apps":  {
                  "qyread":  {
@@ -231,48 +231,6 @@
                                                                         }
                                                           }
                                          },
-                 "gstats":  {
-                                "display_name":  "GStats",
-                                "desc":  "飞牛 fnOS 上的 GitHub 仓库流量统计平台：统计仓库外部访客 PV/UV、克隆次数、来源网站与热门路径，每日快照存档突破 14 天限制，支持导出报表。",
-                                "platform":  [
-                                                 "x86",
-                                                 "arm"
-                                             ],
-                                "categories":  [
-                                                   "编程开发",
-                                                   "系统工具"
-                                               ],
-                                "icon_url":  "./gstats/ICON.PNG",
-                                "readme_url":  "./gstats/README.md",
-                                "bug_report_url":  "https://github.com/MisiteQ/GStats/issues",
-                                "maintainer":  "Misite齊",
-                                "maintainer_url":  "https://github.com/MisiteQ",
-                                "distributor":  "MisiteQ",
-                                "distributor_url":  "https://github.com/MisiteQ/FnDepot",
-                                "run_as":  "package",
-                                "install_type":  "",
-                                "is_docker":  false,
-                                "service_port":  "",
-                                "releases":  {
-                                                 "1.2.2":  {
-                                                               "changelog":  "重构为 GitHub 仓库流量统计平台：接入官方 Repo Traffic API，统计仓库外部访客 PV/UV、克隆次数、来源网站与热门路径，每日自动快照存档突破 14 天限制；新增免登录搜索浏览公开仓库，报表调整为 daily/repos/referrers/paths，绑定账号自动同步 + 每 6 小时全量同步。",
-                                                               "os_min_version":  "1.1.3100",
-                                                               "packages":  {
-                                                                                "x86":  {
-                                                                                            "download_url":  "./gstats/fpk/gstats-1.2.2-x86.fpk",
-                                                                                            "sha256":  "9ac1c284db968044c02caaf8104aebae1a5a23653e93b4a9b9f6e3be02a1d11a",
-                                                                                            "size":  307270
-                                                                                        },
-                                                                                "arm":  {
-                                                                                            "download_url":  "./gstats/fpk/gstats-1.2.2-arm.fpk",
-                                                                                            "sha256":  "08386fe01a5b2c2db60777a4ef923309b30ffde4fa255833c27b132ce12d607f",
-                                                                                            "size":  307269
-                                                                                        }
-                                                                            },
-                                                               "updated_at":  "2026-09-29T08:55:00+08:00"
-                                                           }
-                                             }
-                            },
                  "bombjackgame":  {
                                       "display_name":  "炸弹杰克",
                                       "desc":  "经典 FC《Mighty Bomb Jack》离线版：飞牛桌面直接玩，6 槽位存档、改键、截图、全屏，纯本地无端口无后台。",
@@ -355,47 +313,6 @@
                                                                   }
                                                     }
                                    },
-                 "qdassistant":  {
-                                     "display_name":  "QDAssistant",
-                                     "desc":  "飞牛 fnOS 上的签到助手：把 WorkBuddy 与 Trae 双平台每日签到搬到 NAS 上 7×24 常驻，到点自动完成，凭据仅保存在本机。",
-                                     "platform":  [
-                                                      "x86",
-                                                      "arm"
-                                                  ],
-                                     "categories":  [
-                                                        "系统工具"
-                                                    ],
-                                     "icon_url":  "./qdassistant/ICON.PNG",
-                                     "readme_url":  "./qdassistant/README.md",
-                                     "bug_report_url":  "https://github.com/MisiteQ/qdassistant/issues",
-                                     "maintainer":  "Misite齊",
-                                     "maintainer_url":  "https://github.com/MisiteQ",
-                                     "distributor":  "MisiteQ",
-                                     "distributor_url":  "https://github.com/MisiteQ/FnDepot",
-                                     "run_as":  "package",
-                                     "install_type":  "",
-                                     "is_docker":  false,
-                                     "service_port":  "8790",
-                                     "releases":  {
-                                                      "1.0.2":  {
-                                                                    "changelog":  "v1.0.2：桌面入口改走飞牛统一网关（/app/qdassistant/ + 应用内置 Unix 套接字）修复域名访问加载失败；TCP 端口保留作局域网直连，与网关组成双通道，套接字异常时自动回退端口；启动 / 停止 / 安装 / 升级 / 卸载各环节统一清理残留套接字。另含 1.0.1 修复（未单独发布）：首屏改为单请求 bootstrap 聚合，规避统一网关并发转发悬停；覆盖安装 10 分钟数据保护窗口。",
-                                                                    "updated_at":  "2026-10-16T23:05:32+08:00",
-                                                                    "os_min_version":  "0.9.0",
-                                                                    "packages":  {
-                                                                                     "x86":  {
-                                                                                                 "download_url":  "./qdassistant/fpk/qdassistant-1.0.2-x86.fpk",
-                                                                                                 "sha256":  "b42885b9fb4319a727c70cbef32567406c1b780b514ebdfe946fd459b2c317fb",
-                                                                                                 "size":  424465
-                                                                                             },
-                                                                                     "arm":  {
-                                                                                                 "download_url":  "./qdassistant/fpk/qdassistant-1.0.2-arm.fpk",
-                                                                                                 "sha256":  "b821af9bfdd789d659e71d2ddae036e9be205aff370038a68051d813ebc200a0",
-                                                                                                 "size":  424464
-                                                                                             }
-                                                                                 }
-                                                                }
-                                                  }
-                                 },
                  "qdd-document-distributor":  {
                                                   "display_name":  "QDD 文档分发",
                                                   "desc":  "fnOS 文档分发与授权工具：多目录扫描自动分类（类型 + 关键词）、全类型在线预览、批量打包 / Excel 导出、多用户目录授权，适合团队共享资料。",
