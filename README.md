@@ -21,7 +21,6 @@ https://github.com/MisiteQ/FnDepot
 | [惬意阅读 (QYRead)](https://github.com/MisiteQ/FnDepot/blob/main/qyread/README.md) | 飞牛上的私人书库与阅读中心：多格式书库（TXT/EPUB/MOBI/AZW3/PDF/CBZ/CBR/CB7）、小说聚合搜索下载（可暂停/继续/取消）、沉浸阅读、Edge 听书、批注笔记与阅读统计 | x86 / arm |
 | [飞牛监控 (fnMonitor)](https://github.com/MisiteQ/FnDepot/blob/main/fnmonitor/README.md) | fnOS 系统监控面板：实时监控 CPU / 内存 / 磁盘 / 网络 / 温度 / 功耗 / GPU 与 Docker，支持流量统计、功耗统计、历史趋势与数据持久化 | x86 / arm |
 | [GitHub++ 加速器 (github-plus-plus)](https://github.com/MisiteQ/FnDepot/blob/main/github-plus-plus/README.md) | 飞牛 NAS 上的 GitHub / Docker 加速器：智能测速自动择优加速通道，支持 Git 克隆、网页加速、Release/raw 下载与 Docker 拉取加速，内置 Web 控制台 | x86 / arm |
-| [Window Composer](https://github.com/MisiteQ/FnDepot/blob/main/window-composer/README.md) | 把飞牛 NAS 上的应用以窗口形式编排输出到物理显示器：支持 HDMI/DP/USB-C/VGA/DVI 全接口、显示器热插拔、远程网页布局管理、多窗口不重叠、屏幕旋转与截图 | x86 / arm |
 | [时钟天气 QTWeather](https://github.com/MisiteQ/FnDepot/blob/main/com.qweather.widget/README.md) | 飞牛桌面时钟+天气小部件：大号时钟（秒/公历/农历）与实时天气、5 天预报可独立开关，设置中心支持全透明、配色、字号与自定义字体，Open-Meteo 无需 API Key | x86 / arm |
 | [QLink2Desktop](https://github.com/MisiteQ/FnDepot/blob/main/qlink2desktop/README.md) | 把本机端口、Docker 容器、局域网或公网服务一键放到飞牛桌面：自动发现本机端口与容器一键注册为原生桌面应用，支持反向代理、SSH 隧道、四层端口转发（TCP/UDP）、网页快捷方式、文字图标生成、自动抓取站点图标（查找过程可见）、外网访问三模式可选（飞牛 ID / fnOS 反代 / 自定义公网反代），飞牛统一网关零端口接入 | x86 / arm |
 | [炸弹杰克 (bombjackgame)](https://github.com/MisiteQ/FnDepot/blob/main/bombjackgame/README.md) | 经典 FC 游戏《Mighty Bomb Jack》（Tecmo/Tehkan，1986 街机/1987 FC）完全离线版：桌面窗口直接游玩，6 槽位磁盘存档、自定义按键、暂停、截图、音量、全屏，无端口无后台 | x86 / arm |
@@ -50,11 +49,6 @@ FnDepot/
     └── fpk/         # 各架构安装包
         ├── github-plus-plus-1.0.6-x86.fpk
         └── github-plus-plus-1.0.6-arm.fpk
-└── window-composer/ # Window Composer 应用目录
-    ├── ICON.PNG     # 应用图标
-    ├── README.md    # 应用详情说明
-    └── fpk/         # 通用安装包（x86/arm 共用；安装时联网拉取镜像）
-        └── window-composer-1.0.0.fpk
 ├── com.qweather.widget/ # 时钟天气 QTWeather 应用目录（内部标识沿用 com.qweather.widget）
 │   ├── ICON.PNG     # 应用图标
 │   ├── README.md    # 应用详情说明
@@ -74,7 +68,7 @@ FnDepot/
         ├── qlink2desktop-1.2.9-x86.fpk
         └── qlink2desktop-1.2.9-arm.fpk
 ```
-`fnpack.json` 中的资源与安装包均使用相对路径定位，随仓库一起分发。Window Composer 安装包本身不含 Docker 镜像，安装时自动从 ghcr 加速源测速拉取。
+`fnpack.json` 中的资源与安装包均使用相对路径定位，随仓库一起分发。
 
 ## 🔧 规范
 

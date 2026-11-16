@@ -4,7 +4,7 @@
         "name":  "MisiteQ 应用源",
         "author":  "MisiteQ",
         "homepage":  "https://github.com/MisiteQ/FnDepot",
-        "description":  "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、Window Composer（NAS 应用窗口化输出到物理显示器）、天气预报 QWeather（桌面天气小部件）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）、QDD 文档分发（轻量文档分发管理与授权工具）。"
+        "description":  "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、天气预报 QWeather（桌面天气小部件）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）、QDD 文档分发（轻量文档分发管理与授权工具）。"
     },
     "apps":  {
         "qyread":  {
@@ -267,48 +267,7 @@
                 }
             }
         },
-        "window-composer":  {
-            "display_name":  "Window Composer",
-            "desc":  "把飞牛 NAS 上的应用以窗口形式编排输出到物理显示器，支持 HDMI/DP/USB-C/VGA/DVI 全接口、热插拔、远程布局管理与截图。",
-            "platform":  [
-                "x86",
-                "arm"
-            ],
-            "categories":  [
-                "系统工具",
-                "影音娱乐"
-            ],
-            "icon_url":  "./window-composer/ICON.PNG",
-            "readme_url":  "./window-composer/README.md",
-            "bug_report_url":  "https://github.com/MisiteQ/window-composer/issues",
-            "maintainer":  "Misite齊",
-            "maintainer_url":  "https://github.com/MisiteQ",
-            "distributor":  "MisiteQ",
-            "distributor_url":  "https://github.com/MisiteQ/FnDepot",
-            "run_as":  "root",
-            "install_type":  "",
-            "is_docker":  true,
-            "service_port":  "8181",
-            "releases":  {
-                "1.0.0":  {
-                    "changelog":  "首个版本：通用多显示接口支持（HDMI/DP/USB-C/VGA/DVI）、显示器热插拔守护、目标显示器切换、安装时自动测速择优拉取镜像、窗口布局管理与截图。",
-                    "os_min_version":  "0.9.27",
-                    "packages":  {
-                        "x86":  {
-                            "download_url":  "./window-composer/fpk/window-composer-1.0.0.fpk",
-                            "sha256":  "f267ded7052983ccd31346d1a18a0ff15b491af11300bfb3d4ab56ef4e14eb77",
-                            "size":  133602
-                        },
-                        "arm":  {
-                            "download_url":  "./window-composer/fpk/window-composer-1.0.0.fpk",
-                            "sha256":  "f267ded7052983ccd31346d1a18a0ff15b491af11300bfb3d4ab56ef4e14eb77",
-                            "size":  133602
-                        }
-                    },
-                    "updated_at":  "2026-09-19T16:20:00+08:00"
-                }
-            }
-        },
+
         "com.qweather.widget":  {
             "display_name":  "时钟天气QTWeather",
             "desc":  "桌面时钟+天气小部件：大号时钟带农历，与实时天气、5天预报可独立开关；支持全透明、配色、字号与自定义字体，Open-Meteo 数据无需 Key。",
