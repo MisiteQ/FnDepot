@@ -55,8 +55,8 @@ FnDepot/
 │   ├── ICON.PNG             # 应用图标
 │   ├── README.md            # 应用详情说明
 │   └── fpk/                 # 各架构安装包
-│       ├── com.qweather.widget-3.0.5-x86.fpk
-│       └── com.qweather.widget-3.0.5-arm.fpk
+│       ├── com.qweather.widget-3.0.6-x86.fpk
+│       └── com.qweather.widget-3.0.6-arm.fpk
 ├── bombjackgame/            # 炸弹杰克应用目录
 │   ├── ICON.PNG             # 应用图标
 │   ├── README.md            # 应用详情说明
