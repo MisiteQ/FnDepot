@@ -87,23 +87,6 @@
                             "size": 734990
                         }
                     }
-                },
-                "2.42.8": {
-                    "changelog": "内置更新改用 fnOS 官方 appcenter-cli 完成安装与版本登记，旧版覆盖升级后自动补装一次，修复应用中心仍显示旧版本。",
-                    "updated_at": "2026-11-18T13:22:54+08:00",
-                    "os_min_version": "0.9.0",
-                    "packages": {
-                        "x86": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.8-x86.fpk",
-                            "sha256": "b1c9d8bbaa2f49f3609b4af01695ad8985081f1854a24a16d0c4288790907dda",
-                            "size": 731832
-                        },
-                        "arm": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.8-arm.fpk",
-                            "sha256": "9aeb9bacc4b92895d6a9d5f745eab3266f3d328c46f3a57064154793154ae5f1",
-                            "size": 731840
-                        }
-                    }
                 }
             }
         },
