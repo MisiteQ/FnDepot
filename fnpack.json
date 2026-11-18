@@ -71,37 +71,20 @@
             "is_docker": false,
             "service_port": "8777",
             "releases": {
-                "2.42.7": {
-                    "changelog": "v2.42.7 内置更新后应用中心版本号不刷新修复<br>① 修复通过应用内「在线更新 / 自动更新」升级后，飞牛应用中心仍显示旧版本号：升级只覆盖应用目录，而应用中心读取的是注册目录（/var/apps、/vol1|/vol2/@appcenter、/usr/local/apps/@appcenter 等）下的 manifest，两者不同步就一直显示旧版本<br>② 安装完成后与每次启动时都会把较新的 manifest 与图标写入各注册目录；启动时的同步在后台线程执行，不阻塞 HTTP 服务，避免影响应用中心健康检查<br>③ 只覆盖 manifest 与图标文件，不改动 cmd / ui 目录结构，避免应用中心判定应用损坏；注册目录版本更高时不做反向覆盖",
-                    "updated_at": "2026-11-18",
+                "2.42.8": {
+                    "changelog": "内置更新改用 fnOS 官方 appcenter-cli 完成安装与版本登记，旧版覆盖升级后自动补装一次，修复应用中心仍显示旧版本。",
+                    "updated_at": "2026-11-18T13:22:54+08:00",
                     "os_min_version": "0.9.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.7-x86.fpk",
-                            "sha256": "87dbce198547efdb4f307cb259324ff1a153cef3e46f3b04694a56e15625298a",
-                            "size": 729929
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.8-x86.fpk",
+                            "sha256": "b1c9d8bbaa2f49f3609b4af01695ad8985081f1854a24a16d0c4288790907dda",
+                            "size": 731832
                         },
                         "arm": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.7-arm.fpk",
-                            "sha256": "ef7edbbfb1d97d02fe4d670593becc35359619af480d0e297fb2732b3cac5d72",
-                            "size": 729934
-                        }
-                    }
-                },
-                "2.42.6": {
-                    "changelog": "v2.42.6 通知 Webhook 数值类型修复 · 功耗硬盘细分 · 容器端口识别<br>① 通用 Webhook 自定义 JSON 模板里写死的纯数字（如 Gotify 的 \"priority\":\"0\"）自动转成数字类型，不再因字段类型不符被服务端 400 拒绝；4xx 失败时回显响应体内容<br>② 功耗与电费新增「硬盘功耗清单」：可按 3.5 寸机械 / 2.5 寸机械 / 固态分别填写数量与单盘瓦数（issue #36）；基础电价与分时电价支持 3 位小数<br>③ 已停止容器的端口用 docker inspect 补齐，host 网络容器显示「host 网络」而非「无端口映射」（issue #37）",
-                    "updated_at": "2026-11-18",
-                    "os_min_version": "0.9.0",
-                    "packages": {
-                        "x86": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.6-x86.fpk",
-                            "sha256": "84fc3ca950b861f81d1b30bf0642d3d09c84f373d1f0e2436d4ba2396dad75f8",
-                            "size": 729641
-                        },
-                        "arm": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.6-arm.fpk",
-                            "sha256": "cec2b7050bb111309534573a3a02b687a42f1ea54224d3cc84881770d374993c",
-                            "size": 729645
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.8-arm.fpk",
+                            "sha256": "9aeb9bacc4b92895d6a9d5f745eab3266f3d328c46f3a57064154793154ae5f1",
+                            "size": 731840
                         }
                     }
                 }
