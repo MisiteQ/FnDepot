@@ -172,18 +172,18 @@
             "releases": {
                 "3.0.3": {
                     "changelog": "安全加固：nginx 反代拆成 5 个精确 location 锁死管理端点；移除 CORS 遗留配置；子进程调用去 shell=True；settings.json 加字段白名单/类型校验/合并写。并发防护：ng.conf.zip 加 _zip_lock；conf.d 修复加失败计数上限。冲突解决：widget.js saveSettings 改字段白名单 payload 与 settings.html 完全不重叠；后端 save_settings 加 threading.Lock；settings.json 损坏时拒绝写回。UI 升级：大圆角玻璃卡片、青绿天蓝渐变、chip 胶囊详情、秒针改定位色。",
-                    "updated_at": "2026-11-06T14:59:54+08:00",
+                    "updated_at": "2026-11-18T11:30:00+08:00",
                     "os_min_version": "1.0.0",
                     "packages": {
                         "x86": {
                             "download_url": "./com.qweather.widget/fpk/com.qweather.widget-3.0.3-x86.fpk",
-                            "sha256": "735feb5b33b0609c49e4ec396ddb68dfcdd9c114a13497e15e39fc50210e8cbd",
-                            "size": 459211
+                            "sha256": "b7b70010074ad9cae09b8f9280586b82c35e446d3a6c0d401b076b8f32bbe0a7",
+                            "size": 459213
                         },
                         "arm": {
                             "download_url": "./com.qweather.widget/fpk/com.qweather.widget-3.0.3-arm.fpk",
-                            "sha256": "8ae7a276a5f3de8f05f6da81d61b032caa51946e423e39a2fd729354b3609631",
-                            "size": 459211
+                            "sha256": "6b7663c4bd6b14489e3ac8ab54119dc8db343b71602d3669aba103482621ac68",
+                            "size": 459213
                         }
                     }
                 }
