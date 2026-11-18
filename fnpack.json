@@ -316,22 +316,22 @@
             "is_docker": false,
             "service_port": "7717",
             "releases": {
-                "1.0.6": {
-                    "changelog": "接入方式支持局域网/外网切换（主机地址下拉+保存外网地址）；Docker 加速固定 127.0.0.1 走 NAS 本机 loopback；新增应用加速页整合三种被动加速方式（hosts/Docker 一键应用/系统级 HTTP 代理开关），第三方软件无需配置即可加速；后台常驻修复（setsid 脱离会话+崩溃自动重启看门狗），关闭桌面窗口/登出飞牛账号服务不退出；侧边栏折叠 logo 偏移修复。",
+                "1.0.7": {
+                    "changelog": "飞牛 Docker 管理适配：自动写入镜像加速并切换当前镜像源，保存原状态支持「取消应用」无损还原，无法识别环境回退 daemon.json；安全加固：默认密码强制修改、未改密前接口返回 403、密码不再回显；修复 /api/docker 路由与未知 API 路径响应。已知问题（待排查，非本版引入）：codeload.github.com 拉取 archive 返回 403 Invalid input；gist.github.com 直连探测持续 TLS 失败。",
                     "os_min_version": "1.0.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.6-x86.fpk",
-                            "sha256": "0d994be1650dad0883ff31c6a4aef34e496629677d389383c61ce42a85d8608c",
-                            "size": 3714210
+                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.7-x86.fpk",
+                            "sha256": "d8eb60266a27d724be6d7ea828cc1cb91162b9cd2b0ae9fa8f7b1ac5f793ff4c",
+                            "size": 3728389
                         },
                         "arm": {
-                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.6-arm.fpk",
-                            "sha256": "1fa5d68a7426c4df8105bc5cd389b831b01f32696542907e32397d5b43aa139e",
-                            "size": 3376748
+                            "download_url": "./github-plus-plus/fpk/github-plus-plus-1.0.7-arm.fpk",
+                            "sha256": "770cd8c943c33aac42e20abe91fab873c94e47947e90f805d3f8bbefaa42f792",
+                            "size": 3389613
                         }
                     },
-                    "updated_at": "2026-09-29T10:30:00+08:00"
+                    "updated_at": "2026-11-18T09:16:18+08:00"
                 }
             }
         },

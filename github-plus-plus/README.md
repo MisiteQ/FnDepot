@@ -17,7 +17,7 @@
 在 FnDepot 客户端添加本应用源 `https://github.com/MisiteQ/FnDepot` 后，搜索「GitHub++」一键安装即可；安装后从桌面打开控制台。
 
 - 控制台端口：**7717**；代理端口：**7710**
-- 默认账号：**admin / admin123**（登录后请及时修改）
+- 默认账号：**admin / admin123**（首次登录强制修改密码，未修改前无法使用其他功能）
 - 应用以 root 身份运行（hosts 加速需写 /etc/hosts），最低 fnOS 版本 **1.0.0**
 
 ## 🚀 使用
@@ -39,9 +39,16 @@ Docker 加速：控制台里有说明，把 Docker 的 registry-mirrors 指向 N
 
 ## ⚠️ 说明
 
-- 首次登录记得改密码
+- 默认密码 admin123 仅用于首次登录，改密前除改密/登出/健康检查外的接口都会被拦截
 - MITM 模式的根证书只装在自己的设备上，别外传
 - 加速通道为社区公益服务，可用性以实际测速为准
+
+## 🐞 已知问题（v1.0.7，待排查）
+
+以下问题尚未修复，并非本版改动引入：
+
+- 经 NAS 反代拉取 `codeload.github.com` 的 archive 返回 `403 Invalid input.`
+- 后台对 `gist.github.com` 的直连探测持续 TLS 失败（日志累计千级，不影响 GitHub 主站加速）
 
 ## 🔗 相关链接
 

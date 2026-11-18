@@ -47,8 +47,8 @@ FnDepot/
     ├── ICON.PNG     # 应用图标
     ├── README.md    # 应用详情说明
     └── fpk/         # 各架构安装包
-        ├── github-plus-plus-1.0.6-x86.fpk
-        └── github-plus-plus-1.0.6-arm.fpk
+        ├── github-plus-plus-1.0.7-x86.fpk
+        └── github-plus-plus-1.0.7-arm.fpk
 ├── com.qweather.widget/ # 时钟天气 QTWeather 应用目录（内部标识沿用 com.qweather.widget）
 │   ├── ICON.PNG     # 应用图标
 │   ├── README.md    # 应用详情说明
