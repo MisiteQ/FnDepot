@@ -71,6 +71,23 @@
             "is_docker": false,
             "service_port": "8777",
             "releases": {
+                "2.42.9": {
+                    "changelog": "天气数据源改为「中国天气网（国内直连、免费无需 key）→ Open-Meteo → wttr.in」三级兜底，修复国内网络访问 api.open-meteo.com 长期 TLS 握手超时、首页天气卡片一直显示「天气不可用」；失败提示改为可读文案，失败缓存缩短为 2 分钟。",
+                    "updated_at": "2026-11-18T15:05:00+08:00",
+                    "os_min_version": "0.9.0",
+                    "packages": {
+                        "x86": {
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.9-x86.fpk",
+                            "sha256": "4da01f0828743f5543772f59d5c5333c7466b4623b56fe3c0d6fa5d1e7587e9b",
+                            "size": 734979
+                        },
+                        "arm": {
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.9-arm.fpk",
+                            "sha256": "411aee7ac77fdc799d57b3cb0621b3f4d0fb5f41d930e94e72f344409d0420f9",
+                            "size": 734990
+                        }
+                    }
+                },
                 "2.42.8": {
                     "changelog": "内置更新改用 fnOS 官方 appcenter-cli 完成安装与版本登记，旧版覆盖升级后自动补装一次，修复应用中心仍显示旧版本。",
                     "updated_at": "2026-11-18T13:22:54+08:00",
