@@ -24,49 +24,57 @@ https://github.com/MisiteQ/FnDepot
 | [时钟天气 QTWeather](https://github.com/MisiteQ/FnDepot/blob/main/com.qweather.widget/README.md) | 飞牛桌面时钟+天气小部件：大号时钟（秒/公历/农历）与实时天气、5 天预报可独立开关，设置中心支持全透明、配色、字号与自定义字体，Open-Meteo 无需 API Key | x86 / arm |
 | [QLink2Desktop](https://github.com/MisiteQ/FnDepot/blob/main/qlink2desktop/README.md) | 把本机端口、Docker 容器、局域网或公网服务一键放到飞牛桌面：自动发现本机端口与容器一键注册为原生桌面应用，支持反向代理、SSH 隧道、四层端口转发（TCP/UDP）、网页快捷方式、文字图标生成、自动抓取站点图标（查找过程可见）、外网访问三模式可选（飞牛 ID / fnOS 反代 / 自定义公网反代），飞牛统一网关零端口接入 | x86 / arm |
 | [炸弹杰克 (bombjackgame)](https://github.com/MisiteQ/FnDepot/blob/main/bombjackgame/README.md) | 经典 FC 游戏《Mighty Bomb Jack》（Tecmo/Tehkan，1986 街机/1987 FC）完全离线版：桌面窗口直接游玩，6 槽位磁盘存档、自定义按键、暂停、截图、音量、全屏，无端口无后台 | x86 / arm |
+| [QDD 文档分发](https://github.com/MisiteQ/FnDepot/blob/main/qdd-document-distributor/README.md) | fnOS 文档分发与授权工具：多目录扫描自动分类、全类型在线预览（图片/PDF/Office/音视频）、批量打包 / Excel 导出、多用户目录授权 | x86 / arm |
 
 ## 🗂 仓库结构
 
 ```
 FnDepot/
-├── fnpack.json      # FnDepot V2 应用源索引（根目录，文件名固定）
-├── README.md        # 本说明
-├── qyread/          # 惬意阅读应用目录
-│   ├── ICON.PNG     # 应用图标
-│   ├── README.md    # 应用详情说明
-│   └── fpk/         # 各架构安装包
+├── fnpack.json              # FnDepot V2 应用源索引（根目录，文件名固定）
+├── README.md                # 本说明
+├── qyread/                  # 惬意阅读应用目录
+│   ├── ICON.PNG             # 应用图标
+│   ├── README.md            # 应用详情说明
+│   └── fpk/                 # 各架构安装包
 │       ├── qyread-0.1.30-x86.fpk
 │       └── qyread-0.1.30-arm.fpk
-├── fnmonitor/       # 飞牛监控应用目录
-    ├── ICON.PNG     # 应用图标
-    ├── README.md    # 应用详情说明
-    └── fpk/         # 各架构安装包
-        ├── fnmonitor-2.30.1-x86.fpk
-        └── fnmonitor-2.30.1-arm.fpk
-└── github-plus-plus/ # GitHub++ 加速器应用目录
-    ├── ICON.PNG     # 应用图标
-    ├── README.md    # 应用详情说明
-    └── fpk/         # 各架构安装包
-        ├── github-plus-plus-1.0.7-x86.fpk
-        └── github-plus-plus-1.0.7-arm.fpk
-├── com.qweather.widget/ # 时钟天气 QTWeather 应用目录（内部标识沿用 com.qweather.widget）
-│   ├── ICON.PNG     # 应用图标
-│   ├── README.md    # 应用详情说明
-│   └── fpk/         # 各架构安装包
-│       ├── com.qweather.widget-3.0.0-x86.fpk
-│       └── com.qweather.widget-3.0.0-arm.fpk
-└── bombjackgame/    # 炸弹杰克应用目录
-    ├── ICON.PNG     # 应用图标
-    ├── README.md    # 应用详情说明
-    └── fpk/         # 各架构安装包（纯 WebAssembly，x86/arm 通用核心）
-        ├── bombjackgame-1.0.5-x86.fpk
-        └── bombjackgame-1.0.5-arm.fpk
-└── qlink2desktop/   # QLink2Desktop 应用目录
-    ├── ICON.PNG     # 应用图标
-    ├── README.md    # 应用详情说明
-    └── fpk/         # 各架构安装包
-        ├── qlink2desktop-1.2.9-x86.fpk
-        └── qlink2desktop-1.2.9-arm.fpk
+├── fnmonitor/               # 飞牛监控应用目录
+│   ├── ICON.PNG             # 应用图标
+│   ├── README.md            # 应用详情说明
+│   ├── docs/screenshots/    # 设置页等截图
+│   └── fpk/                 # 各架构安装包
+│       ├── fnmonitor-2.42.6-x86.fpk
+│       └── fnmonitor-2.42.6-arm.fpk
+├── github-plus-plus/        # GitHub++ 加速器应用目录
+│   ├── ICON.PNG             # 应用图标
+│   ├── README.md            # 应用详情说明
+│   └── fpk/                 # 各架构安装包
+│       ├── github-plus-plus-1.0.7-x86.fpk
+│       └── github-plus-plus-1.0.7-arm.fpk
+├── com.qweather.widget/     # 时钟天气 QTWeather 应用目录（内部标识沿用 com.qweather.widget）
+│   ├── ICON.PNG             # 应用图标
+│   ├── README.md            # 应用详情说明
+│   └── fpk/                 # 各架构安装包
+│       ├── com.qweather.widget-3.0.3-x86.fpk
+│       └── com.qweather.widget-3.0.3-arm.fpk
+├── bombjackgame/            # 炸弹杰克应用目录
+│   ├── ICON.PNG             # 应用图标
+│   ├── README.md            # 应用详情说明
+│   └── fpk/                 # 各架构安装包（纯 WebAssembly，x86/arm 通用核心）
+│       ├── bombjackgame-1.0.5-x86.fpk
+│       └── bombjackgame-1.0.5-arm.fpk
+├── qlink2desktop/           # QLink2Desktop 应用目录
+│   ├── ICON.PNG             # 应用图标
+│   ├── README.md            # 应用详情说明
+│   └── fpk/                 # 各架构安装包
+│       ├── qlink2desktop-1.2.9-x86.fpk
+│       └── qlink2desktop-1.2.9-arm.fpk
+└── qdd-document-distributor/ # QDD 文档分发应用目录
+    ├── ICON.PNG             # 应用图标
+    ├── README.md            # 应用详情说明
+    └── fpk/                 # 各架构安装包
+        ├── qdd-1.0.6-x86.fpk
+        └── qdd-1.0.6-arm.fpk
 ```
 `fnpack.json` 中的资源与安装包均使用相对路径定位，随仓库一起分发。
 
