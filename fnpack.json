@@ -4,7 +4,7 @@
         "name": "MisiteQ 应用源",
         "author": "MisiteQ",
         "homepage": "https://github.com/MisiteQ/FnDepot",
-        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、天气预报 QWeather（桌面天气小部件）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）、QDD 文档分发（轻量文档分发管理与授权工具）。"
+        "description": "MisiteQ 的飞牛 fnOS 第三方应用源：惬意阅读 QYRead（私人书库与阅读中心）、飞牛监控 fnMonitor（系统监控面板）、GitHub++ 加速器（GitHub / Docker 加速）、时钟天气 QTWeather（桌面时钟天气小部件）、QLink2Desktop（把本机端口 / Docker / 局域网与公网服务一键放到飞牛桌面）、炸弹杰克（经典 FC 游戏 Mighty Bomb Jack 离线版）、QDD 文档分发（轻量文档分发管理与授权工具）。"
     },
     "apps": {
         "qyread": {
@@ -133,7 +133,7 @@
         },
         "com.qweather.widget": {
             "display_name": "时钟天气QTWeather",
-            "desc": "桌面时钟+天气小部件：大号时钟带农历，与实时天气、5天预报可独立开关；支持全透明、配色、字号与自定义字体，Open-Meteo 数据无需 Key。",
+            "desc": "桌面时钟+天气小部件：大号时钟带农历，与实时天气、5天预报可独立开关；支持全透明、配色、字号与自定义字体，中国天气网数据无需 Key。",
             "platform": [
                 "x86",
                 "arm"
@@ -153,20 +153,20 @@
             "is_docker": false,
             "service_port": "5698",
             "releases": {
-                "3.0.3": {
-                    "changelog": "安全加固：nginx 反代拆成 5 个精确 location 锁死管理端点；移除 CORS 遗留配置；子进程调用去 shell=True；settings.json 加字段白名单/类型校验/合并写。并发防护：ng.conf.zip 加 _zip_lock；conf.d 修复加失败计数上限。冲突解决：widget.js saveSettings 改字段白名单 payload 与 settings.html 完全不重叠；后端 save_settings 加 threading.Lock；settings.json 损坏时拒绝写回。UI 升级：大圆角玻璃卡片、青绿天蓝渐变、chip 胶囊详情、秒针改定位色。",
-                    "updated_at": "2026-11-18T11:30:00+08:00",
+                "3.0.4": {
+                    "changelog": "天气源切换为中国天气网（国内直连、免费无需 Key）优先，Open-Meteo / wttr.in 逐级兜底，修复国内网络下卡片显示天气不可用；天气请求统一经 NAS 后端同源代理，5 天预报与实时字段保持不变；失败提示改为可读文案。",
+                    "updated_at": "2026-11-18T16:35:43+08:00",
                     "os_min_version": "1.0.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-3.0.3-x86.fpk",
-                            "sha256": "b7b70010074ad9cae09b8f9280586b82c35e446d3a6c0d401b076b8f32bbe0a7",
-                            "size": 459213
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-3.0.4-x86.fpk",
+                            "sha256": "b36b79790de22274a17b7904e10df2119e795f798f997fe505b7f4ce75989c69",
+                            "size": 463037
                         },
                         "arm": {
-                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-3.0.3-arm.fpk",
-                            "sha256": "6b7663c4bd6b14489e3ac8ab54119dc8db343b71602d3669aba103482621ac68",
-                            "size": 459213
+                            "download_url": "./com.qweather.widget/fpk/com.qweather.widget-3.0.4-arm.fpk",
+                            "sha256": "c8f72d4f975c870d5ba9ad5709277495723f9671ac5ebd39c310375ac5a90f88",
+                            "size": 463037
                         }
                     }
                 }
