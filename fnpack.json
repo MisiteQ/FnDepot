@@ -59,7 +59,7 @@
             "categories": [
                 "系统工具"
             ],
-            "icon_url": "https://github.com/MisiteQ/fnmonitor/releases/download/2.42.7/ICON_256.PNG",
+            "icon_url": "https://github.com/MisiteQ/fnmonitor/releases/download/2.42.10/ICON_256.PNG",
             "readme_url": "./fnmonitor/README.md",
             "bug_report_url": "https://github.com/MisiteQ/fnmonitor/issues",
             "maintainer": "Misite齊",
@@ -71,20 +71,20 @@
             "is_docker": false,
             "service_port": "8777",
             "releases": {
-                "2.42.9": {
-                    "changelog": "天气数据源改为「中国天气网（国内直连、免费无需 key）→ Open-Meteo → wttr.in」三级兜底，修复国内网络访问 api.open-meteo.com 长期 TLS 握手超时、首页天气卡片一直显示「天气不可用」；失败提示改为可读文案，失败缓存缩短为 2 分钟。",
-                    "updated_at": "2026-11-18T15:05:00+08:00",
+                "2.42.10": {
+                    "changelog": "内置更新跨机器兼容加固：应用中心升级走 Unix Socket RPC（socket 多候选自动发现与回退、响应字段与状态词容错），升级任务提交后仅观察 20 秒即返回、不再长时间转圈，重复点击与已登记目标版本时自动跳过；去掉 /vol1~vol4 等单机硬编码，存储池挂载点、内置应用数据目录、应用注册目录、下载保存目录改为运行时动态枚举，时区跟随系统，安装/升级脚本动态解析应用基础目录。",
+                    "updated_at": "2026-11-18T16:30:00+08:00",
                     "os_min_version": "0.9.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.9-x86.fpk",
-                            "sha256": "4da01f0828743f5543772f59d5c5333c7466b4623b56fe3c0d6fa5d1e7587e9b",
-                            "size": 734979
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.10-x86.fpk",
+                            "sha256": "cad95781a951beda677478a8c3090059d3666294009d93b1f90d4f72a1678af5",
+                            "size": 741504
                         },
                         "arm": {
-                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.9-arm.fpk",
-                            "sha256": "411aee7ac77fdc799d57b3cb0621b3f4d0fb5f41d930e94e72f344409d0420f9",
-                            "size": 734990
+                            "download_url": "./fnmonitor/fpk/fnmonitor-2.42.10-arm.fpk",
+                            "sha256": "eb5719023e5afc5535f0588c855a1cc686ee0cafbe3024623aa59cca71096462",
+                            "size": 741525
                         }
                     }
                 }
