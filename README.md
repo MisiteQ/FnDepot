@@ -22,7 +22,7 @@ https://github.com/MisiteQ/FnDepot
 | [飞牛监控 (fnMonitor)](https://github.com/MisiteQ/FnDepot/blob/main/fnmonitor/README.md) | fnOS 系统监控面板：实时监控 CPU / 内存 / 磁盘 / 网络 / 温度 / 功耗 / GPU 与 Docker，支持流量统计、功耗统计、历史趋势与数据持久化 | x86 / arm |
 | [GitHub++ 加速器 (github-plus-plus)](https://github.com/MisiteQ/FnDepot/blob/main/github-plus-plus/README.md) | 飞牛 NAS 上的 GitHub / Docker 加速器：智能测速自动择优加速通道，支持 Git 克隆、网页加速、Release/raw 下载与 Docker 拉取加速，内置 Web 控制台 | x86 / arm |
 | [时钟天气 QTWeather](https://github.com/MisiteQ/FnDepot/blob/main/com.qweather.widget/README.md) | 飞牛桌面时钟+天气小部件：大号时钟（秒/公历/农历）与实时天气、5 天预报可独立开关，设置中心支持全透明、配色、字号与自定义字体，中国天气网数据无需 API Key | x86 / arm |
-| [QLink2Desktop](https://github.com/MisiteQ/FnDepot/blob/main/qlink2desktop/README.md) | 把本机端口、Docker 容器、局域网或公网服务一键放到飞牛桌面：自动发现本机端口与容器一键注册为原生桌面应用，支持反向代理、SSH 隧道、四层端口转发（TCP/UDP）、网页快捷方式、文字图标生成、自动抓取站点图标（查找过程可见）、外网访问三模式可选（飞牛 ID / fnOS 反代 / 自定义公网反代），飞牛统一网关零端口接入 | x86 / arm |
+| [QLink2Desktop](https://github.com/MisiteQ/FnDepot/blob/main/qlink2desktop/README.md) | 把本机端口、Docker 容器、局域网或公网服务一键放到飞牛桌面：自动发现本机端口与容器一键注册为原生桌面应用，支持反向代理、SSH 隧道、四层端口转发（TCP/UDP）、网页快捷方式、文字图标生成、自动抓取站点图标（查找过程可见）、外网访问四模式可选（飞牛 ID / 仅内网 / fnOS 反代 / 自定义公网反代），飞牛统一网关零端口接入 | x86 / arm |
 | [炸弹杰克 (bombjackgame)](https://github.com/MisiteQ/FnDepot/blob/main/bombjackgame/README.md) | 经典 FC 游戏《Mighty Bomb Jack》（Tecmo/Tehkan，1986 街机/1987 FC）完全离线版：桌面窗口直接游玩，6 槽位磁盘存档、自定义按键、暂停、截图、音量、全屏，无端口无后台 | x86 / arm |
 | [QDD 文档分发](https://github.com/MisiteQ/FnDepot/blob/main/qdd-document-distributor/README.md) | fnOS 文档分发与授权工具：多目录扫描自动分类、全类型在线预览（图片/PDF/Office/音视频）、批量打包 / Excel 导出、多用户目录授权 | x86 / arm |
 
@@ -67,8 +67,8 @@ FnDepot/
 │   ├── ICON.PNG             # 应用图标
 │   ├── README.md            # 应用详情说明
 │   └── fpk/                 # 各架构安装包
-│       ├── qlink2desktop-1.2.9-x86.fpk
-│       └── qlink2desktop-1.2.9-arm.fpk
+│       ├── qlink2desktop-1.2.10-x86.fpk
+│       └── qlink2desktop-1.2.10-arm.fpk
 └── qdd-document-distributor/ # QDD 文档分发应用目录
     ├── ICON.PNG             # 应用图标
     ├── README.md            # 应用详情说明

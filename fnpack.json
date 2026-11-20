@@ -235,22 +235,22 @@
             "is_docker": false,
             "service_port": "",
             "releases": {
-                "1.2.9": {
-                    "changelog": "外网访问三模式逐链接可选：飞牛 ID（默认，行为不变）/ fnOS 反代（桌面入口不声明端口，由 fnOS 内置 Nginx 按应用端口反代）/ 自定义公网反代（CGI 按访问来源 Host 分流：内网直连本机端口，外网 302 跳到反代地址）；桌面列表标注每条链接外网走向。",
+                "1.2.10": {
+                    "changelog": "修复「所有用户可见」关闭后不生效（Issue #1）：新增「仅内网」外网模式，端口直连时放弃 FN Connect 中继、让「仅管理员可见」在内网真正生效；中继（飞牛 ID）模式下编辑器禁用并固定勾选该开关并给出原因与替代方案，不再静默忽略用户设置。",
                     "os_min_version": "0.9.0",
                     "packages": {
                         "x86": {
-                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.9-x86.fpk",
-                            "sha256": "bd99b84153aab3d829e38f0eb16a243ed356f66771500be747fe9d4510e58e6a",
-                            "size": 4355220
+                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.10-x86.fpk",
+                            "sha256": "d10b8f50491fa6390584c3e1ecc35422dea691b9cc7602a786e3e64c4d2dcfde",
+                            "size": 4355602
                         },
                         "arm": {
-                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.9-arm.fpk",
-                            "sha256": "97297a7034352ed046708c5a18ae6ee4d49412f3b0367d281e93b791a5bc0a1a",
-                            "size": 3985407
+                            "download_url": "./qlink2desktop/fpk/qlink2desktop-1.2.10-arm.fpk",
+                            "sha256": "565e1a4afad80574a48578f888b5f5c0bcd0187b0ab56308956d9bf8ae3eac8d",
+                            "size": 3987999
                         }
                     },
-                    "updated_at": "2026-10-23T10:45:00+08:00"
+                    "updated_at": "2026-11-20T08:18:20+08:00"
                 }
             }
         },
