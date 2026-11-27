@@ -43,8 +43,8 @@ FnDepot/
 │   ├── README.md            # 应用详情说明
 │   ├── docs/screenshots/    # 设置页等截图
 │   └── fpk/                 # 各架构安装包
-│       ├── fnmonitor-2.42.15-x86.fpk
-│       └── fnmonitor-2.42.15-arm.fpk
+│       ├── fnmonitor-2.42.19-x86.fpk
+│       └── fnmonitor-2.42.19-arm.fpk
 ├── github-plus-plus/        # GitHub++ 加速器应用目录
 │   ├── ICON.PNG             # 应用图标
 │   ├── README.md            # 应用详情说明
